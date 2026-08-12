@@ -15,6 +15,8 @@ const providers = companies
       countryCode: c.country,
       countryLabel: COUNTRY_LABELS[c.country],
       origin: isOriginCountry(c.country),
+      hasPhone: c.contact.phone.length > 0,
+      hasWebsite: Boolean(c.contact.website),
       href: `/${COUNTRY_SLUGS[c.country]}/${cityInfo?.slug}/corporate_mobility/${c.slug}/`,
     };
   })
@@ -78,7 +80,7 @@ const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).
     </div>
   </section>
 
-  <style>
+  <style is:global>
     .hero {
       padding: 72px 0 40px;
       border-bottom: 1px solid var(--color-line);
@@ -191,7 +193,7 @@ const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).
     .provider-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+      gap: 16px;
     }
     @media (max-width: 900px) {
       .provider-grid { grid-template-columns: repeat(2, 1fr); }
@@ -199,58 +201,140 @@ const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).
     @media (max-width: 620px) {
       .provider-grid { grid-template-columns: 1fr; }
     }
+
     .provider-card {
+      position: relative;
       display: flex;
-      gap: 14px;
-      padding: 16px;
-      border: 1px solid var(--color-line);
-      border-radius: 8px;
+      flex-direction: column;
+      min-height: 240px;
+      padding: 18px;
+      border-radius: 14px;
+      border-top: 3px solid var(--color-primary);
       background: var(--color-card);
-      transition: border-color 0.15s ease;
+      box-shadow: 0 1px 2px rgba(34, 31, 26, 0.04);
+      transition: box-shadow 0.15s ease, transform 0.15s ease;
     }
     .provider-card:hover {
-      border-color: var(--color-primary);
+      box-shadow: 0 8px 20px rgba(34, 31, 26, 0.1);
+      transform: translateY(-2px);
     }
-    .provider-card .code-badge {
-      flex-shrink: 0;
-      width: 44px;
-      height: 44px;
+    .provider-card.origin {
+      border-top-color: var(--color-accent);
+    }
+    .provider-card::after {
+      content: '';
+      position: absolute;
+      inset: 8px;
+      border: 1px solid currentColor;
+      opacity: 0.08;
       border-radius: 8px;
-      background: var(--color-primary-soft);
+      pointer-events: none;
+      color: var(--color-ink);
+    }
+    .provider-card .card-top {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .provider-card .kicker-tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+    .provider-card.origin .kicker-tag {
+      color: var(--color-accent);
+    }
+    .provider-card .avatar {
+      flex-shrink: 0;
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      border: 1px solid var(--color-line);
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: var(--font-display);
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--color-primary);
-    }
-    .provider-card.origin .code-badge {
-      background: #F4E3D4;
-      color: var(--color-accent);
-    }
-    .provider-card .body { min-width: 0; }
-    .provider-card h3 {
-      font-size: 0.98rem;
-      font-weight: 600;
-      line-height: 1.3;
-    }
-    .provider-card .meta {
-      margin-top: 4px;
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       color: var(--color-ink-soft);
     }
+    .provider-card h3 {
+      position: relative;
+      z-index: 1;
+      margin-top: 14px;
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.25;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .provider-card .meta {
+      position: relative;
+      z-index: 1;
+      margin-top: 6px;
+      font-size: 0.8rem;
+      letter-spacing: 0.02em;
+      color: var(--color-ink-soft);
+    }
+    .provider-card .desc {
+      position: relative;
+      z-index: 1;
+      margin-top: 10px;
+      font-size: 0.85rem;
+      line-height: 1.45;
+      color: var(--color-ink-soft);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      flex: 1;
+    }
+    .provider-card .card-footer {
+      position: relative;
+      z-index: 1;
+      margin-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+    .provider-card .contact-flags {
+      display: flex;
+      gap: 6px;
+      font-size: 0.72rem;
+      color: var(--color-ink-soft);
+    }
+    .provider-card .contact-flags span {
+      border: 1px solid var(--color-line);
+      border-radius: 999px;
+      padding: 2px 8px;
+    }
     .provider-card .view-link {
-      margin-top: 8px;
-      display: inline-block;
       font-size: 0.82rem;
       font-weight: 500;
       color: var(--color-primary);
+      white-space: nowrap;
+    }
+    .provider-card.origin .view-link {
+      color: var(--color-accent);
     }
   </style>
 
   <script>
     const providers = JSON.parse(document.getElementById('providers-data').textContent);
+
+    function escapeHtml(str) {
+      const div = document.createElement('div');
+      div.textContent = str;
+      return div.innerHTML;
+    }
     const searchInput = document.getElementById('search-input');
     const countryFilter = document.getElementById('country-filter');
     const typeFilter = document.getElementById('type-filter');
@@ -294,11 +378,19 @@ const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).
           const card = document.createElement('a');
           card.className = 'provider-card' + (p.origin ? ' origin' : '');
           card.href = p.href;
+          const flags = [];
+          if (p.hasPhone) flags.push('<span>Phone</span>');
+          if (p.hasWebsite) flags.push('<span>Website</span>');
           card.innerHTML = `
-            <div class="code-badge">${p.countryCode}</div>
-            <div class="body">
-              <h3>${p.name}</h3>
-              <div class="meta">${p.city}</div>
+            <div class="card-top">
+              <span class="kicker-tag">${p.origin ? 'Origin market' : 'Destination'}</span>
+              <span class="avatar">${escapeHtml(p.name.charAt(0))}</span>
+            </div>
+            <h3>${escapeHtml(p.name)}</h3>
+            <div class="meta">${escapeHtml(p.city)}, ${escapeHtml(p.countryLabel)}</div>
+            ${p.description ? `<p class="desc">${escapeHtml(p.description)}</p>` : '<div class="desc"></div>'}
+            <div class="card-footer">
+              <div class="contact-flags">${flags.join('')}</div>
               <span class="view-link">View details →</span>
             </div>
           `;
