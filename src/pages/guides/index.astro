@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+---
+<BaseLayout
+  title="Relocation Guides | Relocado"
+  description="Guides for relocating to Singapore and Indonesia — coming soon."
+>
+  <div class="wrap">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Guides' }]} />
+  </div>
+
+  <div class="page-header">
+    <div class="wrap">
+      <span class="kicker">Guides</span>
+      <h1>Relocation guides</h1>
+      <p class="lede">In-depth guides to moving to Singapore and Indonesia are coming soon.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="empty-state">
+        <p>No guides published yet. Check back soon.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

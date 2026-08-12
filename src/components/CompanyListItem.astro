@@ -1,0 +1,18 @@
+---
+import type { Company } from '../lib/types';
+import { CATEGORY_LABELS } from '../lib/constants';
+
+interface Props {
+  company: Company;
+  href: string;
+}
+const { company, href } = Astro.props;
+---
+<a class="company-row" href={href}>
+  <div>
+    <h3>{company.name}</h3>
+    <div class="meta">{company.city} · {company.categories.map((c) => CATEGORY_LABELS[c]).join(', ')}</div>
+    {company.description && <p class="snippet">{company.description}</p>}
+  </div>
+  <span class="view-link">View details →</span>
+</a>

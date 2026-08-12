@@ -1,0 +1,198 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Company } from '../lib/types';
+import { CATEGORY_LABELS } from '../lib/constants';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  company: Company;
+  breadcrumbs: Crumb[];
+}
+const { company, breadcrumbs } = Astro.props;
+const { contact } = company;
+
+const hasAddress = Boolean(contact.address.street || contact.address.postal_code);
+const hasMap = contact.address.lat != null && contact.address.lng != null;
+const hasSocial = contact.social.linkedin || contact.social.instagram || contact.social.facebook;
+const hasContactPerson = Boolean(contact.contact_person.name);
+
+const claimSubject = encodeURIComponent(`Claim listing: ${company.name}`);
+const claimMailto = `mailto:hello@relocado.asia?subject=${claimSubject}`;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: company.name,
+  description: company.description || undefined,
+  url: contact.website || undefined,
+  telephone: contact.phone[0] || undefined,
+  email: contact.email[0] || undefined,
+  address: hasAddress
+    ? {
+        '@type': 'PostalAddress',
+        streetAddress: contact.address.street || undefined,
+        postalCode: contact.address.postal_code || undefined,
+        addressLocality: company.city,
+        addressCountry: company.country,
+      }
+    : undefined,
+  geo: hasMap
+    ? {
+        '@type': 'GeoCoordinates',
+        latitude: contact.address.lat,
+        longitude: contact.address.lng,
+      }
+    : undefined,
+  sameAs: hasSocial
+    ? [contact.social.linkedin, contact.social.instagram, contact.social.facebook].filter(Boolean)
+    : undefined,
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+<div class="wrap">
+  <Breadcrumbs items={breadcrumbs} />
+</div>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="kicker">{company.categories.map((c) => CATEGORY_LABELS[c]).join(' · ')}</span>
+    <h1>{company.name}</h1>
+    {company.description && <p class="lede">{company.description}</p>}
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap profile-grid">
+    <div class="profile-main">
+      {company.status === 'unclaimed' && (
+        <div class="claim-banner">
+          <div>
+            <strong>Is this your business?</strong>
+            <p>This listing hasn't been claimed yet. Claim it to update details and respond to enquiries.</p>
+          </div>
+          <a class="btn btn-primary" href={claimMailto}>Claim this listing</a>
+        </div>
+      )}
+
+      <div class="detail-block">
+        <h2>Contact</h2>
+        <dl class="detail-list">
+          {contact.phone.length > 0 && (
+            <div><dt>Phone</dt><dd>{contact.phone.map((p) => <a href={`tel:${p.replace(/\s+/g, '')}`}>{p}</a>)}</dd></div>
+          )}
+          {contact.whatsapp && (
+            <div><dt>WhatsApp</dt><dd><a href={`https://wa.me/${contact.whatsapp.replace(/[^\d]/g, '')}`} target="_blank" rel="noopener noreferrer">{contact.whatsapp}</a></dd></div>
+          )}
+          {contact.email.length > 0 && (
+            <div><dt>Email</dt><dd>{contact.email.map((e) => <a href={`mailto:${e}`}>{e}</a>)}</dd></div>
+          )}
+          {contact.website && (
+            <div><dt>Website</dt><dd><a href={contact.website} target="_blank" rel="noopener noreferrer">{contact.website.replace(/^https?:\/\//, '')}</a></dd></div>
+          )}
+          {contact.contact_form_url && (
+            <div><dt>Contact form</dt><dd><a href={contact.contact_form_url} target="_blank" rel="noopener noreferrer">Send an enquiry →</a></dd></div>
+          )}
+          {hasContactPerson && (
+            <div><dt>Contact person</dt><dd>{contact.contact_person.name}{contact.contact_person.role && ` — ${contact.contact_person.role}`}</dd></div>
+          )}
+        </dl>
+      </div>
+
+      {hasAddress && (
+        <div class="detail-block">
+          <h2>Address</h2>
+          <p>{contact.address.street}{contact.address.street && contact.address.postal_code && ', '}{contact.address.postal_code} {company.city}</p>
+          {hasMap && (
+            <div class="map-embed">
+              <iframe
+                width="100%"
+                height="280"
+                style="border:0"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src={`https://maps.google.com/maps?q=${contact.address.lat},${contact.address.lng}&z=15&output=embed`}
+              />
+            </div>
+          )}
+        </div>
+      )}
+
+      {(company.languages_spoken.length > 0 || company.operating_hours) && (
+        <div class="detail-block">
+          <h2>Details</h2>
+          <dl class="detail-list">
+            {company.languages_spoken.length > 0 && (
+              <div><dt>Languages spoken</dt><dd>{company.languages_spoken.join(', ')}</dd></div>
+            )}
+            {company.operating_hours && (
+              <div><dt>Operating hours</dt><dd>{company.operating_hours}</dd></div>
+            )}
+          </dl>
+        </div>
+      )}
+
+      {hasSocial && (
+        <div class="detail-block">
+          <h2>Social</h2>
+          <div class="social-links">
+            {contact.social.linkedin && <a href={contact.social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>}
+            {contact.social.instagram && <a href={contact.social.instagram} target="_blank" rel="noopener noreferrer">Instagram</a>}
+            {contact.social.facebook && <a href={contact.social.facebook} target="_blank" rel="noopener noreferrer">Facebook</a>}
+          </div>
+        </div>
+      )}
+    </div>
+  </div>
+</section>
+
+<style>
+  .profile-main { max-width: 640px; }
+  .claim-banner {
+    background: var(--color-primary-soft);
+    border: 1px solid var(--color-line);
+    border-radius: 4px;
+    padding: 22px 24px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .claim-banner strong { display: block; margin-bottom: 4px; }
+  .claim-banner p { font-size: 0.9rem; color: var(--color-ink-soft); max-width: 380px; }
+  .detail-block { margin-bottom: 36px; }
+  .detail-block h2 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 14px;
+  }
+  .detail-list div {
+    display: flex;
+    gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--color-line);
+    font-size: 0.94rem;
+  }
+  .detail-list dt {
+    width: 140px;
+    flex-shrink: 0;
+    color: var(--color-ink-soft);
+  }
+  .detail-list dd {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .detail-list dd a { color: var(--color-primary); }
+  .detail-list dd a:hover { text-decoration: underline; }
+  .map-embed { margin-top: 14px; border-radius: 4px; overflow: hidden; border: 1px solid var(--color-line); }
+  .social-links { display: flex; gap: 18px; }
+  .social-links a { color: var(--color-primary); font-size: 0.92rem; border-bottom: 1px solid var(--color-primary); }
+</style>

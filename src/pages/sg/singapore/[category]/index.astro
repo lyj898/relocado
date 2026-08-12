@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CategoryListing from '../../../../components/CategoryListing.astro';
+import { CATEGORIES, CATEGORY_LABELS, type Category } from '../../../../lib/constants';
+import { getCompaniesByCategory } from '../../../../lib/companies';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params as { category: Category };
+const list = getCompaniesByCategory('SG', 'singapore', category);
+const label = CATEGORY_LABELS[category];
+---
+<BaseLayout
+  title={`${label} in Singapore | Relocado`}
+  description={`Browse ${list.length} ${label.toLowerCase()} providers in Singapore, part of Relocado's relocation directory.`}
+>
+  <CategoryListing
+    category={category}
+    cityLabel="Singapore"
+    companies={list}
+    basePath={`/sg/singapore/${category}`}
+    breadcrumbs={[
+      { label: 'Home', href: '/' },
+      { label: 'Singapore', href: '/sg/' },
+      { label },
+    ]}
+  />
+</BaseLayout>

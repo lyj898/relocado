@@ -1,0 +1,46 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS, CITIES } from '../../../lib/constants';
+import { getCompaniesByCity, countByCategory } from '../../../lib/companies';
+
+export function getStaticPaths() {
+  return CITIES.ID.map((city) => ({ params: { city: city.slug } }));
+}
+
+const { city: citySlug } = Astro.params;
+const cityInfo = CITIES.ID.find((c) => c.slug === citySlug)!;
+const list = getCompaniesByCity('ID', citySlug as string);
+---
+<BaseLayout
+  title={`Relocation Services in ${cityInfo.label} | Relocado`}
+  description={`Browse movers, visa consultants, real estate agents, and other relocation service providers in ${cityInfo.label}, Indonesia.`}
+>
+  <div class="wrap">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Indonesia', href: '/id/' }, { label: cityInfo.label }]} />
+  </div>
+
+  <div class="page-header">
+    <div class="wrap">
+      <span class="kicker">{cityInfo.label}, Indonesia</span>
+      <h1>Relocation services in {cityInfo.label}</h1>
+      <p class="lede">{list.length} providers listed across {CATEGORIES.length} categories.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid-3">
+        {CATEGORIES.map((cat) => (
+          <a class="card" href={`/id/${citySlug}/${cat}/`}>
+            <div>
+              <h3>{CATEGORY_LABELS[cat]}</h3>
+              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+            </div>
+            <div class="cta">{countByCategory(list, cat)} providers →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

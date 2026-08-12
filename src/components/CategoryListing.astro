@@ -1,0 +1,46 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import CompanyListItem from './CompanyListItem.astro';
+import type { Company } from '../lib/types';
+import { CATEGORY_LABELS, CATEGORY_DESCRIPTIONS, type Category } from '../lib/constants';
+
+interface Crumb {
+  label: string;
+  href?: string;
+}
+interface Props {
+  category: Category;
+  cityLabel: string;
+  companies: Company[];
+  basePath: string; // e.g. /sg/singapore/movers or /id/jakarta/movers
+  breadcrumbs: Crumb[];
+}
+const { category, cityLabel, companies, basePath, breadcrumbs } = Astro.props;
+---
+<div class="wrap">
+  <Breadcrumbs items={breadcrumbs} />
+</div>
+
+<div class="page-header">
+  <div class="wrap">
+    <span class="kicker">{cityLabel}</span>
+    <h1>{companies.length} {CATEGORY_LABELS[category]} in {cityLabel}</h1>
+    <p class="lede">{CATEGORY_DESCRIPTIONS[category]}</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    {companies.length > 0 ? (
+      <div class="company-list">
+        {companies.map((company) => (
+          <CompanyListItem company={company} href={`${basePath}/${company.slug}/`} />
+        ))}
+      </div>
+    ) : (
+      <div class="empty-state">
+        <p>No {CATEGORY_LABELS[category].toLowerCase()} listed in {cityLabel} yet.</p>
+      </div>
+    )}
+  </div>
+</section>

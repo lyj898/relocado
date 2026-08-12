@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS } from '../../lib/constants';
+import { getCompaniesByCity, countByCategory } from '../../lib/companies';
+
+const list = getCompaniesByCity('SG', 'singapore');
+---
+<BaseLayout
+  title="Relocation Services in Singapore | Relocado"
+  description="Browse movers, visa consultants, real estate agents, and other relocation service providers in Singapore, organised by category."
+>
+  <div class="wrap">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Singapore' }]} />
+  </div>
+
+  <div class="page-header">
+    <div class="wrap">
+      <span class="kicker">Singapore</span>
+      <h1>Relocation services in Singapore</h1>
+      <p class="lede">{list.length} providers listed across {CATEGORIES.length} categories.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid-3">
+        {CATEGORIES.map((cat) => (
+          <a class="card" href={`/sg/singapore/${cat}/`}>
+            <div>
+              <h3>{CATEGORY_LABELS[cat]}</h3>
+              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+            </div>
+            <div class="cta">{countByCategory(list, cat)} providers →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS } from '../lib/constants';
+import { companies } from '../lib/companies';
+
+const sgCount = companies.filter((c) => c.country === 'SG').length;
+const idCount = companies.filter((c) => c.country === 'ID').length;
+const featured = CATEGORIES.slice(0, 6);
+---
+<BaseLayout
+  title="Relocado — Find relocation services in Singapore & Indonesia"
+  description="A directory of movers, visa consultants, real estate agents, and other relocation services for people moving to Singapore and Indonesia."
+>
+  <style>
+    .hero {
+      padding: 88px 0 72px;
+      border-bottom: 1px solid var(--color-line);
+    }
+    .hero-kicker {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.08;
+      font-weight: 600;
+      max-width: 760px;
+      letter-spacing: -0.01em;
+    }
+    .hero p.lede {
+      margin-top: 22px;
+      font-size: 1.15rem;
+      color: var(--color-ink-soft);
+      max-width: 560px;
+    }
+    .country-grid {
+      margin-top: 44px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 760px;
+    }
+    .country-card .flag-label {
+      font-size: 0.78rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-ink-soft);
+    }
+    .country-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.7rem;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+    .country-card .count {
+      margin-top: 14px;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    @media (max-width: 720px) {
+      .country-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+
+  <section class="hero">
+    <div class="wrap">
+      <span class="hero-kicker">Relocation Directory · Southeast Asia</span>
+      <h1>Everything you need to move to Singapore or Indonesia, in one place.</h1>
+      <p class="lede">Movers, visa consultants, real estate agents, and more — researched and organised by category and city, so you don't have to start from a blank search.</p>
+
+      <div class="country-grid">
+        <a class="bordered-card country-card" href="/sg/">
+          <div class="flag-label">Start here</div>
+          <h3>Singapore</h3>
+          <div class="count">{sgCount} listed providers</div>
+        </a>
+        <a class="bordered-card country-card" href="/id/">
+          <div class="flag-label">Jakarta · Bali</div>
+          <h3>Indonesia</h3>
+          <div class="count">{idCount} listed providers</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Browse by category</h2>
+        <a href="/sg/">See all categories</a>
+      </div>
+      <div class="grid-3">
+        {featured.map((cat) => (
+          <a class="card" href={`/sg/singapore/${cat}/`}>
+            <div>
+              <h3>{CATEGORY_LABELS[cat]}</h3>
+              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+            </div>
+            <div class="cta">View listings →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
