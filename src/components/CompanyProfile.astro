@@ -189,10 +189,27 @@ const jsonLd = {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
   .detail-list dd a { color: var(--color-primary); }
   .detail-list dd a:hover { text-decoration: underline; }
   .map-embed { margin-top: 14px; border-radius: 4px; overflow: hidden; border: 1px solid var(--color-line); }
-  .social-links { display: flex; gap: 18px; }
+  .social-links { display: flex; gap: 18px; flex-wrap: wrap; }
   .social-links a { color: var(--color-primary); font-size: 0.92rem; border-bottom: 1px solid var(--color-primary); }
+
+  @media (max-width: 560px) {
+    .detail-list div {
+      flex-direction: column;
+      gap: 2px;
+    }
+    .detail-list dt {
+      width: auto;
+    }
+    .claim-banner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
 </style>
