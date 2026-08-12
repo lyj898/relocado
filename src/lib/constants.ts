@@ -35,27 +35,65 @@ export const CATEGORY_DESCRIPTIONS: Record<Category, string> = {
   insurance: 'Health, property, and international insurance providers.',
 };
 
-export const COUNTRIES = ['SG', 'ID'] as const;
+// Destination markets: full directory (all categories).
+export const DESTINATION_COUNTRIES = ['SG', 'ID'] as const;
+
+// Origin markets: providers based here who move corporate assignees TO Singapore.
+// Only the corporate_mobility category is populated for these for now.
+export const ORIGIN_COUNTRIES = ['US', 'CA', 'UK', 'DE', 'FR', 'JP', 'KR'] as const;
+
+export const COUNTRIES = [...DESTINATION_COUNTRIES, ...ORIGIN_COUNTRIES] as const;
 
 export type CountryCode = (typeof COUNTRIES)[number];
 
 export const COUNTRY_LABELS: Record<CountryCode, string> = {
   SG: 'Singapore',
   ID: 'Indonesia',
+  US: 'United States',
+  CA: 'Canada',
+  UK: 'United Kingdom',
+  DE: 'Germany',
+  FR: 'France',
+  JP: 'Japan',
+  KR: 'South Korea',
 };
 
 export const COUNTRY_SLUGS: Record<CountryCode, string> = {
   SG: 'sg',
   ID: 'id',
+  US: 'us',
+  CA: 'ca',
+  UK: 'uk',
+  DE: 'de',
+  FR: 'fr',
+  JP: 'jp',
+  KR: 'kr',
 };
 
-// City slugs per country. SG has a single city but keeps the segment for URL consistency.
+// City slugs per country. Countries with a single city still keep the segment for URL consistency.
 export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
   SG: [{ slug: 'singapore', label: 'Singapore' }],
   ID: [
     { slug: 'jakarta', label: 'Jakarta' },
     { slug: 'bali', label: 'Bali' },
   ],
+  US: [
+    { slug: 'chicago', label: 'Chicago' },
+    { slug: 'danbury', label: 'Danbury' },
+    { slug: 'denver', label: 'Denver' },
+  ],
+  CA: [
+    { slug: 'toronto', label: 'Toronto' },
+    { slug: 'laval', label: 'Laval' },
+  ],
+  UK: [{ slug: 'london', label: 'London' }],
+  DE: [
+    { slug: 'frankfurt', label: 'Frankfurt' },
+    { slug: 'berlin', label: 'Berlin' },
+  ],
+  FR: [{ slug: 'paris', label: 'Paris' }],
+  JP: [{ slug: 'tokyo', label: 'Tokyo' }],
+  KR: [{ slug: 'seoul', label: 'Seoul' }],
 };
 
 export function citySlug(city: string): string {
@@ -64,4 +102,8 @@ export function citySlug(city: string): string {
 
 export function countrySlugFromCode(code: CountryCode): string {
   return COUNTRY_SLUGS[code];
+}
+
+export function isOriginCountry(code: CountryCode): boolean {
+  return (ORIGIN_COUNTRIES as readonly string[]).includes(code);
 }

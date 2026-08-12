@@ -1,11 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS } from '../lib/constants';
+import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS, ORIGIN_COUNTRIES, COUNTRY_LABELS, COUNTRY_SLUGS } from '../lib/constants';
 import { companies } from '../lib/companies';
 
 const sgCount = companies.filter((c) => c.country === 'SG').length;
 const idCount = companies.filter((c) => c.country === 'ID').length;
 const featured = CATEGORIES.slice(0, 6);
+const originCounts = ORIGIN_COUNTRIES.map((code) => ({
+  code,
+  label: COUNTRY_LABELS[code],
+  slug: COUNTRY_SLUGS[code],
+  count: companies.filter((c) => c.country === code).length,
+}));
 ---
 <BaseLayout
   title="Relocado — Find relocation services in Singapore & Indonesia"
@@ -67,6 +73,17 @@ const featured = CATEGORIES.slice(0, 6);
     @media (max-width: 720px) {
       .country-grid { grid-template-columns: 1fr; }
     }
+    .origin-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--color-line);
+      border: 1px solid var(--color-line);
+    }
+    .origin-card h3 { font-size: 1.05rem; }
+    @media (max-width: 900px) {
+      .origin-grid { grid-template-columns: repeat(2, 1fr); }
+    }
   </style>
 
   <section class="hero">
@@ -104,6 +121,25 @@ const featured = CATEGORIES.slice(0, 6);
               <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
             </div>
             <div class="cta">View listings →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="border-top: 1px solid var(--color-line);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Moving to Singapore for work?</h2>
+      </div>
+      <p style="margin-top: -20px; margin-bottom: 32px; color: var(--color-ink-soft); max-width: 620px;">
+        Find a corporate mobility provider based in your home country that specialises in managing relocations to Singapore.
+      </p>
+      <div class="origin-grid">
+        {originCounts.map((c) => (
+          <a class="card origin-card" href={`/${c.slug}/`}>
+            <h3>{c.label}</h3>
+            <div class="cta">{c.count} providers →</div>
           </a>
         ))}
       </div>

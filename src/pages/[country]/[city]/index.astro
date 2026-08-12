@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import {
+  COUNTRIES,
+  COUNTRY_LABELS,
+  COUNTRY_SLUGS,
+  CITIES,
+  CATEGORIES,
+  CATEGORY_LABELS,
+  CATEGORY_DESCRIPTIONS,
+  type CountryCode,
+} from '../../../lib/constants';
+import { getCompaniesByCity, countByCategory } from '../../../lib/companies';
+
+export function getStaticPaths() {
+  return COUNTRIES.flatMap((code) =>
+    CITIES[code].map((city) => ({
+      params: { country: COUNTRY_SLUGS[code], city: city.slug },
+    }))
+  );
+}
+
+const { country: countrySlug, city: citySlug } = Astro.params;
+const countryCode = (COUNTRIES as readonly string[]).find(
+  (code) => COUNTRY_SLUGS[code as CountryCode] === countrySlug
+) as CountryCode;
+const countryLabel = COUNTRY_LABELS[countryCode];
+const cityInfo = CITIES[countryCode].find((c) => c.slug === citySlug)!;
+const list = getCompaniesByCity(countryCode, citySlug as string);
+---
+<BaseLayout
+  title={`Relocation Services in ${cityInfo.label} | Relocado`}
+  description={`Browse relocation service providers in ${cityInfo.label}, ${countryLabel}.`}
+>
+  <div class="wrap">
+    <Breadcrumbs items={[
+      { label: 'Home', href: '/' },
+      { label: countryLabel, href: `/${countrySlug}/` },
+      { label: cityInfo.label },
+    ]} />
+  </div>
+
+  <div class="page-header">
+    <div class="wrap">
+      <span class="kicker">{cityInfo.label}, {countryLabel}</span>
+      <h1>Relocation services in {cityInfo.label}</h1>
+      <p class="lede">{list.length} providers listed across {CATEGORIES.length} categories.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="grid-3">
+        {CATEGORIES.map((cat) => (
+          <a class="card" href={`/${countrySlug}/${citySlug}/${cat}/`}>
+            <div>
+              <h3>{CATEGORY_LABELS[cat]}</h3>
+              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+            </div>
+            <div class="cta">{countByCategory(list, cat)} providers →</div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

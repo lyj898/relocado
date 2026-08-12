@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import {
+  COUNTRIES,
+  COUNTRY_LABELS,
+  COUNTRY_SLUGS,
+  CITIES,
+  CATEGORIES,
+  CATEGORY_LABELS,
+  CATEGORY_DESCRIPTIONS,
+  isOriginCountry,
+  type CountryCode,
+} from '../../lib/constants';
+import { getCompaniesByCity, countByCategory } from '../../lib/companies';
+
+export function getStaticPaths() {
+  return COUNTRIES.map((code) => ({ params: { country: COUNTRY_SLUGS[code] } }));
+}
+
+const { country: countrySlug } = Astro.params;
+const countryCode = (COUNTRIES as readonly string[]).find(
+  (code) => COUNTRY_SLUGS[code as CountryCode] === countrySlug
+) as CountryCode;
+const countryLabel = COUNTRY_LABELS[countryCode];
+const cities = CITIES[countryCode];
+const origin = isOriginCountry(countryCode);
+
+// Single-city countries show the category grid directly; multi-city countries show a city selector.
+const soleCity = cities.length === 1 ? cities[0] : null;
+const soleCityList = soleCity ? getCompaniesByCity(countryCode, soleCity.slug) : [];
+const cityCounts = cities.map((city) => ({
+  ...city,
+  count: getCompaniesByCity(countryCode, city.slug).length,
+}));
+---
+<BaseLayout
+  title={soleCity
+    ? `Relocation Services in ${countryLabel} | Relocado`
+    : `Relocation Services in ${countryLabel} | Relocado`}
+  description={
+    origin
+      ? `Corporate mobility and global relocation providers in ${countryLabel} that help employees move to Singapore.`
+      : `Browse movers, visa consultants, real estate agents, and other relocation service providers in ${countryLabel}.`
+  }
+>
+  <div class="wrap">
+    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: countryLabel }]} />
+  </div>
+
+  <div class="page-header">
+    <div class="wrap">
+      <span class="kicker">{countryLabel}</span>
+      <h1>{origin ? `Corporate mobility providers in ${countryLabel}` : `Relocation services in ${countryLabel}`}</h1>
+      <p class="lede">
+        {origin
+          ? `Companies based in ${countryLabel} that manage corporate relocation and global mobility programs for employees moving to Singapore.`
+          : soleCity
+            ? `${soleCityList.length} providers listed across ${CATEGORIES.length} categories.`
+            : `Choose a city to see providers listed there.`}
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      {soleCity ? (
+        <div class="grid-3">
+          {CATEGORIES.map((cat) => (
+            <a class="card" href={`/${countrySlug}/${soleCity.slug}/${cat}/`}>
+              <div>
+                <h3>{CATEGORY_LABELS[cat]}</h3>
+                <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+              </div>
+              <div class="cta">{countByCategory(soleCityList, cat)} providers →</div>
+            </a>
+          ))}
+        </div>
+      ) : (
+        <div class="grid-2">
+          {cityCounts.map((city) => (
+            <a class="bordered-card" href={`/${countrySlug}/${city.slug}/`}>
+              <h3 style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 500;">{city.label}</h3>
+              <div style="margin-top: 14px; font-size: 0.9rem; color: var(--color-primary); font-weight: 500;">{city.count} listed providers</div>
+            </a>
+          ))}
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>

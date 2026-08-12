@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import CategoryListing from '../../../../components/CategoryListing.astro';
+import {
+  COUNTRIES,
+  COUNTRY_LABELS,
+  COUNTRY_SLUGS,
+  CITIES,
+  CATEGORIES,
+  CATEGORY_LABELS,
+  type CountryCode,
+  type Category,
+} from '../../../../lib/constants';
+import { getCompaniesByCategory } from '../../../../lib/companies';
+
+export function getStaticPaths() {
+  return COUNTRIES.flatMap((code) =>
+    CITIES[code].flatMap((city) =>
+      CATEGORIES.map((category) => ({
+        params: { country: COUNTRY_SLUGS[code], city: city.slug, category },
+      }))
+    )
+  );
+}
+
+const { country: countrySlug, city: citySlug, category } = Astro.params as {
+  country: string;
+  city: string;
+  category: Category;
+};
+const countryCode = (COUNTRIES as readonly string[]).find(
+  (code) => COUNTRY_SLUGS[code as CountryCode] === countrySlug
+) as CountryCode;
+const countryLabel = COUNTRY_LABELS[countryCode];
+const cityInfo = CITIES[countryCode].find((c) => c.slug === citySlug)!;
+const list = getCompaniesByCategory(countryCode, citySlug, category);
+const label = CATEGORY_LABELS[category];
+---
+<BaseLayout
+  title={`${label} in ${cityInfo.label} | Relocado`}
+  description={`Browse ${list.length} ${label.toLowerCase()} providers in ${cityInfo.label}, ${countryLabel}, part of Relocado's relocation directory.`}
+>
+  <CategoryListing
+    category={category}
+    cityLabel={cityInfo.label}
+    companies={list}
+    basePath={`/${countrySlug}/${citySlug}/${category}`}
+    breadcrumbs={[
+      { label: 'Home', href: '/' },
+      { label: countryLabel, href: `/${countrySlug}/` },
+      { label: cityInfo.label, href: `/${countrySlug}/${citySlug}/` },
+      { label },
+    ]}
+  />
+</BaseLayout>
