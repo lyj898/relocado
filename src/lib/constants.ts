@@ -40,7 +40,7 @@ export const DESTINATION_COUNTRIES = ['SG', 'ID'] as const;
 
 // Origin markets: providers based here who move corporate assignees TO Singapore.
 // Only the corporate_mobility category is populated for these for now.
-export const ORIGIN_COUNTRIES = ['US', 'CA', 'UK', 'DE', 'FR', 'JP', 'KR'] as const;
+export const ORIGIN_COUNTRIES = ['US', 'CA', 'UK', 'DE', 'FR', 'JP', 'KR', 'AU', 'IE', 'BE', 'NL', 'CH', 'EE'] as const;
 
 export const COUNTRIES = [...DESTINATION_COUNTRIES, ...ORIGIN_COUNTRIES] as const;
 
@@ -56,6 +56,12 @@ export const COUNTRY_LABELS: Record<CountryCode, string> = {
   FR: 'France',
   JP: 'Japan',
   KR: 'South Korea',
+  AU: 'Australia',
+  IE: 'Ireland',
+  BE: 'Belgium',
+  NL: 'Netherlands',
+  CH: 'Switzerland',
+  EE: 'Estonia',
 };
 
 export const COUNTRY_SLUGS: Record<CountryCode, string> = {
@@ -68,6 +74,12 @@ export const COUNTRY_SLUGS: Record<CountryCode, string> = {
   FR: 'fr',
   JP: 'jp',
   KR: 'kr',
+  AU: 'au',
+  IE: 'ie',
+  BE: 'be',
+  NL: 'nl',
+  CH: 'ch',
+  EE: 'ee',
 };
 
 // City slugs per country. Countries with a single city still keep the segment for URL consistency.
@@ -79,12 +91,15 @@ export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
   ],
   US: [
     { slug: 'boston', label: 'Boston' },
+    { slug: 'buffalo-grove', label: 'Buffalo Grove' },
     { slug: 'chicago', label: 'Chicago' },
     { slug: 'cleveland', label: 'Cleveland' },
     { slug: 'dallas', label: 'Dallas' },
     { slug: 'danbury', label: 'Danbury' },
     { slug: 'denver', label: 'Denver' },
+    { slug: 'evansville', label: 'Evansville' },
     { slug: 'fairfax', label: 'Fairfax' },
+    { slug: 'fenton', label: 'Fenton' },
     { slug: 'frisco', label: 'Frisco' },
     { slug: 'jacksonville', label: 'Jacksonville' },
     { slug: 'lewisville', label: 'Lewisville' },
@@ -97,7 +112,13 @@ export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
     { slug: 'pewaukee', label: 'Pewaukee' },
     { slug: 'phoenix', label: 'Phoenix' },
     { slug: 'pittsburgh', label: 'Pittsburgh' },
+    { slug: 'pleasanton', label: 'Pleasanton' },
+    { slug: 'redondo-beach', label: 'Redondo Beach' },
+    { slug: 'roswell', label: 'Roswell' },
+    { slug: 'san-diego', label: 'San Diego' },
+    { slug: 'san-mateo', label: 'San Mateo' },
     { slug: 'scottsdale', label: 'Scottsdale' },
+    { slug: 'springfield', label: 'Springfield' },
     { slug: 'st-louis', label: 'St. Louis' },
     { slug: 'sterling', label: 'Sterling' },
   ],
@@ -115,17 +136,25 @@ export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
   UK: [
     { slug: 'aberdeen', label: 'Aberdeen' },
     { slug: 'bristol', label: 'Bristol' },
+    { slug: 'chester', label: 'Chester' },
+    { slug: 'cobham', label: 'Cobham' },
+    { slug: 'croydon', label: 'Croydon' },
+    { slug: 'dunstable', label: 'Dunstable' },
     { slug: 'glasgow', label: 'Glasgow' },
     { slug: 'guildford', label: 'Guildford' },
     { slug: 'haddington', label: 'Haddington' },
     { slug: 'london', label: 'London' },
     { slug: 'perth', label: 'Perth' },
+    { slug: 'potters-bar', label: 'Potters Bar' },
+    { slug: 'southampton', label: 'Southampton' },
+    { slug: 'stowmarket', label: 'Stowmarket' },
     { slug: 'tunbridge-wells', label: 'Tunbridge Wells' },
     { slug: 'uxbridge', label: 'Uxbridge' },
     { slug: 'welwyn-garden-city', label: 'Welwyn Garden City' },
   ],
   DE: [
     { slug: 'berlin', label: 'Berlin' },
+    { slug: 'cologne', label: 'Cologne' },
     { slug: 'dusseldorf', label: 'Düsseldorf' },
     { slug: 'eschborn', label: 'Eschborn' },
     { slug: 'frankfurt', label: 'Frankfurt' },
@@ -155,6 +184,18 @@ export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
     { slug: 'goyang-si', label: 'Goyang-si' },
     { slug: 'seoul', label: 'Seoul' },
   ],
+  AU: [
+    { slug: 'melbourne', label: 'Melbourne' },
+    { slug: 'sydney', label: 'Sydney' },
+  ],
+  IE: [{ slug: 'limerick', label: 'Limerick' }],
+  BE: [
+    { slug: 'antwerp', label: 'Antwerp' },
+    { slug: 'overijse', label: 'Overijse' },
+  ],
+  NL: [{ slug: 'nootdorp', label: 'Nootdorp' }],
+  CH: [{ slug: 'bern', label: 'Bern' }],
+  EE: [{ slug: 'tallinn', label: 'Tallinn' }],
 };
 
 export function citySlug(city: string): string {

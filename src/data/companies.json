@@ -6890,5 +6890,1405 @@
     "status": "unclaimed",
     "verified_at": "2026-08-12",
     "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-ace-relocation-systems",
+    "name": "Ace Relocation Systems, Inc.",
+    "slug": "ace-relocation-systems",
+    "country": "US",
+    "city": "San Diego",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Full-service U.S. moving company handling residential, commercial, and corporate relocations, packing, and storage.",
+    "contact": {
+      "phone": [
+        "888-764-2908"
+      ],
+      "whatsapp": "",
+      "email": [
+        "kferris@acerelocation.com"
+      ],
+      "website": "https://www.acerelocation.com",
+      "contact_form_url": "https://www.acerelocation.com/request-a-quote/",
+      "address": {
+        "street": "5608 Eastgate Dr",
+        "postal_code": "92121",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/ace-relocation-systems",
+        "instagram": "https://www.instagram.com/acerelocationinc/",
+        "facebook": "https://www.facebook.com/acerelocation"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.acerelocation.com/about/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-atlas-van-lines",
+    "name": "Atlas Van Lines, Inc.",
+    "slug": "atlas-van-lines",
+    "country": "US",
+    "city": "Evansville",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A long-established van line offering household, corporate, military, and international moving and logistics services.",
+    "contact": {
+      "phone": [
+        "800-638-9797"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@atlasworldgroup.com"
+      ],
+      "website": "https://www.atlasvanlines.com",
+      "contact_form_url": "https://www.atlasvanlines.com/request-quote",
+      "address": {
+        "street": "1212 Saint George Road",
+        "postal_code": "47711",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/atlas-van-lines",
+        "instagram": "https://www.instagram.com/atlasvanlines/",
+        "facebook": "https://www.facebook.com/AtlasVanLines/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.atlasvanlines.com/moving-services",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-home-sweet-home",
+    "name": "Home Sweet Home",
+    "slug": "home-sweet-home",
+    "country": "US",
+    "city": "Redondo Beach",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A professional organizing and relocation support service that unpacks, organizes, and prepares homes for clients.",
+    "contact": {
+      "phone": [
+        "+1 310 802 7700"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@unpackme.com"
+      ],
+      "website": "https://unpackme.com",
+      "contact_form_url": "https://unpackme.com/contact-us/",
+      "address": {
+        "street": "1650 S. Pacific Coast Highway, Suite 203",
+        "postal_code": "90277",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://unpackme.com/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-interlink-relocation-resources",
+    "name": "InterLink Relocation Resources",
+    "slug": "interlink-relocation-resources",
+    "country": "US",
+    "city": "Roswell",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A global mobility firm managing corporate relocation, immigration, and mobility tax programs for large employers.",
+    "contact": {
+      "phone": [
+        "866-254-3910"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@interlinkrelocation.com"
+      ],
+      "website": "https://interlinkrelocation.com",
+      "contact_form_url": "https://interlinkrelocation.com/contact-us/",
+      "address": {
+        "street": "535 Colonial Park Drive, Building A",
+        "postal_code": "30075",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/interlink-relocation-resources/",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/InterLinkRelocationResources"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://interlinkrelocation.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-interstate-group-holdings",
+    "name": "Interstate Group Holdings, Inc.",
+    "slug": "interstate-group-holdings",
+    "country": "US",
+    "city": "Springfield",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A moving and logistics company providing residential, commercial, and international relocation and storage services.",
+    "contact": {
+      "phone": [
+        "703-569-2121"
+      ],
+      "whatsapp": "",
+      "email": [
+        "contactus@invan.com"
+      ],
+      "website": "https://moveinterstate.com",
+      "contact_form_url": "https://www.moveinterstate.com/contact-us/",
+      "address": {
+        "street": "5801 Rolling Road",
+        "postal_code": "22152",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/moveinterstate/",
+        "instagram": "https://www.instagram.com/moveinterstate/",
+        "facebook": "https://www.facebook.com/MoveInterstate/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://moveinterstate.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-jk-moving-services",
+    "name": "JK Moving Services",
+    "slug": "jk-moving-services",
+    "country": "US",
+    "city": "Sterling",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A large independent moving company providing residential, commercial, and international relocation and storage services.",
+    "contact": {
+      "phone": [
+        "703-260-4282"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@jkmoving.com"
+      ],
+      "website": "https://jkmoving.com",
+      "contact_form_url": "https://www.jkmoving.com/contact-us",
+      "address": {
+        "street": "44112 Mercure Circle",
+        "postal_code": "20166",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/jk-moving-services",
+        "instagram": "https://www.instagram.com/jkmoving/",
+        "facebook": "https://www.facebook.com/jkmoving"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://jkmoving.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-movecenter",
+    "name": "MoveCenter",
+    "slug": "movecenter",
+    "country": "US",
+    "city": "San Mateo",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A woman-owned relocation management firm coordinating domestic, international, and government employee moves across 150+ countries.",
+    "contact": {
+      "phone": [
+        "+1 650 548 9000"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@movecenter.com"
+      ],
+      "website": "https://movecenter.com",
+      "contact_form_url": "https://movecenter.com/contact-us/",
+      "address": {
+        "street": "1650 Borel Place #204",
+        "postal_code": "94402",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/movecenter/",
+        "instagram": "https://www.instagram.com/movecenter_rmc",
+        "facebook": "https://www.facebook.com/movecenter"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://movecenter.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-nri-relocation",
+    "name": "NRI Relocation, Inc.",
+    "slug": "nri-relocation",
+    "country": "US",
+    "city": "Buffalo Grove",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A corporate relocation management company running domestic and international employee moves via its proprietary ReloHub platform.",
+    "contact": {
+      "phone": [
+        "1-847-215-5000"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@nrirelocation.com"
+      ],
+      "website": "https://nrirelocation.com",
+      "contact_form_url": "https://nrirelocation.com/contact/",
+      "address": {
+        "street": "1110 W. Lake Cook Road, Suite 301",
+        "postal_code": "60089",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/590289/",
+        "instagram": "https://www.instagram.com/nrirelocation/",
+        "facebook": "https://www.facebook.com/NRIRelocation/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://nrirelocation.com/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-relo-direct",
+    "name": "RELO Direct, Inc.",
+    "slug": "relo-direct",
+    "country": "US",
+    "city": "Chicago",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A full-service relocation management company handling group moves, visa support, and mobility programs for corporate and government clients.",
+    "contact": {
+      "phone": [
+        "+1 312 384 5900"
+      ],
+      "whatsapp": "",
+      "email": [
+        "supplier@relodirect.com"
+      ],
+      "website": "https://www.relodirect.com/",
+      "contact_form_url": "https://www.relodirect.com/contact",
+      "address": {
+        "street": "161 N. Clark Street, Suite 3450",
+        "postal_code": "60601",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/relo-direct-inc",
+        "instagram": "https://instagram.com/relodirect",
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.relodirect.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-united-van-lines",
+    "name": "United Van Lines, LLC",
+    "slug": "united-van-lines",
+    "country": "US",
+    "city": "Fenton",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A national household goods carrier offering long-distance, local, international, and corporate moving and storage services.",
+    "contact": {
+      "phone": [
+        "1-800-282-4133"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.unitedvanlines.com/",
+      "contact_form_url": "https://www.unitedvanlines.com/contact-united",
+      "address": {
+        "street": "1 United Dr",
+        "postal_code": "63026",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/united-van-lines/",
+        "instagram": "https://www.instagram.com/unitedvanlines/",
+        "facebook": "https://www.facebook.com/unitedvanlines"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.unitedvanlines.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "us-nucompass-mobility",
+    "name": "NuCompass Mobility Services, Inc.",
+    "slug": "nucompass-mobility",
+    "country": "US",
+    "city": "Pleasanton",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "An independent relocation management company handling corporate employee relocation programs and technology-driven expense management.",
+    "contact": {
+      "phone": [
+        "+1 925 734 3434"
+      ],
+      "whatsapp": "",
+      "email": [
+        "communications@nucompass.com"
+      ],
+      "website": "https://nucompass.com",
+      "contact_form_url": "https://www.nucompass.com/contact-us/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/nucompassmobility/",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/NuCompassMobility"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://nucompass.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-abode-bespoke-home",
+    "name": "Abode Bespoke Home",
+    "slug": "abode-bespoke-home",
+    "country": "UK",
+    "city": "Cobham",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Cobham-based concierge firm offering white-glove unpacking, home staging, and relocation support for high-net-worth clients.",
+    "contact": {
+      "phone": [
+        "+44 (0)7834 966 004"
+      ],
+      "whatsapp": "",
+      "email": [
+        "michelle@abodebespokehome.co.uk"
+      ],
+      "website": "https://abodebespokehome.co.uk/",
+      "contact_form_url": "https://abodebespokehome.co.uk/unpacking-services.html",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": "https://instagram.com/abh_organisers/",
+        "facebook": "https://facebook.com/ABODEBESPOKE/"
+      },
+      "contact_person": {
+        "name": "Michelle Harley",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://abodebespokehome.co.uk/unpacking-services.html",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-anglo-pacific",
+    "name": "Anglo Pacific International Ltd",
+    "slug": "anglo-pacific",
+    "country": "UK",
+    "city": "London",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A London-headquartered international removals firm handling household, office, baggage, and student shipping worldwide.",
+    "contact": {
+      "phone": [
+        "020 8965 1234"
+      ],
+      "whatsapp": "",
+      "email": [
+        "removals@anglopacific.co.uk"
+      ],
+      "website": "https://www.anglopacific.co.uk/",
+      "contact_form_url": "https://www.anglopacific.co.uk/contact-us.htm",
+      "address": {
+        "street": "Anglo House, Drury Way",
+        "postal_code": "NW10 0HZ",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/380433/",
+        "instagram": "https://www.instagram.com/anglopacific/",
+        "facebook": "https://www.facebook.com/Anglo-Pacific-102368008315668"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.anglopacific.co.uk/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-bishops-move",
+    "name": "Bishop's Move",
+    "slug": "bishops-move",
+    "country": "UK",
+    "city": "Potters Bar",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A long-established UK removals company, founded in 1854, offering domestic, business, and international moving and storage services.",
+    "contact": {
+      "phone": [
+        "44 (0)208 391 8222"
+      ],
+      "whatsapp": "",
+      "email": [
+        "enquiries@bishopsmove.com"
+      ],
+      "website": "https://www.bishopsmove.com/",
+      "contact_form_url": "https://www.bishopsmove.com/calendar/",
+      "address": {
+        "street": "The Heights East, Cranborne Road",
+        "postal_code": "EN6 3JN",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/company/bishops-move/",
+        "instagram": "https://instagram.com/bishopsmove_/",
+        "facebook": "https://facebook.com/BishopsMove"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.bishopsmove.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-cadogan-tate",
+    "name": "Cadogan Tate",
+    "slug": "cadogan-tate",
+    "country": "UK",
+    "city": "London",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A global moving and storage specialist focused on fine art, antiques, and high-value residential relocation logistics.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://cadogantate.com/",
+      "contact_form_url": "https://cadogantate.com/make-an-enquiry/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/cadogan-tate-fine-art",
+        "instagram": "https://www.instagram.com/cadogantate/",
+        "facebook": "https://www.facebook.com/CadoganTate"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://cadogantate.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-greens-removals",
+    "name": "Greens Removals & Storage Ltd",
+    "slug": "greens-removals",
+    "country": "UK",
+    "city": "Stowmarket",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Suffolk-based family removals firm handling domestic, European, and international moves plus bonded warehouse storage.",
+    "contact": {
+      "phone": [
+        "01449 613053"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@greensremovals.co.uk"
+      ],
+      "website": "https://greensremovals.co.uk/",
+      "contact_form_url": "https://greensremovals.co.uk/contact-us/",
+      "address": {
+        "street": "Tomo Industrial Estate",
+        "postal_code": "IP14 5AY",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": "https://instagram.com/greensremovalsstorageltd/",
+        "facebook": "https://facebook.com/Greensremovalsandstorage"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://greensremovals.co.uk/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-pss-international-removals",
+    "name": "PSS International Removals",
+    "slug": "pss-international-removals",
+    "country": "UK",
+    "city": "Croydon",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Croydon-headquartered international removals company shipping household goods, vehicles, and baggage worldwide.",
+    "contact": {
+      "phone": [
+        "020 8686 7733"
+      ],
+      "whatsapp": "",
+      "email": [
+        "sales@pssremovals.com"
+      ],
+      "website": "https://www.pssremovals.com/",
+      "contact_form_url": "https://www.pssremovals.com/contact-us",
+      "address": {
+        "street": "Unit 6, Mill Lane Trading Estate, Mill Lane",
+        "postal_code": "CR9 4PS",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/company/pss-international-removals",
+        "instagram": "https://instagram.com/pssremovals",
+        "facebook": "https://facebook.com/pssinternationalremovals"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.pssremovals.com/contact-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-the-organising-experts",
+    "name": "The Organising Experts",
+    "slug": "the-organising-experts",
+    "country": "UK",
+    "city": "Chester",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Chester-based decluttering and home-organizing business offering relocation unpacking and property staging.",
+    "contact": {
+      "phone": [
+        "01244 848685"
+      ],
+      "whatsapp": "",
+      "email": [
+        "hello@theorganisingexperts.co.uk"
+      ],
+      "website": "https://www.theorganisingexperts.co.uk/",
+      "contact_form_url": "https://www.theorganisingexperts.co.uk/contact",
+      "address": {
+        "street": "1 Queen's Park Road",
+        "postal_code": "CH4 7AD",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": "https://instagram.com/theorganisingexperts",
+        "facebook": "https://facebook.com/theorganisingexperts"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.theorganisingexperts.co.uk/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-white-and-company",
+    "name": "White & Company PLC",
+    "slug": "white-and-company",
+    "country": "UK",
+    "city": "Southampton",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A long-running removals group, trading since 1871, providing domestic, European, and international moving and storage across 19 UK sites.",
+    "contact": {
+      "phone": [
+        "01489 854875"
+      ],
+      "whatsapp": "",
+      "email": [
+        "hq@whiteandcompany.co.uk"
+      ],
+      "website": "https://www.whiteandcompany.co.uk/",
+      "contact_form_url": "https://www.whiteandcompany.co.uk/contact-us/",
+      "address": {
+        "street": "Hillsons Road, Botley",
+        "postal_code": "SO30 2DY",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/company/white-&-co-plc",
+        "instagram": "https://instagram.com/WhiteandCo1871/",
+        "facebook": "https://facebook.com/whiteandcompanyplc"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.whiteandcompany.co.uk/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "uk-williams-and-yates",
+    "name": "Williams and Yates Limited",
+    "slug": "williams-and-yates",
+    "country": "UK",
+    "city": "Dunstable",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A UK removals firm offering premium house moves, storage, and specialist fine-art and international relocation services.",
+    "contact": {
+      "phone": [
+        "+44 (0)1442 962 919"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@williamsandyates.co.uk"
+      ],
+      "website": "https://www.williamsandyates.co.uk/",
+      "contact_form_url": "https://www.williamsandyates.co.uk/contact/",
+      "address": {
+        "street": "Unit 1A Holla, Thorn Road",
+        "postal_code": "LU5 6TZ",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/company/williams-yates",
+        "instagram": "https://instagram.com/williamsandyates.co.uk",
+        "facebook": "https://facebook.com/Williams-Yates"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.williamsandyates.co.uk/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "de-hasenkamp",
+    "name": "hasenkamp Holding GmbH",
+    "slug": "hasenkamp",
+    "country": "DE",
+    "city": "Cologne",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A German logistics firm handling careful transport and storage of art, tech equipment, interiors, and corporate relocations.",
+    "contact": {
+      "phone": [
+        "+49 (0) 2234 104-0"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@hasenkamp.com"
+      ],
+      "website": "https://hasenkamp.com",
+      "contact_form_url": "https://hasenkamp.com/kontakt",
+      "address": {
+        "street": "Europaallee 16-18",
+        "postal_code": "50226",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://linkedin.com/company/hasenkamp-service",
+        "instagram": "https://instagram.com/hasenkamp_projectlogistics/",
+        "facebook": "https://facebook.com/hasenkampgroup"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://hasenkamp.com/impressum",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "kr-landkorea-relocation-specialists",
+    "name": "LandKorea (Korea Relocation Specialists)",
+    "slug": "landkorea-relocation-specialists",
+    "country": "KR",
+    "city": "Seoul",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Seoul-based agency helping foreigners with Korean visas, immigration, housing, and settling-in support.",
+    "contact": {
+      "phone": [
+        "010-2251-3291"
+      ],
+      "whatsapp": "",
+      "email": [
+        "inquiry@korearelocation.com"
+      ],
+      "website": "https://korearelocation.com",
+      "contact_form_url": "https://korearelocation.com/#contact",
+      "address": {
+        "street": "29F, 521 Teheran-ro, Gangnam-gu",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://korearelocation.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "sg-seven-seas-worldwide",
+    "name": "Seven Seas Worldwide (LCH Logistics Pte Ltd.)",
+    "slug": "seven-seas-worldwide",
+    "country": "SG",
+    "city": "Singapore",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A door-to-door international removals and box/baggage shipping company serving Singapore customers to over 100 destinations.",
+    "contact": {
+      "phone": [
+        "8001 0123 10"
+      ],
+      "whatsapp": "",
+      "email": [
+        "customerservice@sevenseasworldwide.com"
+      ],
+      "website": "https://www.sevenseasworldwide.com/en-sg/",
+      "contact_form_url": "https://www.sevenseasworldwide.com/en-sg/contact/",
+      "address": {
+        "street": "#01-02, 3 Pioneer Sector 3",
+        "postal_code": "628342",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": "https://instagram.com/7seasworldwide",
+        "facebook": "https://facebook.com/sevenseasworldwide"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.sevenseasworldwide.com/en-sg/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "fr-convelio",
+    "name": "Convelio",
+    "slug": "convelio",
+    "country": "FR",
+    "city": "Paris",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "A Paris-founded tech-enabled freight forwarder specializing in shipping and storage of fine art and antiques.",
+    "contact": {
+      "phone": [
+        "+33 1 76 42 10 05"
+      ],
+      "whatsapp": "",
+      "email": [
+        "order@convelio.com"
+      ],
+      "website": "https://convelio.com",
+      "contact_form_url": "https://www.convelio.com/en/company/",
+      "address": {
+        "street": "64 rue de Saintonge",
+        "postal_code": "75003",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/convelio",
+        "instagram": "https://instagram.com/convelio",
+        "facebook": "https://facebook.com/convelio"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.convelio.com/en/company/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-elite-woodhams-relocation",
+    "name": "Elite Woodhams Relocation",
+    "slug": "elite-woodhams-relocation",
+    "country": "AU",
+    "city": "Melbourne",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Australian corporate relocation firm providing destination services, visa support, and move management for transferring employees.",
+    "contact": {
+      "phone": [
+        "+61 2 9955 3300"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.ewrelocation.com/",
+      "contact_form_url": "https://www.ewrelocation.com/contact-us",
+      "address": {
+        "street": "Level 1, 6 Riddell Parade",
+        "postal_code": "VIC 3185",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/ewrelocation/",
+        "instagram": "https://www.instagram.com/elitewoodhamsrelocation/",
+        "facebook": "https://www.facebook.com/p/Elite-Woodhams-Relocation-100087756664341/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.ewrelocation.com/contact-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-king-and-wilson-worldwide-moving",
+    "name": "King & Wilson Worldwide Moving",
+    "slug": "king-and-wilson-worldwide-moving",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Long-running Australian removalist offering international, interstate and local moves plus storage since 1907.",
+    "contact": {
+      "phone": [
+        "1300 368 893"
+      ],
+      "whatsapp": "",
+      "email": [
+        "mail@kingandwilson.com.au"
+      ],
+      "website": "https://www.kingandwilson.com.au/",
+      "contact_form_url": "https://www.kingandwilson.com.au/contact-us",
+      "address": {
+        "street": "29B Davis Rd",
+        "postal_code": "NSW 2164",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://au.linkedin.com/company/king-&-wilson-worldwide-moving",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.kingandwilson.com.au/contact-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-careline-moving-storage",
+    "name": "Careline Moving & Storage",
+    "slug": "careline-moving-storage",
+    "country": "IE",
+    "city": "Limerick",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Irish removals and storage company handling household and corporate relocations across Ireland and internationally.",
+    "contact": {
+      "phone": [
+        "0818 25 35 45"
+      ],
+      "whatsapp": "",
+      "email": [
+        "sales@careline.ie"
+      ],
+      "website": "https://www.careline.ie/",
+      "contact_form_url": "https://www.careline.ie/contact-us/",
+      "address": {
+        "street": "Whitehall, Parteen",
+        "postal_code": "V94 W407",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.careline.ie/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-gosselin-mobility",
+    "name": "Gosselin Mobility NV",
+    "slug": "gosselin-mobility",
+    "country": "BE",
+    "city": "Antwerp",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Belgian international removals and mobility group moving households and offices between Europe, the Americas and Asia.",
+    "contact": {
+      "phone": [
+        "+32 3 360 55 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@gosselingroup.eu"
+      ],
+      "website": "https://gosselin-moving.com",
+      "contact_form_url": "https://www.gosselingroup.eu/en/contact",
+      "address": {
+        "street": "Belcrownlaan 23",
+        "postal_code": "2100",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/gosselin-group",
+        "instagram": "https://www.instagram.com/gosselin_group/",
+        "facebook": "https://www.facebook.com/gosselingroup"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.gosselingroup.eu/en/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-transworld-international",
+    "name": "Transworld International",
+    "slug": "transworld-international",
+    "country": "BE",
+    "city": "Overijse",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Belgian moving and relocation company handling household, office and international removals for over 45 years.",
+    "contact": {
+      "phone": [
+        "+32 2 687 50 90"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@transworld.be"
+      ],
+      "website": "https://transworld.be",
+      "contact_form_url": "https://transworld.be/nl/relocatieofferte-aanvragen",
+      "address": {
+        "street": "Cl. Vanophemstraat 78",
+        "postal_code": "B-3090",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://transworld.be",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-voerman-group",
+    "name": "Voerman Group",
+    "slug": "voerman-group",
+    "country": "NL",
+    "city": "Nootdorp",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dutch global mobility firm offering move management, destination services and complex international logistics for relocating families.",
+    "contact": {
+      "phone": [
+        "+31 (0)70 30 11 301"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@voerman.com"
+      ],
+      "website": "https://voerman.com",
+      "contact_form_url": "https://www.voerman.com/contact",
+      "address": {
+        "street": "Reflectiestraat 2",
+        "postal_code": "2631 RV",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/voerman/",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://voerman.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-packimpex",
+    "name": "Packimpex Ltd.",
+    "slug": "packimpex",
+    "country": "CH",
+    "city": "Bern",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Swiss-headquartered global mobility firm with offices across Switzerland managing corporate and family relocations.",
+    "contact": {
+      "phone": [
+        "+41 58 356 14 14"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@packimpex.com"
+      ],
+      "website": "https://packimpex.ch",
+      "contact_form_url": "https://www.packimpex.com/ch-en/contact",
+      "address": {
+        "street": "Brunnmattstrasse 5",
+        "postal_code": "3174",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/packimpex-sa/",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.packimpex.com/ch-en/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-jobbatical",
+    "name": "Jobbatical OÜ",
+    "slug": "jobbatical",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Estonian immigration-tech platform providing corporate visa, work permit and global mobility services across 45+ countries.",
+    "contact": {
+      "phone": [
+        "+44 330 818 7363"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@jobbatical.com"
+      ],
+      "website": "https://www.jobbatical.com",
+      "contact_form_url": "https://www.jobbatical.com/contact-us",
+      "address": {
+        "street": "Narva mnt 7b",
+        "postal_code": "10117",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/jobbatical-com",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/jobbatical"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.jobbatical.com/contact-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
   }
 ]
