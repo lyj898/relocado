@@ -96,36 +96,159 @@
     "is_placeholder": true
   },
   {
-    "id": "sg-crossroads-mobility",
-    "name": "Crossroads Global Mobility",
-    "slug": "crossroads-mobility",
+    "id": "sg-crown-world-mobility",
+    "name": "Crown World Mobility",
+    "slug": "crown-world-mobility",
     "country": "SG",
     "city": "Singapore",
     "categories": ["corporate_mobility"],
-    "description": "End-to-end assignment management for companies relocating employees into and out of Singapore.",
+    "description": "Manages global assignment programs for multinational employers, covering international transfers, group moves, and destination services.",
     "contact": {
-      "phone": ["+65 6456 7890"],
+      "phone": ["+65 6861 6818"],
       "whatsapp": "",
-      "email": ["partners@crossroadsmobility.example"],
-      "website": "https://crossroadsmobility.example",
-      "contact_form_url": "https://crossroadsmobility.example/talk-to-us",
+      "email": [],
+      "website": "https://www.crownworldmobility.com",
+      "contact_form_url": "https://www.crownworldmobility.com/contact/locations/singapore/",
       "address": {
-        "street": "1 Raffles Place, #40-02",
-        "postal_code": "048616",
-        "lat": 1.2839,
-        "lng": 103.8514
+        "street": "3 Toh Tuck Link",
+        "postal_code": "596228",
+        "lat": null,
+        "lng": null
       },
-      "social": { "linkedin": "https://linkedin.com/company/crossroads-mobility", "instagram": null, "facebook": null },
-      "contact_person": { "name": "Priya Sharma", "role": "Client Director" }
+      "social": { "linkedin": "https://www.linkedin.com/company/crown-world-mobility/", "instagram": null, "facebook": "https://www.facebook.com/CrownWorldMobility" },
+      "contact_person": { "name": null, "role": null }
     },
-    "languages_spoken": ["English"],
-    "operating_hours": "Mon–Fri 9:00–18:00",
-    "source": "placeholder",
-    "source_url": "",
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.crownworldmobility.com/contact/locations/singapore/",
     "status": "unclaimed",
-    "verified_at": null,
-    "created_at": "2026-08-01",
-    "is_placeholder": true
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "sg-santa-fe-relocation",
+    "name": "Santa Fe Relocation",
+    "slug": "santa-fe-relocation",
+    "country": "SG",
+    "city": "Singapore",
+    "categories": ["corporate_mobility", "movers"],
+    "description": "Corporate relocation and global mobility program management for companies moving employees into and out of Singapore.",
+    "contact": {
+      "phone": ["+65 6398 8588"],
+      "whatsapp": "",
+      "email": ["Singapore@santaferelo.com"],
+      "website": "https://www.santaferelo.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "2 Bukit Merah Central, #09-04",
+        "postal_code": "159835",
+        "lat": null,
+        "lng": null
+      },
+      "social": { "linkedin": null, "instagram": null, "facebook": null },
+      "contact_person": { "name": null, "role": null }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://personal.santaferelo.com/contact-us/our-offices/moving-company-singapore/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "sg-asian-tigers-group",
+    "name": "Asian Tigers Group",
+    "slug": "asian-tigers-group",
+    "country": "SG",
+    "city": "Singapore",
+    "categories": ["corporate_mobility", "movers"],
+    "description": "Full-service corporate mobility provider handling assignment management, immigration support, and destination services for relocating employees.",
+    "contact": {
+      "phone": ["+65 6261 8116"],
+      "whatsapp": "+65 8761 5921",
+      "email": ["connect@asiantigers-singapore.com"],
+      "website": "https://www.asiantigersgroup.com/singapore/",
+      "contact_form_url": "https://asiantigersgroup.com/singapore/contact-us/",
+      "address": {
+        "street": "6 Lok Yang Way",
+        "postal_code": "628625",
+        "lat": null,
+        "lng": null
+      },
+      "social": { "linkedin": "https://www.linkedin.com/company/13213974", "instagram": "https://www.instagram.com/asiantigersgroup", "facebook": "https://www.facebook.com/asiantigersgroup" },
+      "contact_person": { "name": null, "role": null }
+    },
+    "languages_spoken": ["English", "Indonesian", "Mandarin"],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://asiantigersgroup.com/singapore/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "sg-management-mobility-consulting",
+    "name": "Management Mobility Consulting",
+    "slug": "management-mobility-consulting",
+    "country": "SG",
+    "city": "Singapore",
+    "categories": ["corporate_mobility"],
+    "description": "Independent global mobility consultancy providing relocation management, destination services, and immigration support for corporate assignees.",
+    "contact": {
+      "phone": ["+65 9775 7401"],
+      "whatsapp": "",
+      "email": ["info@relocationsingapore.com"],
+      "website": "https://www.relocationsingapore.com",
+      "contact_form_url": "https://www.relocationsingapore.com/contact.html",
+      "address": {
+        "street": "Singapore Land Tower, Level 19, 50 Raffles Place",
+        "postal_code": "048623",
+        "lat": null,
+        "lng": null
+      },
+      "social": { "linkedin": "https://www.linkedin.com/company/management-mobility-consulting", "instagram": null, "facebook": "https://www.facebook.com/managementmobilityconsulting" },
+      "contact_person": { "name": null, "role": null }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.relocationsingapore.com/contact.html",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "sg-k2-group",
+    "name": "K2 Group",
+    "slug": "k2-group",
+    "country": "SG",
+    "city": "Singapore",
+    "categories": ["corporate_mobility"],
+    "description": "Global mobility and relocation partner supporting corporate assignment programs, home search, and settling-in services for relocating employees.",
+    "contact": {
+      "phone": ["+65 6415 6850"],
+      "whatsapp": "",
+      "email": ["hello@k2group.com"],
+      "website": "https://www.k2group.com",
+      "contact_form_url": "https://www.k2group.com/contact",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": { "linkedin": null, "instagram": null, "facebook": null },
+      "contact_person": { "name": null, "role": null }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.k2group.com/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
   },
   {
     "id": "sg-raffles-wealth-tax",
