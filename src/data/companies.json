@@ -8290,5 +8290,2871 @@
     "status": "unclaimed",
     "verified_at": "2026-08-12",
     "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-grace-corporate-services",
+    "name": "Grace Corporate Services (Grace Removals Australia)",
+    "slug": "grace-corporate-services",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Long-established Australian mover offering assignment management, immigration, and destination services for corporate global mobility programs.",
+    "contact": {
+      "phone": [
+        "13 14 42"
+      ],
+      "whatsapp": "",
+      "email": [
+        "sydney@grace.com.au"
+      ],
+      "website": "https://www.grace.com.au/mobility/",
+      "contact_form_url": "https://www.grace.com.au/contact-us/",
+      "address": {
+        "street": "4 Tucks Road, Seven Hills",
+        "postal_code": "NSW 2147",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.grace.com.au/mobility/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-crown-relocations",
+    "name": "Crown Relocations (Crown Worldwide Australia Pty Ltd)",
+    "slug": "crown-relocations",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Part of Crown Worldwide Group, providing employee mobility, immigration, and international relocation management for multinational employers.",
+    "contact": {
+      "phone": [
+        "1300 168 382"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.crownrelo.com.au/corporate-relocation/",
+      "contact_form_url": "https://www.crownrelo.com.au/",
+      "address": {
+        "street": "Unit 2/4 Tucks Rd, Seven Hills",
+        "postal_code": "NSW 2147",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.crownrelo.com.au/corporate-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-allied-moving-services",
+    "name": "Allied Moving Services Australia (SIRVA)",
+    "slug": "allied-moving-services-australia",
+    "country": "AU",
+    "city": "Melbourne",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "SIRVA-owned Australian mover delivering integrated corporate and government employee relocation solutions nationwide and internationally.",
+    "contact": {
+      "phone": [
+        "13 25 54"
+      ],
+      "whatsapp": "",
+      "email": [
+        "quotes@allied.com"
+      ],
+      "website": "https://www.allied.com/au/corporate",
+      "contact_form_url": "https://www.allied.com/au/corporate",
+      "address": {
+        "street": "202-228 Greens Road, Dandenong South",
+        "postal_code": "VIC 3175",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.allied.com/au/corporate",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-kent-relocation-group",
+    "name": "Kent Relocation Group",
+    "slug": "kent-relocation-group",
+    "country": "AU",
+    "city": "Clayton",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Australian-headquartered relocation company managing corporate employee moves and international removals, a EuRA-accredited member.",
+    "contact": {
+      "phone": [
+        "1300 340 057"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.kentrelocationgroup.com/about-us-kent-corporate-relocation-services/",
+      "contact_form_url": "https://www.kentrelocationgroup.com/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.eura-relocation.com/members/kent-relocation-group-incorporating-expat-international",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-chess-moving",
+    "name": "Chess Moving Australia",
+    "slug": "chess-moving-australia",
+    "country": "AU",
+    "city": "Adelaide",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Australian-owned mover with a dedicated corporate relocations division coordinating staff moves through the UniGroup international network.",
+    "contact": {
+      "phone": [
+        "13 14 69"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.chessmoving.com.au/corporate-relocations/what-we-offer",
+      "contact_form_url": "https://www.chessmoving.com.au/",
+      "address": {
+        "street": "593-595 South Road, Regency Park",
+        "postal_code": "SA 5010",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.chessmoving.com.au/corporate-relocations/what-we-offer",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-australian-relocation-managers",
+    "name": "Australian Relocation Managers",
+    "slug": "australian-relocation-managers",
+    "country": "AU",
+    "city": "Melbourne",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Boutique global mobility consultancy providing home search, school search, and settling-in support for corporate assignees across Australia.",
+    "contact": {
+      "phone": [
+        "(03) 9017 3636"
+      ],
+      "whatsapp": "",
+      "email": [
+        "nmorey@ausrelocationmanagers.com.au"
+      ],
+      "website": "https://australianrelocationmanagers.com.au/global-mobility/",
+      "contact_form_url": "https://australianrelocationmanagers.com.au/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://australianrelocationmanagers.com.au/global-mobility/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-relocations-australia",
+    "name": "Relocations Australia Pty Ltd",
+    "slug": "relocations-australia",
+    "country": "AU",
+    "city": "Chatswood",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "EuRA full member delivering integrated global, national and regional corporate employee mobility relocation services.",
+    "contact": {
+      "phone": [
+        "+61 2 9419 5600"
+      ],
+      "whatsapp": "",
+      "email": [
+        "ros@relocationsaus.com.au"
+      ],
+      "website": "https://relocationsaus.com.au/",
+      "contact_form_url": "https://relocationsaus.com.au/",
+      "address": {
+        "street": "Level 11, 809 Pacific Highway, Chatswood",
+        "postal_code": "NSW 2057",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Ros Peterson",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.eura-relocation.com/members/relocations-australia-pty-ltd",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-relocation-specialists",
+    "name": "Relocation Specialists",
+    "slug": "relocation-specialists",
+    "country": "AU",
+    "city": "Brisbane",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "EuRA member destination service provider supplying personalised corporate and individual transfer support into and out of Australia.",
+    "contact": {
+      "phone": [
+        "+61 419 969559"
+      ],
+      "whatsapp": "",
+      "email": [
+        "service@relocationspecialists.com.au"
+      ],
+      "website": "https://www.relocationspecialists.com.au/",
+      "contact_form_url": "https://www.relocationspecialists.com.au/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.relocationspecialists.com.au/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-palmers-relocations",
+    "name": "Palmers Relocations",
+    "slug": "palmers-relocations",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Corporate relocations specialist delivering dedicated account management for multinational and local business employee moves.",
+    "contact": {
+      "phone": [
+        "1300 363 916"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://palmersrelocations.com.au/corporate-relocations/",
+      "contact_form_url": "https://palmersrelocations.com.au/",
+      "address": {
+        "street": "13/15 Mayvic St, Chullora",
+        "postal_code": "NSW 2190",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://palmersrelocations.com.au/corporate-relocations/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-home-hunters-relocations",
+    "name": "Home Hunters Relocations",
+    "slug": "home-hunters-relocations",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Sydney-based corporate relocation provider assisting employers with employee transfers across Sydney, Brisbane and Melbourne.",
+    "contact": {
+      "phone": [
+        "+61 411 487 453"
+      ],
+      "whatsapp": "",
+      "email": [
+        "jo@homehunters.com.au"
+      ],
+      "website": "https://www.hhrelocations.com/corporate-relocation/",
+      "contact_form_url": "https://www.hhrelocations.com/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Jo",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.hhrelocations.com/corporate-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-nuss-corporate-relocations",
+    "name": "NUSS Corporate Relocations (Nuss Removals)",
+    "slug": "nuss-corporate-relocations",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Over 120-year-old Sydney mover with a dedicated enterprise relocation and global mobility division for corporate clients.",
+    "contact": {
+      "phone": [
+        "1300 466 877"
+      ],
+      "whatsapp": "",
+      "email": [
+        "sydney@nuss.com.au"
+      ],
+      "website": "https://www.nuss.com.au/corporate-relocations",
+      "contact_form_url": "https://www.nuss.com.au/",
+      "address": {
+        "street": "708b Mowbray Rd, Lane Cove",
+        "postal_code": "NSW 2066",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.nuss.com.au/corporate-relocations",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-k2-relocate",
+    "name": "K2 Relocate (K2 Corporate Mobility)",
+    "slug": "k2-relocate",
+    "country": "AU",
+    "city": "Sydney",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Global relocation company managing corporate assignee moves, household goods shipments and family settling-in support from Australia.",
+    "contact": {
+      "phone": [
+        "+61 2 9261 8216"
+      ],
+      "whatsapp": "",
+      "email": [
+        "hello@k2relocate.com"
+      ],
+      "website": "https://www.k2relocate.com/our-relocation-services",
+      "contact_form_url": "https://www.k2relocate.com/contact",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.k2relocate.com/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "au-aussiemove-international-movers",
+    "name": "Aussiemove International Movers Pty Ltd",
+    "slug": "aussiemove-international-movers",
+    "country": "AU",
+    "city": "Adelaide",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Adelaide-based mover since 1987 offering accredited international corporate relocations and office removals for businesses.",
+    "contact": {
+      "phone": [
+        "+61 8 8281 0888"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://aussiemove.com.au/office-removals/",
+      "contact_form_url": "https://aussiemove.com.au/",
+      "address": {
+        "street": "Unit 1, 151-159 Ryans Rd, Parafield Gardens",
+        "postal_code": "SA 5107",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://aussiemove.com.au/office-removals/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-crown-relocations",
+    "name": "Crown Relocations",
+    "slug": "crown-relocations",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Global moving company with a Dublin office managing corporate employee relocations and international assignments worldwide.",
+    "contact": {
+      "phone": [
+        "+353 1 697 2838"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.crownrelo.com/intl/en/office/dublin",
+      "contact_form_url": "",
+      "address": {
+        "street": "3-4 North Park, North Road, Finglas, Dublin 11",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/crown-relocations",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.crownrelo.com/intl/en/office/dublin",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-cronin-group",
+    "name": "Cronin Group Ltd",
+    "slug": "cronin-group",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dublin logistics firm with a FIDI-certified Global Mobility division managing corporate relocations for multinational employers.",
+    "contact": {
+      "phone": [
+        "+353 1 8097000"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@croningroup.ie"
+      ],
+      "website": "https://croningroup.ie/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Damastown Way, Damastown Industrial Park, Dublin 15",
+        "postal_code": "D15 R67X",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ie.linkedin.com/company/cronin-group-ie",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://croningroup.ie/logistics-services/global-mobility/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-corporate-relocations-ltd",
+    "name": "Corporate Relocations Ltd",
+    "slug": "corporate-relocations-ltd",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dublin-based specialist corporate relocation company managing visas, housing, and international assignment logistics for employers.",
+    "contact": {
+      "phone": [
+        "+353 1 588 0513"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@corporaterelocations.ie"
+      ],
+      "website": "https://www.corporaterelocations.ie/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Suite 6, 32 Nassau Street, Dublin 2",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ie.linkedin.com/company/corporate-relocations-ltd",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.corporaterelocations.ie/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-irish-relocation-services",
+    "name": "Irish Relocation Services Ltd",
+    "slug": "irish-relocation-services",
+    "country": "IE",
+    "city": "Kilcock",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Kildare-based relocation firm delivering global employee mobility, visa, and destination support services for corporate assignees.",
+    "contact": {
+      "phone": [
+        "+353 1 675 7900"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@irishrelo.com"
+      ],
+      "website": "https://irishrelo.com/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Unit 4 Portgloriam Business Campus, Clane Road",
+        "postal_code": "W23 XH0A",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ie.linkedin.com/company/irish-relocation-services",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://irishrelo.com/corporate-relocation-services/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-onboard-ireland",
+    "name": "Onboard Ireland Ltd",
+    "slug": "onboard-ireland",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Irish-owned global mobility consultancy providing immigration, home search, and assignee support for relocating employees.",
+    "contact": {
+      "phone": [
+        "+353 (0)1 6855 950"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.onboardireland.ie/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Unit 17, Enterprise Centre, Bunratty Drive",
+        "postal_code": "D17 PD77",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ie.linkedin.com/company/onboard-ireland",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/onboardireland/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.onboardireland.ie/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-amc-removals-storage",
+    "name": "AMC Removals & Storage",
+    "slug": "amc-removals-storage",
+    "country": "IE",
+    "city": "Naas",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "FIDI-accredited Kildare mover offering international and corporate relocation, packing, and storage services across Ireland.",
+    "contact": {
+      "phone": [
+        "045 874 498"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@amcremovals.ie"
+      ],
+      "website": "https://www.amcremovals.ie/",
+      "contact_form_url": "",
+      "address": {
+        "street": "AMC House, Naas Industrial Estate",
+        "postal_code": "W91 X5KT",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/amc-removals",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.amcremovals.ie/about-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-celtic-relocations",
+    "name": "Celtic Relocations",
+    "slug": "celtic-relocations",
+    "country": "IE",
+    "city": "Kinsale",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Cork-based destination service provider, now part of Packimpex, supporting corporate relocations with housing, schooling, and immigration help.",
+    "contact": {
+      "phone": [
+        "+353 21 4700762"
+      ],
+      "whatsapp": "",
+      "email": [
+        "orla@celtic-relocations.com"
+      ],
+      "website": "https://www.packimpex.com/ie/celtic-relocations",
+      "contact_form_url": "",
+      "address": {
+        "street": "Highgate House, Mansfield Lands",
+        "postal_code": "P17 HN32",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Orla Hurley",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.eura-relocation.com/members/celtic-relocations-packimpex-company",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-corporate-care-relocation",
+    "name": "Corporate Care Relocation",
+    "slug": "corporate-care-relocation",
+    "country": "IE",
+    "city": "Cork",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Established Irish global mobility provider offering home finding, settling-in, and school search support for corporate assignees.",
+    "contact": {
+      "phone": [
+        "+353 21 431 3466"
+      ],
+      "whatsapp": "",
+      "email": [
+        "salesteam@corporatecarerelocation.com"
+      ],
+      "website": "https://www.corporatecarerelocation.com/",
+      "contact_form_url": "https://www.corporatecarerelocation.com/contact",
+      "address": {
+        "street": "Enterprise House, Marina Commercial Park Centre, Park Road",
+        "postal_code": "T12 X4YW",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ie.linkedin.com/company/corporate-care-relocation",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.mcpcork.ie/business-listing/corporate-care-relocation-ltd/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-household-moving-company",
+    "name": "Household Moving Company",
+    "slug": "household-moving-company",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dublin mover and Harmony Relocation Network member providing executive, office, and international corporate relocation services.",
+    "contact": {
+      "phone": [
+        "+353 (0)1 8499266"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.hhm.ie/",
+      "contact_form_url": "https://www.hhm.ie/contact-us.html",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://hhm.ie/services/executive-relocations.html",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ie-settle-in",
+    "name": "Settle-In",
+    "slug": "settle-in",
+    "country": "IE",
+    "city": "Dublin",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dublin relocation consultancy delivering executive housing search, school placement, and settling-in support for corporate clients.",
+    "contact": {
+      "phone": [
+        "+353 86 817 5868"
+      ],
+      "whatsapp": "",
+      "email": [
+        "ciara@settlein.ie"
+      ],
+      "website": "https://www.settlein.ie/",
+      "contact_form_url": "https://www.settlein.ie/contact-irish-relocation-services",
+      "address": {
+        "street": "38 Fitzwilliam Square",
+        "postal_code": "D02 NX53",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/settlein.ie/"
+      },
+      "contact_person": {
+        "name": "Ciara",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.settlein.ie/contact-irish-relocation-services",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-santa-fe-relocation",
+    "name": "Santa Fe Relocation Services N.V.",
+    "slug": "santa-fe-relocation",
+    "country": "BE",
+    "city": "Kampenhout",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Global relocation management company supporting multinational employers with corporate moves from its Belgium office near Brussels.",
+    "contact": {
+      "phone": [
+        "+32 2 757 9285"
+      ],
+      "whatsapp": "",
+      "email": [
+        "brussels@santaferelo.com"
+      ],
+      "website": "https://www.santaferelo.com",
+      "contact_form_url": "https://www.santaferelo.com/contact-us/",
+      "address": {
+        "street": "Haachtsesteenweg 674",
+        "postal_code": "1910",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/santa-fe-relocation/",
+        "instagram": null,
+        "facebook": "https://facebook.com/SantaFeRelo"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.santaferelo.com/contact/our-offices/belgium-brussels/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-crown-relocations",
+    "name": "Crown Relocations Belgium",
+    "slug": "crown-relocations-belgium",
+    "country": "BE",
+    "city": "Brussels",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "FIDI-certified international mover handling corporate relocation and moving logistics for employers around Brussels.",
+    "contact": {
+      "phone": [
+        "+32 2 213 37 33"
+      ],
+      "whatsapp": "",
+      "email": [
+        "brussels@crownww.com"
+      ],
+      "website": "https://www.crownrelo.com/belgium/en-be",
+      "contact_form_url": "https://www.crownrelo.com/intl/en-be/office/brussels",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "Monday - Friday, 8:00am - 5pm",
+    "source": "web_research",
+    "source_url": "https://www.crownrelo.com/intl/en-be/office/brussels",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-relocation-belgium",
+    "name": "Relocation Belgium",
+    "slug": "relocation-belgium",
+    "country": "BE",
+    "city": "Ghent",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Destination service provider handling immigration paperwork and home-finding for companies transferring staff into Belgium.",
+    "contact": {
+      "phone": [
+        "+32 9 247 47 74"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@relocationbelgium.com"
+      ],
+      "website": "https://www.relocationbelgium.com",
+      "contact_form_url": "https://www.relocationbelgium.com/contact",
+      "address": {
+        "street": "Floraliënlaan 3/0001",
+        "postal_code": "9000",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/RelocationBelgium/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.relocationbelgium.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-ags-movers-belgium",
+    "name": "AGS Movers Belgium",
+    "slug": "ags-movers-belgium",
+    "country": "BE",
+    "city": "Kampenhout",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Belgian branch of the AGS global moving network, supporting corporate and embassy relocations in and out of Belgium.",
+    "contact": {
+      "phone": [
+        "+32 16 47 91 50"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.agsmovers.com/branches/movers-europe/belgium/brussels/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Haachtsesteenweg 674",
+        "postal_code": "1910",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Thierry Palermo",
+        "role": "Branch Manager"
+      }
+    },
+    "languages_spoken": [
+      "English",
+      "Dutch",
+      "French"
+    ],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.agsmovers.com/branches/movers-europe/belgium/brussels/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-compas-international-movers",
+    "name": "Compas International Movers NV",
+    "slug": "compas-international-movers",
+    "country": "BE",
+    "city": "Zemst",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "FIDI-affiliated mover offering employee and corporate relocation services to HR teams managing international mobility programs.",
+    "contact": {
+      "phone": [
+        "+32 2 897 05 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@compasim.be"
+      ],
+      "website": "https://www.compasim.be/en",
+      "contact_form_url": "https://www.compasim.be/en/contact",
+      "address": {
+        "street": "Erasmuslaan 30A",
+        "postal_code": "1804",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/compasinternationalmovers/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.compasim.be/en/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-erdo-relocation",
+    "name": "ERDO Relocation",
+    "slug": "erdo-relocation",
+    "country": "BE",
+    "city": "Antwerp",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Antwerp-based relocation agency helping corporate transferees with housing, settling-in, and moving arrangements.",
+    "contact": {
+      "phone": [
+        "+32 3 233 06 11"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@erdo-relocation.com"
+      ],
+      "website": "https://erdo-relocation.com",
+      "contact_form_url": "https://erdo-relocation.com/contact",
+      "address": {
+        "street": "Londenstraat 38",
+        "postal_code": "2000",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://nl.linkedin.com/company/erdo-relocation",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/pages/category/Community/ERDO-Relocation-1530820493809703/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://erdo-relocation.com/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-putters-international",
+    "name": "Putters International",
+    "slug": "putters-international",
+    "country": "BE",
+    "city": "Brussels",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Long-established Belgian moving company providing international removals and relocation logistics for corporate clients.",
+    "contact": {
+      "phone": [
+        "+32 2 721 40 40"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@putters.be"
+      ],
+      "website": "https://www.putters.be/en",
+      "contact_form_url": "",
+      "address": {
+        "street": "Erasmuslaan 30",
+        "postal_code": "1804",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.putters.be/en/about-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-expat-management-group",
+    "name": "Expat Management Group",
+    "slug": "expat-management-group",
+    "country": "BE",
+    "city": "Brussels",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Mobility management group delivering immigration, tax, and relocation support to corporate clients across Belgium and Luxembourg.",
+    "contact": {
+      "phone": [
+        "+32 2 316 1026"
+      ],
+      "whatsapp": "",
+      "email": [
+        "belux@expatmanagementgroup.com"
+      ],
+      "website": "https://www.expatmanagementgroup.com/belgium",
+      "contact_form_url": "https://www.expatmanagementgroup.com/contact-us",
+      "address": {
+        "street": "Rue des Colonies 56",
+        "postal_code": "1000",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/expat-management-group/",
+        "instagram": "https://www.instagram.com/expatmanagementgroup/",
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.expatmanagementgroup.com/contact-us",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-rks-relocation-belgium",
+    "name": "RKS Relocation Belgium",
+    "slug": "rks-relocation-belgium",
+    "country": "BE",
+    "city": "Walhain",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "EuRA and ABRA member agency since 1984 offering home-finding, settling-in, and immigration services for transferred employees.",
+    "contact": {
+      "phone": [
+        "+32 2 387 41 76"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@rksrelocation.be"
+      ],
+      "website": "https://rksrelocation.be",
+      "contact_form_url": "https://rksrelocation.be/contactu",
+      "address": {
+        "street": "Rue Chapja 28",
+        "postal_code": "1457",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://rksrelocation.be/contactu",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-ez-relocation",
+    "name": "EZ-Relocation",
+    "slug": "ez-relocation",
+    "country": "BE",
+    "city": "Antwerp",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Antwerp-based relocation specialist providing moving, immigration, and settling-in support for internationally transferred employees.",
+    "contact": {
+      "phone": [
+        "+32 3 385 46 72"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@ez-relocation.com"
+      ],
+      "website": "https://www.ez-relocation.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/ezrelocation/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.ez-relocation.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "be-brussels-relocation",
+    "name": "Brussels Relocation",
+    "slug": "brussels-relocation",
+    "country": "BE",
+    "city": "Brussels",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Independent relocation consultancy assisting employers with orientation tours, home search, and settling-in for transferred staff.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [
+        "brussels.relocation@skynet.be"
+      ],
+      "website": "https://www.brussels-relocation.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.brussels-relocation.com",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-santa-fe-relocation",
+    "name": "Santa Fe Relocation",
+    "slug": "santa-fe-relocation",
+    "country": "NL",
+    "city": "Amsterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Global moving and destination services provider running its Netherlands office since 1967, supporting corporate relocations worldwide.",
+    "contact": {
+      "phone": [
+        "+31 172 44 7979"
+      ],
+      "whatsapp": "",
+      "email": [
+        "amsterdam@santaferelo.com"
+      ],
+      "website": "https://www.santaferelo.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "H. Kamerlingh Onnesweg 3",
+        "postal_code": "2408 AX",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.santaferelo.com/contact/our-offices/netherlands-amsterdam/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-crown-relocations",
+    "name": "Crown Relocations",
+    "slug": "crown-relocations",
+    "country": "NL",
+    "city": "Amsterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "International moving company offering destination services and company moves for corporate relocations across the Netherlands.",
+    "contact": {
+      "phone": [
+        "+31 20 262 3991"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.crownrelo.com/netherlands/en-nl",
+      "contact_form_url": "https://www.crownrelo.com/netherlands/en-nl/offices",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "Monday - Friday, 8:30am - 5:00pm",
+    "source": "web_research",
+    "source_url": "https://www.crownrelo.com/netherlands/en-nl/offices",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-executive-mobility-group",
+    "name": "Executive Mobility Group B.V.",
+    "slug": "executive-mobility-group",
+    "country": "NL",
+    "city": "Schiphol",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Amsterdam-area global mobility firm managing corporate relocation, immigration, tax and Employer of Record services.",
+    "contact": {
+      "phone": [
+        "+31 20 765 7520"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.executivemobility-group.com",
+      "contact_form_url": "https://www.executivemobility-group.com/contact-us/",
+      "address": {
+        "street": "Evert van de Beekstraat 1-36",
+        "postal_code": "1118 CL",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.executivemobility-group.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-ags-global-solutions-netherlands",
+    "name": "AGS Global Solutions Netherlands",
+    "slug": "ags-global-solutions-netherlands",
+    "country": "NL",
+    "city": "Alphen aan den Rijn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Dutch arm of international mover AGS providing corporate relocation and destination services from its Alphen aan den Rijn hub.",
+    "contact": {
+      "phone": [
+        "+31 172 449977"
+      ],
+      "whatsapp": "",
+      "email": [
+        "netherlands@ags-globalsolutions.com"
+      ],
+      "website": "https://www.ags-globalsolutions.com",
+      "contact_form_url": "https://www.khz-movers.com/en/contact/",
+      "address": {
+        "street": "A. van Leeuwenhoekweg 50",
+        "postal_code": "2408 AN",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.khz-movers.com/en/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-eastwing",
+    "name": "Eastwing B.V.",
+    "slug": "eastwing",
+    "country": "NL",
+    "city": "Capelle aan den IJssel",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Rotterdam-area consultancy offering an integrated one-stop approach to relocation, immigration, tax and global mobility for employers.",
+    "contact": {
+      "phone": [
+        "+31 10 4205027"
+      ],
+      "whatsapp": "+31 6 41291497",
+      "email": [
+        "service@eastwing.nl"
+      ],
+      "website": "https://eastwing.nl/en/",
+      "contact_form_url": "https://eastwing.nl/en/contact/",
+      "address": {
+        "street": "Rietbaan 10",
+        "postal_code": "2908 LP",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://eastwing.nl/en/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-royal-de-gruijter",
+    "name": "Royal De Gruijter & Co.",
+    "slug": "royal-de-gruijter",
+    "country": "NL",
+    "city": "Alphen aan den Rijn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Over 140-year-old Dutch mover delivering corporate international relocation solutions for HR and global mobility teams.",
+    "contact": {
+      "phone": [
+        "+31 85 124 65 60"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@degruijter.nl"
+      ],
+      "website": "https://www.degruijter.nl",
+      "contact_form_url": "",
+      "address": {
+        "street": "A. van Leeuwenhoekweg 50",
+        "postal_code": "2408 AN",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.degruijter.nl/en/corporate-international-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-de-haan-partners-verhuizingen",
+    "name": "De Haan & Partners Verhuizingen B.V.",
+    "slug": "de-haan-partners-verhuizingen",
+    "country": "NL",
+    "city": "Alblasserdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Family-run international moving company near Rotterdam offering corporate relocation and an HR helpdesk for employers.",
+    "contact": {
+      "phone": [
+        "+31 78 69 20 333"
+      ],
+      "whatsapp": "",
+      "email": [
+        "aanvraag@dehaan.nl"
+      ],
+      "website": "https://www.dehaan.nl",
+      "contact_form_url": "",
+      "address": {
+        "street": "Edisonweg 18",
+        "postal_code": "2952 AD",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.dehaan.nl/en/corporate-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-jimble",
+    "name": "Jimble B.V.",
+    "slug": "jimble",
+    "country": "NL",
+    "city": "Amsterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Amsterdam relocation partner aligning corporate global mobility programmes with home finding and immigration support.",
+    "contact": {
+      "phone": [
+        "+31 20 846 6002"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@jimble.nl"
+      ],
+      "website": "https://jimble.nl",
+      "contact_form_url": "",
+      "address": {
+        "street": "Laarderhoogtweg 25/G40",
+        "postal_code": "1101 EB",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://jimble.nl/company-global-mobility/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-exterus",
+    "name": "Exterus B.V.",
+    "slug": "exterus",
+    "country": "NL",
+    "city": "The Hague",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "The Hague-based consultancy managing global employment mobility, immigration, tax and payroll for internationally assigned staff.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://exterus.nl",
+      "contact_form_url": "https://exterus.nl/en/contact",
+      "address": {
+        "street": "Prinses Alexialaan 80",
+        "postal_code": "2496 XA",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://exterus.nl/en/services/global-employment-mobility",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-home-made",
+    "name": "Home.Made",
+    "slug": "home-made",
+    "country": "NL",
+    "city": "Amsterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Award-winning Amsterdam relocation agency delivering customizable corporate relocation programmes for HR and mobility teams.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://homemade-nl.com",
+      "contact_form_url": "https://homemade-nl.com/contact/",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Sherianne",
+        "role": "Founder & CEO"
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://homemade-nl.com/about/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-orange-homes",
+    "name": "Orange Homes",
+    "slug": "orange-homes",
+    "country": "NL",
+    "city": "Amsterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Amsterdam relocation agency partnering with HR teams to manage corporate housing, immigration and settling-in services.",
+    "contact": {
+      "phone": [
+        "+31 20 679 5008"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@orange-homes.com"
+      ],
+      "website": "https://orange-homes.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "Roerstraat 1",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/orangehomesrelocation/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://orange-homes.com/corporate-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-the-relocation-company",
+    "name": "The Relocation Company",
+    "slug": "the-relocation-company",
+    "country": "NL",
+    "city": "Hoofddorp",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Hoofddorp-based relocation firm managing expat moves and immigration for corporate clients since 2009.",
+    "contact": {
+      "phone": [
+        "+31 23 558 0008"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@TheRelocationCompany.nl"
+      ],
+      "website": "https://www.therelocationcompany.nl",
+      "contact_form_url": "",
+      "address": {
+        "street": "Bloemlaan 2",
+        "postal_code": "2132 NP",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.therelocationcompany.nl/?lang=en",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-dutchify",
+    "name": "Dutchify B.V.",
+    "slug": "dutchify",
+    "country": "NL",
+    "city": "Rijswijk",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Rijswijk-registered relocation firm offering flexible corporate relocation packages with dedicated HR account management.",
+    "contact": {
+      "phone": [
+        "+31 70 221 3179"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://dutchify.net",
+      "contact_form_url": "",
+      "address": {
+        "street": "Einsteinlaan 28",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://dutchify.net/best-corporate-relocation-package-netherlands/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-nlrelocation",
+    "name": "NLrelocation",
+    "slug": "nlrelocation",
+    "country": "NL",
+    "city": "Rotterdam",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Rotterdam-based relocation consultancy founded in 2007 supporting companies of all sizes moving staff to the Netherlands.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.nlrelocation.nl",
+      "contact_form_url": "",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.nlrelocation.nl/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "nl-global-mobility-nomad",
+    "name": "Global Mobility Nomad",
+    "slug": "global-mobility-nomad",
+    "country": "NL",
+    "city": "Vlaardingen",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Vlaardingen-based global mobility consultancy assisting employers with international employee relocation and immigration.",
+    "contact": {
+      "phone": [
+        "+31 6 24992427"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@gmnomad.nl"
+      ],
+      "website": "https://gmnomad.nl",
+      "contact_form_url": "https://gmnomad.nl/contact",
+      "address": {
+        "street": "Kreekweg 10-X",
+        "postal_code": "3133 AZ",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://gmnomad.nl/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-santa-fe-relocation",
+    "name": "Santa Fe Relocation",
+    "slug": "santa-fe-relocation",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Long-established global mobility firm managing corporate employee moves to and from Switzerland since 1968.",
+    "contact": {
+      "phone": [
+        "+41 79 686 48 06"
+      ],
+      "whatsapp": "",
+      "email": [
+        "geneva@santaferelo.com"
+      ],
+      "website": "https://www.santaferelo.com",
+      "contact_form_url": "",
+      "address": {
+        "street": "Route de Pré-Bois 20, P.O. Box 1845",
+        "postal_code": "1215 Genève 15 Aéroport",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.santaferelo.com/contact/our-offices/switzerland-geneva/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-crown-relocations",
+    "name": "Crown Relocations",
+    "slug": "crown-relocations",
+    "country": "CH",
+    "city": "Zurich",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Global moving and relocation company handling corporate assignee transfers via its Zurich office.",
+    "contact": {
+      "phone": [
+        "+41 22 518 88 70"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.crownrelo.com/switzerland/en-ch",
+      "contact_form_url": "https://www.crownrelo.com/switzerland/en-ch/office/zurich",
+      "address": {
+        "street": "c/o Ostschweizerische Treuhand Zürich AG, Giesshübelstrasse 4",
+        "postal_code": "8045 Zürich",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/crown-relocations",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/CrownRelocations"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "Monday - Friday, 8:00am-12:00pm / 1:00pm-5:00pm",
+    "source": "web_research",
+    "source_url": "https://www.crownrelo.com/switzerland/en-ch/office/zurich",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-anchor-relocation-services",
+    "name": "Anchor Relocation Services GmbH",
+    "slug": "anchor-relocation-services",
+    "country": "CH",
+    "city": "Zurich",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Zurich-based consultancy supporting multinational companies and individuals relocating employees to the Zug and Zurich areas.",
+    "contact": {
+      "phone": [
+        "+41 44 383 2323"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://anchor-relocation.ch",
+      "contact_form_url": "https://anchor-relocation.ch/contact-us/",
+      "address": {
+        "street": "Rämistrasse 8",
+        "postal_code": "CH-8001 Zürich",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/anchorrelocation",
+        "instagram": "https://www.instagram.com/anchor.relocation/",
+        "facebook": "https://www.facebook.com/anchor.relocation/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://anchor-relocation.ch/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-keller-swiss-group",
+    "name": "Keller Swiss Group AG",
+    "slug": "keller-swiss-group",
+    "country": "CH",
+    "city": "Basel",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Basel-headquartered relocation provider offering home search, school search and settling-in support for corporate transferees.",
+    "contact": {
+      "phone": [
+        "+41 58 317 10 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@kellerswissgroup.com"
+      ],
+      "website": "https://www.kellerswissgroup.com",
+      "contact_form_url": "https://www.kellerswissgroup.com/en/contact/locations",
+      "address": {
+        "street": "Reinacherstrasse 121",
+        "postal_code": "CH-4053 Basel",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/keller-swiss-group",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.kellerswissgroup.com/en/contact/locations",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-the-smc-swiss-moving-company",
+    "name": "the SMC, the Swiss Moving Company SA",
+    "slug": "the-smc-swiss-moving-company",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Geneva-headquartered mover offering a dedicated corporate division assisting businesses with employee and office relocations.",
+    "contact": {
+      "phone": [
+        "+41 22 300 43 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@thesmc.com"
+      ],
+      "website": "https://www.thesmc.com",
+      "contact_form_url": "https://thesmc.com/en/corporate-your-expatriates-mobility/",
+      "address": {
+        "street": "Chemin du Champ-des-Filles 19",
+        "postal_code": "1228 Geneva",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://thesmc.com/en/corporate-your-expatriates-mobility/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-sirva-relocation",
+    "name": "SIRVA Relocation SA",
+    "slug": "sirva-relocation",
+    "country": "CH",
+    "city": "Petit-Lancy",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Swiss branch of a global relocation management company moving corporate talent through its Geneva-area office.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://sirva.com",
+      "contact_form_url": "https://sirva.com/company/office-locations",
+      "address": {
+        "street": "Avenue des Morgines 12",
+        "postal_code": "1213 Petit-Lancy",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://sirva.com/company/office-locations",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-prime-relocation",
+    "name": "Prime Relocation",
+    "slug": "prime-relocation",
+    "country": "CH",
+    "city": "Zug",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Family-owned Zug firm since 2006 delivering corporate relocation and destination services for HR and mobility teams.",
+    "contact": {
+      "phone": [
+        "+41 41 760 74 41"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@primerelocation.ch"
+      ],
+      "website": "https://primerelocation.ch",
+      "contact_form_url": "https://primerelocation.ch/contact/",
+      "address": {
+        "street": "Industriestrasse 47",
+        "postal_code": "6300 Zug",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Kati Kägi",
+        "role": "Founder"
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "Monday-Friday: 9:00-18:00",
+    "source": "web_research",
+    "source_url": "https://primerelocation.ch/corporate/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-welcome-service",
+    "name": "Welcome Service Sàrl",
+    "slug": "welcome-service",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Family-run Geneva agency since 1990 guiding corporations and staff through immigration, housing and settling-in.",
+    "contact": {
+      "phone": [
+        "+41 22 707 61 50"
+      ],
+      "whatsapp": "",
+      "email": [
+        "geneve@welcome-service.ch"
+      ],
+      "website": "https://www.welcome-service.ch",
+      "contact_form_url": "",
+      "address": {
+        "street": "Rue Zurlinden 6",
+        "postal_code": "1207 Geneva",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/welcomeservicesarl/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.welcome-service.ch/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-harsch",
+    "name": "Harsch",
+    "slug": "harsch",
+    "country": "CH",
+    "city": "Carouge",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Swiss family-owned mover founded in Geneva in 1957, handling office and corporate employee relocations.",
+    "contact": {
+      "phone": [
+        "+41 22 300 43 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "harsch.ge@harsch.ch"
+      ],
+      "website": "https://www.harsch.ch",
+      "contact_form_url": "https://www.harsch.ch/en/contact/",
+      "address": {
+        "street": "Rue Baylon 10",
+        "postal_code": "1227 Carouge",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/harsch-the-art-of-moving/",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Isabelle Harsch",
+        "role": "CEO"
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.harsch.ch/en/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-la-boutique-relocation",
+    "name": "La Boutique Relocation",
+    "slug": "la-boutique-relocation",
+    "country": "CH",
+    "city": "Lausanne",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Lausanne-based agency providing tailored integration and relocation support to companies moving staff into the Vaud region.",
+    "contact": {
+      "phone": [
+        "+41 76 567 68 65"
+      ],
+      "whatsapp": "",
+      "email": [
+        "contact@laboutiquerelocation.ch"
+      ],
+      "website": "https://www.laboutiquerelocation.ch",
+      "contact_form_url": "https://www.laboutiquerelocation.ch/contact",
+      "address": {
+        "street": "Avenue de Rhodanie 54",
+        "postal_code": "1007 Lausanne",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": "https://www.instagram.com/laboutiquerelocation/",
+        "facebook": "https://www.facebook.com/laboutiquerelocation/"
+      },
+      "contact_person": {
+        "name": "Daphné Stauffer",
+        "role": "Co-Founder"
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.laboutiquerelocation.ch/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-relocation-expat-services",
+    "name": "Relocation & Expat Services GmbH",
+    "slug": "relocation-expat-services",
+    "country": "CH",
+    "city": "Andelfingen",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Zurich-region firm handling welcome tours, temporary housing and home search for companies transferring employees.",
+    "contact": {
+      "phone": [
+        "+41 79 858 04 77"
+      ],
+      "whatsapp": "",
+      "email": [
+        "welcome@rel-ex.ch"
+      ],
+      "website": "https://rel-ex.ch",
+      "contact_form_url": "https://rel-ex.ch/contact-en/",
+      "address": {
+        "street": "Altweg 30 a",
+        "postal_code": "CH-8450 Andelfingen",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://rel-ex.ch/contact-en/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-executive-relocation",
+    "name": "Executive Relocation GmbH",
+    "slug": "executive-relocation",
+    "country": "CH",
+    "city": "Thalwil",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Zurich-lake area consultancy delivering destination services for executives and companies relocating to Switzerland.",
+    "contact": {
+      "phone": [
+        "+41 76 346 51 17"
+      ],
+      "whatsapp": "",
+      "email": [
+        "welcome@executive-relocation.ch"
+      ],
+      "website": "https://www.executive-relocation.ch",
+      "contact_form_url": "https://www.executive-relocation.ch/contact",
+      "address": {
+        "street": "Etzlibergstrasse 19",
+        "postal_code": "8800 Thalwil",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Bettina Riopelle",
+        "role": "Contact"
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.executive-relocation.ch/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-movemytalent",
+    "name": "MoveMyTalent OÜ",
+    "slug": "movemytalent",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Tallinn relocation agency handling immigration, housing, and settling-in support for companies moving employees abroad.",
+    "contact": {
+      "phone": [
+        "+372 5664 2029"
+      ],
+      "whatsapp": "",
+      "email": [
+        "laura@movemytalent.com"
+      ],
+      "website": "https://movemytalent.com/",
+      "contact_form_url": "https://movemytalent.com/contact/",
+      "address": {
+        "street": "Valukoja tn 8/1",
+        "postal_code": "11415",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ee.linkedin.com/company/movemytalent-relocation-services",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/movemytalentrelocation"
+      },
+      "contact_person": {
+        "name": "Laura Sildmäe",
+        "role": "Founder"
+      }
+    },
+    "languages_spoken": [
+      "English",
+      "Estonian"
+    ],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://movemytalent.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-expat-relocation-estonia",
+    "name": "Expat Relocation Estonia OÜ",
+    "slug": "expat-relocation-estonia",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Tallinn destination service provider helping incoming expat employees with housing, bureaucracy, and family settling-in.",
+    "contact": {
+      "phone": [
+        "+372 646 4749"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@expatestonia.ee"
+      ],
+      "website": "https://expatestonia.ee/",
+      "contact_form_url": "https://expatestonia.ee/contact/",
+      "address": {
+        "street": "Ahtri tn 12",
+        "postal_code": "10151",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/ExpatEstonia/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [
+      "English",
+      "Estonian"
+    ],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://expatestonia.ee/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-nomad-consulting-expat-legal-estonia",
+    "name": "Nomad Consulting OÜ (Expat Legal Estonia)",
+    "slug": "nomad-consulting-expat-legal-estonia",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Estonian immigration law consultancy guiding employers through residence permits and work visa processes for staff.",
+    "contact": {
+      "phone": [],
+      "whatsapp": "",
+      "email": [
+        "info@expatlegalestonia.com"
+      ],
+      "website": "https://www.expatlegalestonia.com/",
+      "contact_form_url": "https://www.expatlegalestonia.com/contact-us",
+      "address": {
+        "street": "",
+        "postal_code": "",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": "Ingmar Lääts",
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.expatlegalestonia.com/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-sorainen",
+    "name": "Sorainen",
+    "slug": "sorainen",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Baltic business law firm whose Tallinn office runs a dedicated migration and relocation practice for corporate clients.",
+    "contact": {
+      "phone": [
+        "+372 6 400 900"
+      ],
+      "whatsapp": "",
+      "email": [
+        "estonia@sorainen.com"
+      ],
+      "website": "https://www.sorainen.com/",
+      "contact_form_url": "https://www.sorainen.com/contacts/",
+      "address": {
+        "street": "Rotermanni 6",
+        "postal_code": "10111",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://ee.linkedin.com/company/law-firm-sorainen",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/soraineneesti/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.sorainen.com/service/employment/migration-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ee-platon-moving",
+    "name": "Platon OÜ (moving.ee)",
+    "slug": "platon-moving",
+    "country": "EE",
+    "city": "Tallinn",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Tallinn moving company running a dedicated corporate relocation division for business clients moving staff domestically and abroad.",
+    "contact": {
+      "phone": [
+        "+372 58 000 626"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@moving.ee"
+      ],
+      "website": "https://moving.ee/en/corporate-relocation/",
+      "contact_form_url": "",
+      "address": {
+        "street": "Astangu tn 66-25",
+        "postal_code": "13519",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "E-L 8.00-19.00",
+    "source": "web_research",
+    "source_url": "https://moving.ee/en/corporate-relocation/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
   }
 ]
