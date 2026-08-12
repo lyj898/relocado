@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import CompanyListItem from '../../components/CompanyListItem.astro';
 import {
   COUNTRIES,
   COUNTRY_LABELS,
@@ -12,7 +13,7 @@ import {
   isOriginCountry,
   type CountryCode,
 } from '../../lib/constants';
-import { getCompaniesByCity, countByCategory } from '../../lib/companies';
+import { getCompaniesByCity, getCompaniesByCountry, countByCategory } from '../../lib/companies';
 
 export function getStaticPaths() {
   return COUNTRIES.map((code) => ({ params: { country: COUNTRY_SLUGS[code] } }));
@@ -26,21 +27,29 @@ const countryLabel = COUNTRY_LABELS[countryCode];
 const cities = CITIES[countryCode];
 const origin = isOriginCountry(countryCode);
 
-// Single-city countries show the category grid directly; multi-city countries show a city selector.
-const soleCity = cities.length === 1 ? cities[0] : null;
+// Origin countries: one category (corporate_mobility) spread across many cities — show a flat list.
+const originList = origin
+  ? getCompaniesByCountry(countryCode)
+      .filter((c) => c.categories.includes('corporate_mobility'))
+      .sort((a, b) => a.city.localeCompare(b.city) || a.name.localeCompare(b.name))
+  : [];
+
+// Destination countries: single-city ones show the category grid directly; multi-city show a city selector.
+const soleCity = !origin && cities.length === 1 ? cities[0] : null;
 const soleCityList = soleCity ? getCompaniesByCity(countryCode, soleCity.slug) : [];
-const cityCounts = cities.map((city) => ({
-  ...city,
-  count: getCompaniesByCity(countryCode, city.slug).length,
-}));
+const cityCounts = !origin
+  ? cities.map((city) => ({ ...city, count: getCompaniesByCity(countryCode, city.slug).length }))
+  : [];
 ---
 <BaseLayout
-  title={soleCity
-    ? `Relocation Services in ${countryLabel} | Relocado`
-    : `Relocation Services in ${countryLabel} | Relocado`}
+  title={
+    origin
+      ? `Corporate Mobility Providers in ${countryLabel} | Relocado`
+      : `Relocation Services in ${countryLabel} | Relocado`
+  }
   description={
     origin
-      ? `Corporate mobility and global relocation providers in ${countryLabel} that help employees move to Singapore.`
+      ? `${originList.length} corporate mobility and global relocation providers in ${countryLabel} that help employers move employees to Singapore.`
       : `Browse movers, visa consultants, real estate agents, and other relocation service providers in ${countryLabel}.`
   }
 >
@@ -54,7 +63,7 @@ const cityCounts = cities.map((city) => ({
       <h1>{origin ? `Corporate mobility providers in ${countryLabel}` : `Relocation services in ${countryLabel}`}</h1>
       <p class="lede">
         {origin
-          ? `Companies based in ${countryLabel} that manage corporate relocation and global mobility programs for employees moving to Singapore.`
+          ? `${originList.length} companies based in ${countryLabel} that manage corporate relocation and global mobility programs for employees moving to Singapore.`
           : soleCity
             ? `${soleCityList.length} providers listed across ${CATEGORIES.length} categories.`
             : `Choose a city to see providers listed there.`}
@@ -64,7 +73,22 @@ const cityCounts = cities.map((city) => ({
 
   <section class="section">
     <div class="wrap">
-      {soleCity ? (
+      {origin ? (
+        originList.length > 0 ? (
+          <div class="company-list">
+            {originList.map((company) => (
+              <CompanyListItem
+                company={company}
+                href={`/${countrySlug}/${cities.find((c) => c.label === company.city)?.slug}/corporate_mobility/${company.slug}/`}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">
+            <p>No corporate mobility providers listed in {countryLabel} yet.</p>
+          </div>
+        )
+      ) : soleCity ? (
         <div class="grid-3">
           {CATEGORIES.map((cat) => (
             <a class="card" href={`/${countrySlug}/${soleCity.slug}/${cat}/`}>

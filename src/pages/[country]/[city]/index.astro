@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import CompanyListItem from '../../../components/CompanyListItem.astro';
 import {
   COUNTRIES,
   COUNTRY_LABELS,
@@ -9,6 +10,7 @@ import {
   CATEGORIES,
   CATEGORY_LABELS,
   CATEGORY_DESCRIPTIONS,
+  isOriginCountry,
   type CountryCode,
 } from '../../../lib/constants';
 import { getCompaniesByCity, countByCategory } from '../../../lib/companies';
@@ -28,10 +30,20 @@ const countryCode = (COUNTRIES as readonly string[]).find(
 const countryLabel = COUNTRY_LABELS[countryCode];
 const cityInfo = CITIES[countryCode].find((c) => c.slug === citySlug)!;
 const list = getCompaniesByCity(countryCode, citySlug as string);
+const origin = isOriginCountry(countryCode);
+const corporateMobilityList = list.filter((c) => c.categories.includes('corporate_mobility'));
 ---
 <BaseLayout
-  title={`Relocation Services in ${cityInfo.label} | Relocado`}
-  description={`Browse relocation service providers in ${cityInfo.label}, ${countryLabel}.`}
+  title={
+    origin
+      ? `Corporate Mobility Providers in ${cityInfo.label} | Relocado`
+      : `Relocation Services in ${cityInfo.label} | Relocado`
+  }
+  description={
+    origin
+      ? `${corporateMobilityList.length} corporate mobility providers in ${cityInfo.label}, ${countryLabel}, that help employers relocate staff to Singapore.`
+      : `Browse relocation service providers in ${cityInfo.label}, ${countryLabel}.`
+  }
 >
   <div class="wrap">
     <Breadcrumbs items={[
@@ -44,24 +56,42 @@ const list = getCompaniesByCity(countryCode, citySlug as string);
   <div class="page-header">
     <div class="wrap">
       <span class="kicker">{cityInfo.label}, {countryLabel}</span>
-      <h1>Relocation services in {cityInfo.label}</h1>
-      <p class="lede">{list.length} providers listed across {CATEGORIES.length} categories.</p>
+      <h1>{origin ? `Corporate mobility providers in ${cityInfo.label}` : `Relocation services in ${cityInfo.label}`}</h1>
+      <p class="lede">
+        {origin
+          ? `${corporateMobilityList.length} providers managing corporate relocations to Singapore from ${cityInfo.label}.`
+          : `${list.length} providers listed across ${CATEGORIES.length} categories.`}
+      </p>
     </div>
   </div>
 
   <section class="section">
     <div class="wrap">
-      <div class="grid-3">
-        {CATEGORIES.map((cat) => (
-          <a class="card" href={`/${countrySlug}/${citySlug}/${cat}/`}>
-            <div>
-              <h3>{CATEGORY_LABELS[cat]}</h3>
-              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
-            </div>
-            <div class="cta">{countByCategory(list, cat)} providers →</div>
-          </a>
-        ))}
-      </div>
+      {origin ? (
+        corporateMobilityList.length > 0 ? (
+          <div class="company-list">
+            {corporateMobilityList.map((company) => (
+              <CompanyListItem company={company} href={`/${countrySlug}/${citySlug}/corporate_mobility/${company.slug}/`} />
+            ))}
+          </div>
+        ) : (
+          <div class="empty-state">
+            <p>No corporate mobility providers listed in {cityInfo.label} yet.</p>
+          </div>
+        )
+      ) : (
+        <div class="grid-3">
+          {CATEGORIES.map((cat) => (
+            <a class="card" href={`/${countrySlug}/${citySlug}/${cat}/`}>
+              <div>
+                <h3>{CATEGORY_LABELS[cat]}</h3>
+                <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
+              </div>
+              <div class="cta">{countByCategory(list, cat)} providers →</div>
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 </BaseLayout>

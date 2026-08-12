@@ -1,21 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CATEGORIES, CATEGORY_LABELS, CATEGORY_DESCRIPTIONS, ORIGIN_COUNTRIES, COUNTRY_LABELS, COUNTRY_SLUGS } from '../lib/constants';
+import { COUNTRIES, COUNTRY_LABELS, COUNTRY_SLUGS, isOriginCountry } from '../lib/constants';
 import { companies } from '../lib/companies';
 
-const sgCount = companies.filter((c) => c.country === 'SG').length;
-const idCount = companies.filter((c) => c.country === 'ID').length;
-const featured = CATEGORIES.slice(0, 6);
-const originCounts = ORIGIN_COUNTRIES.map((code) => ({
+const sgCorporateMobility = companies.filter(
+  (c) => c.country === 'SG' && c.categories.includes('corporate_mobility')
+).length;
+
+const countryCounts = COUNTRIES.map((code) => ({
   code,
   label: COUNTRY_LABELS[code],
   slug: COUNTRY_SLUGS[code],
-  count: companies.filter((c) => c.country === code).length,
-}));
+  origin: isOriginCountry(code),
+  count: companies.filter((c) => c.country === code && c.categories.includes('corporate_mobility')).length,
+})).filter((c) => c.code !== 'ID');
+
+const totalProviders = countryCounts.reduce((sum, c) => sum + c.count, 0);
 ---
 <BaseLayout
-  title="Relocado — Find relocation services in Singapore & Indonesia"
-  description="A directory of movers, visa consultants, real estate agents, and other relocation services for people moving to Singapore and Indonesia."
+  title="Relocado — Corporate Mobility Providers for Relocating to Singapore"
+  description="Find corporate global mobility and relocation management providers — in Singapore and in your home country — to manage your move to Singapore."
 >
   <style>
     .hero {
@@ -36,43 +40,44 @@ const originCounts = ORIGIN_COUNTRIES.map((code) => ({
       font-size: clamp(2.4rem, 5vw, 3.8rem);
       line-height: 1.08;
       font-weight: 600;
-      max-width: 760px;
+      max-width: 800px;
       letter-spacing: -0.01em;
     }
     .hero p.lede {
       margin-top: 22px;
       font-size: 1.15rem;
       color: var(--color-ink-soft);
-      max-width: 560px;
+      max-width: 600px;
     }
-    .country-grid {
+    .hero-stat {
+      margin-top: 28px;
+      font-size: 0.95rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+    .destination-card {
       margin-top: 44px;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      max-width: 760px;
+      max-width: 420px;
     }
-    .country-card .flag-label {
+    .destination-card .flag-label {
       font-size: 0.78rem;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--color-ink-soft);
     }
-    .country-card h3 {
+    .destination-card h3 {
       font-family: var(--font-display);
       font-size: 1.7rem;
       margin-top: 6px;
       font-weight: 500;
     }
-    .country-card .count {
+    .destination-card .count {
       margin-top: 14px;
       font-size: 0.9rem;
       color: var(--color-primary);
       font-weight: 500;
     }
-    @media (max-width: 720px) {
-      .country-grid { grid-template-columns: 1fr; }
-    }
+
     .origin-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -84,43 +89,63 @@ const originCounts = ORIGIN_COUNTRIES.map((code) => ({
     @media (max-width: 900px) {
       .origin-grid { grid-template-columns: repeat(2, 1fr); }
     }
+
+    .how-it-works {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .how-it-works .step .num {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--color-accent);
+    }
+    .how-it-works .step h3 {
+      font-size: 1.05rem;
+      margin-top: 10px;
+    }
+    .how-it-works .step p {
+      margin-top: 8px;
+      font-size: 0.92rem;
+      color: var(--color-ink-soft);
+    }
+    @media (max-width: 720px) {
+      .how-it-works { grid-template-columns: 1fr; }
+    }
   </style>
 
   <section class="hero">
     <div class="wrap">
-      <span class="hero-kicker">Relocation Directory · Southeast Asia</span>
-      <h1>Everything you need to move to Singapore or Indonesia, in one place.</h1>
-      <p class="lede">Movers, visa consultants, real estate agents, and more — researched and organised by category and city, so you don't have to start from a blank search.</p>
+      <span class="hero-kicker">Corporate Mobility Directory · Destination: Singapore</span>
+      <h1>Find the right corporate mobility partner to move your team to Singapore.</h1>
+      <p class="lede">
+        Relocado is a directory of global mobility and relocation management companies — researched from their own
+        websites, organised by country — for HR and mobility teams (and the employees they're relocating) planning a
+        move to Singapore.
+      </p>
+      <p class="hero-stat">{totalProviders} corporate mobility providers listed across {countryCounts.length} countries.</p>
 
-      <div class="country-grid">
-        <a class="bordered-card country-card" href="/sg/">
-          <div class="flag-label">Start here</div>
-          <h3>Singapore</h3>
-          <div class="count">{sgCount} listed providers</div>
-        </a>
-        <a class="bordered-card country-card" href="/id/">
-          <div class="flag-label">Jakarta · Bali</div>
-          <h3>Indonesia</h3>
-          <div class="count">{idCount} listed providers</div>
-        </a>
-      </div>
+      <a class="bordered-card destination-card" href="/sg/">
+        <div class="flag-label">Destination</div>
+        <h3>Providers based in Singapore</h3>
+        <div class="count">{sgCorporateMobility} corporate mobility providers →</div>
+      </a>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="find-provider">
     <div class="wrap">
       <div class="section-head">
-        <h2>Browse by category</h2>
-        <a href="/sg/">See all categories</a>
+        <h2>Find a provider in your home country</h2>
       </div>
-      <div class="grid-3">
-        {featured.map((cat) => (
-          <a class="card" href={`/sg/singapore/${cat}/`}>
-            <div>
-              <h3>{CATEGORY_LABELS[cat]}</h3>
-              <p>{CATEGORY_DESCRIPTIONS[cat]}</p>
-            </div>
-            <div class="cta">View listings →</div>
+      <p style="margin-top: -20px; margin-bottom: 32px; color: var(--color-ink-soft); max-width: 640px;">
+        Companies based where your employees are moving from, with experience managing relocations into Singapore.
+      </p>
+      <div class="origin-grid">
+        {countryCounts.filter((c) => c.origin).map((c) => (
+          <a class="card origin-card" href={`/${c.slug}/`}>
+            <h3>{c.label}</h3>
+            <div class="cta">{c.count} providers →</div>
           </a>
         ))}
       </div>
@@ -130,18 +155,24 @@ const originCounts = ORIGIN_COUNTRIES.map((code) => ({
   <section class="section" style="border-top: 1px solid var(--color-line);">
     <div class="wrap">
       <div class="section-head">
-        <h2>Moving to Singapore for work?</h2>
+        <h2>How Relocado works</h2>
       </div>
-      <p style="margin-top: -20px; margin-bottom: 32px; color: var(--color-ink-soft); max-width: 620px;">
-        Find a corporate mobility provider based in your home country that specialises in managing relocations to Singapore.
-      </p>
-      <div class="origin-grid">
-        {originCounts.map((c) => (
-          <a class="card origin-card" href={`/${c.slug}/`}>
-            <h3>{c.label}</h3>
-            <div class="cta">{c.count} providers →</div>
-          </a>
-        ))}
+      <div class="how-it-works">
+        <div class="step">
+          <div class="num">01</div>
+          <h3>Pick a country</h3>
+          <p>Browse providers based in Singapore, or in the country your employee is relocating from.</p>
+        </div>
+        <div class="step">
+          <div class="num">02</div>
+          <h3>Compare providers</h3>
+          <p>Each listing has verified contact details, sourced directly from the company's own website.</p>
+        </div>
+        <div class="step">
+          <div class="num">03</div>
+          <h3>Reach out directly</h3>
+          <p>Contact the provider yourself — phone, email, or their contact form. No middleman, no lead forms.</p>
+        </div>
       </div>
     </div>
   </section>
