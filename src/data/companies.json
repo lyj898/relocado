@@ -11156,5 +11156,437 @@
     "status": "unclaimed",
     "verified_at": "2026-08-12",
     "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-auris-relocation",
+    "name": "Auris Relocation AG",
+    "slug": "auris-relocation",
+    "country": "CH",
+    "city": "Zurich",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Swiss-wide advisory firm handling immigration, cross-cultural training and global mobility for relocating employees.",
+    "contact": {
+      "phone": [
+        "+41 44 808 60 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@aurisrelocation.com"
+      ],
+      "website": "https://www.aurisrelocation.com",
+      "contact_form_url": "https://aurisrelocation.com/en/contact",
+      "address": {
+        "street": "Sternenstrasse 12",
+        "postal_code": "CH-8002",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://aurisrelocation.com/en/contact",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-la-relocation-group",
+    "name": "La Relocation Group AG",
+    "slug": "la-relocation-group",
+    "country": "CH",
+    "city": "Zurich",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Corporate and private relocation firm coordinating permits, housing and school placement near Zurich.",
+    "contact": {
+      "phone": [
+        "+41 79 46 40 051"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@larelocationgroup.com"
+      ],
+      "website": "https://larelocationgroup.com",
+      "contact_form_url": "https://larelocationgroup.com/contact-us/",
+      "address": {
+        "street": "The Circle 6-8, Spaces The Circle",
+        "postal_code": "8058",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/la-relocation-group",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/larelocationgroup"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://larelocationgroup.com/zurich/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-mw-relo",
+    "name": "MW Relo",
+    "slug": "mw-relo",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Swiss global relocation specialist covering moving, permits and destination services for corporate and diplomatic clients.",
+    "contact": {
+      "phone": [
+        "+41 799 39 39 39"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@mwrelo.com"
+      ],
+      "website": "https://mwrelo.com",
+      "contact_form_url": "https://mwrelo.com/contact-us/",
+      "address": {
+        "street": "Av. des Communes-Réunies 51",
+        "postal_code": "1212",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/mwrelo/",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/MWRelo"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://mwrelo.com/contact-us/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-swiss-relocation-services",
+    "name": "Swiss Relocation Services GmbH",
+    "slug": "swiss-relocation-services",
+    "country": "CH",
+    "city": "Regensdorf",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Zurich-region relocation firm since 2005 offering housing, permit and school-search support for transferees.",
+    "contact": {
+      "phone": [
+        "+41 79 465 48 55"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://swiss-relocation.ch",
+      "contact_form_url": "https://swiss-relocation.ch/en/contact/",
+      "address": {
+        "street": "Hubackerstrasse 31",
+        "postal_code": "CH-8105",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": "https://www.facebook.com/SwissRelocationServicesGmbh/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://swiss-relocation.ch/en/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-pelichet-nlc",
+    "name": "Pelichet NLC SA",
+    "slug": "pelichet-nlc",
+    "country": "CH",
+    "city": "Vernier",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Geneva mobility provider since 1891 covering employee removals, office relocation and archiving.",
+    "contact": {
+      "phone": [
+        "+41 22 827 80 00"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@pelichet.ch"
+      ],
+      "website": "https://www.pelichet.ch",
+      "contact_form_url": "https://www.pelichet.ch/en/request-a-quote/",
+      "address": {
+        "street": "Chemin de Grenet 25",
+        "postal_code": "CH 1214",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/pelichet",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.pelichet.ch/en/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-global-relocation",
+    "name": "Global Relocation SARL",
+    "slug": "global-relocation",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Boutique Lake Geneva agency since 2013 sourcing corporate and private housing across the region.",
+    "contact": {
+      "phone": [
+        "+41 22 700 07 83"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.globalrelocation.ch",
+      "contact_form_url": "https://www.globalrelocation.ch/en/contact-en",
+      "address": {
+        "street": "27, Rue du Nant",
+        "postal_code": "1207",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/global-relocation-sarl/",
+        "instagram": null,
+        "facebook": "https://www.facebook.com/globalrelocationgeneve/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.globalrelocation.ch/en/home-english/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-lodge-relocation",
+    "name": "Lodge Relocation SA",
+    "slug": "lodge-relocation",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Nationwide mobility firm since 1994 with offices in Geneva, Lausanne, Zug and Zurich serving corporate clients.",
+    "contact": {
+      "phone": [
+        "+41 22 740 14 94"
+      ],
+      "whatsapp": "",
+      "email": [],
+      "website": "https://www.lodge-relocation.com",
+      "contact_form_url": "https://www.lodge-relocation.com/en/contact/",
+      "address": {
+        "street": "Rue de la Scie 4",
+        "postal_code": "CH-1207",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/lodge-services-relocation/",
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://www.lodge-relocation.com/en/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-rg-relocation-genevoise",
+    "name": "RG Relocation Genevoise SA",
+    "slug": "rg-relocation-genevoise",
+    "country": "CH",
+    "city": "Geneva",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Geneva relocation agency offering housing search, banking, schooling and concierge support for employers.",
+    "contact": {
+      "phone": [
+        "+41 22 715 17 48"
+      ],
+      "whatsapp": "+41783371528",
+      "email": [],
+      "website": "https://relocation-genevoise.ch",
+      "contact_form_url": "https://relocation-genevoise.ch/call-me-back",
+      "address": {
+        "street": "Rue des Alpes 5",
+        "postal_code": "1201",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "https://www.linkedin.com/company/relocation-genevoise",
+        "instagram": "https://www.instagram.com/relocationgenevoise/",
+        "facebook": "https://www.facebook.com/people/Relocation-Genevoise/61566756459931/"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://relocation-genevoise.ch/entreprises",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-switzerland-relo",
+    "name": "Switzerland Relo GmbH",
+    "slug": "switzerland-relo",
+    "country": "CH",
+    "city": "Schöfflisdorf",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "EuRA-member destination services provider positioned as an alternative to large international relocation brands.",
+    "contact": {
+      "phone": [
+        "+41 44 500 41 54"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@switzerlandrelo.com"
+      ],
+      "website": "https://switzerlandrelo.com",
+      "contact_form_url": "https://switzerlandrelo.com/contact/",
+      "address": {
+        "street": "Chüchelacherstrasse 7",
+        "postal_code": "CH-8165",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": "http://www.linkedin.com/company/switzerland-relo",
+        "instagram": null,
+        "facebook": "http://www.facebook.com/SwitzerlandRelo"
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://switzerlandrelo.com/contact/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
+  },
+  {
+    "id": "ch-sgier-partner",
+    "name": "Sgier + Partner GmbH",
+    "slug": "sgier-partner",
+    "country": "CH",
+    "city": "Zurich",
+    "categories": [
+      "corporate_mobility"
+    ],
+    "description": "Zurich immigration specialist managing work permits and relocation for over 100 corporate HR departments.",
+    "contact": {
+      "phone": [
+        "+41 44 228 78 90"
+      ],
+      "whatsapp": "",
+      "email": [
+        "info@sgierpartner.ch"
+      ],
+      "website": "https://sgierpartner.ch",
+      "contact_form_url": "https://sgierpartner.ch/en/contact/",
+      "address": {
+        "street": "Molkenstrasse 15",
+        "postal_code": "8004",
+        "lat": null,
+        "lng": null
+      },
+      "social": {
+        "linkedin": null,
+        "instagram": null,
+        "facebook": null
+      },
+      "contact_person": {
+        "name": null,
+        "role": null
+      }
+    },
+    "languages_spoken": [],
+    "operating_hours": "",
+    "source": "web_research",
+    "source_url": "https://sgierpartner.ch/en/company/",
+    "status": "unclaimed",
+    "verified_at": "2026-08-12",
+    "created_at": "2026-08-12"
   }
 ]
