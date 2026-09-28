@@ -1,51 +1,88 @@
 ---
 import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
+import { SITE, HUBS, HUB_ORDER, hubUrl, DIRECTORY_URL } from '../lib/site';
+import { assertSeo } from '../lib/seo';
+import { baseGraph } from '../lib/schema';
 
 interface Props {
   title: string;
   description: string;
   canonicalPath?: string;
+  ogType?: 'website' | 'article';
+  /** Extra JSON-LD nodes for this page; merged into one @graph with the Organization and WebSite. */
+  schema?: Record<string, unknown>[];
+  noindex?: boolean;
 }
 
-const { title, description, canonicalPath } = Astro.props;
-const canonicalURL = canonicalPath
-  ? new URL(canonicalPath, Astro.site)
-  : new URL(Astro.url.pathname, Astro.site);
+const { title, description, canonicalPath, ogType = 'website', schema = [], noindex = false } = Astro.props;
+assertSeo(title, description, Astro.url.pathname);
+
+const canonicalURL = new URL(canonicalPath ?? Astro.url.pathname, Astro.site).href;
+const graph = { '@context': 'https://schema.org', '@graph': [...baseGraph(), ...schema] };
+const path = Astro.url.pathname;
+const year = new Date().getFullYear();
 ---
-<html lang="en">
+<html lang="en-SG">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title}</title>
   <meta name="description" content={description} />
-  <link rel="canonical" href={canonicalURL} />
+  {noindex ? <meta name="robots" content="noindex" /> : <link rel="canonical" href={canonicalURL} />}
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:locale" content="en_SG" />
+  <meta name="twitter:card" content="summary" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json" set:html={JSON.stringify(graph)} />
+  <Analytics />
   <slot name="head" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site">
     <div class="wrap site-header-row">
       <a class="logo" href="/">Reloc<span>a</span>do</a>
-      <nav class="site-nav">
-        <a href="/">Browse providers</a>
-        <a href="/sg/">Singapore</a>
-        <a href="/guides/">Guides</a>
+      <nav class="site-nav" aria-label="Main">
+        {HUB_ORDER.map((key) => (
+          <a href={hubUrl(key)} aria-current={path.startsWith(hubUrl(key)) ? 'page' : undefined}>{HUBS[key].navLabel}</a>
+        ))}
+        <a href={DIRECTORY_URL} aria-current={path.startsWith(DIRECTORY_URL) ? 'page' : undefined}>Directory</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <slot />
   </main>
 
   <footer class="site">
-    <div class="wrap footer-row">
-      <span>&copy; 2026 Relocado. Listings are researched independently and may be unclaimed by the business.</span>
-      <a href="mailto:hello@relocado.asia">Claim a listing / contact us</a>
+    <div class="wrap footer-grid">
+      <div class="footer-about">
+        <a class="logo" href="/">Reloc<span>a</span>do</a>
+        <p>
+          Relocado is run by the team behind Junk to Clear, HomeToMoved and HomeToClean. We link to them
+          only where a guide calls for that service. The directory lists other companies, and nobody pays
+          to appear in it. <a href="/about/">How Relocado works</a>
+        </p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        {HUB_ORDER.map((key) => <a href={hubUrl(key)}>{HUBS[key].navLabel}</a>)}
+        <a href="/leaving-singapore/planner/">Leaving Singapore planner</a>
+        <a href={DIRECTORY_URL}>Directory</a>
+        <a href="/guides/">All guides</a>
+        <a href="/about/">About</a>
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+      </nav>
     </div>
+    <div class="wrap footer-base">&copy; {year} Relocado. Guides are general information, not legal or tax advice.</div>
   </footer>
 </body>
 </html>

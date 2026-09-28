@@ -1,28 +1,38 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import { HUBS, HUB_ORDER, hubUrl } from '../../lib/site';
+import { allGuides, urlFor } from '../../lib/guides';
+
+const guides = await allGuides();
 ---
 <BaseLayout
-  title="Relocation Guides | Relocado"
-  description="Guides for relocating to Singapore — coming soon."
+  title="All Guides to Moving In or Out of Singapore | Relocado"
+  description="Every Relocado guide in one place: leaving Singapore, moving to Singapore or moving back, and the checklist for HR and relocation teams."
 >
-  <div class="wrap">
-    <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'Guides' }]} />
-  </div>
-
   <div class="page-header">
     <div class="wrap">
+      <Breadcrumbs items={[{ label: 'Home', href: '/' }, { label: 'All guides' }]} />
       <span class="kicker">Guides</span>
-      <h1>Relocation guides</h1>
-      <p class="lede">In-depth guides to moving to Singapore are coming soon.</p>
+      <h1>All guides</h1>
+      <p class="lede">Every guide, grouped by the kind of move.</p>
     </div>
   </div>
 
-  <section class="section">
-    <div class="wrap">
-      <div class="empty-state">
-        <p>No guides published yet. Check back soon.</p>
+  {HUB_ORDER.map((key) => (
+    <section class="section section-tight">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>{HUBS[key].title}</h2>
+          <a href={hubUrl(key)}>Open this section</a>
+        </div>
+        <div class="guide-list">
+          {guides.filter((g) => g.data.hub === key).map((g) => (
+            <GuideCard href={urlFor(g)} title={g.data.title} summary={g.data.summary} />
+          ))}
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 </BaseLayout>

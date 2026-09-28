@@ -1,0 +1,19 @@
+---
+interface Props {
+  href: string;
+  title: string;
+  summary: string;
+  kicker?: string;
+  step?: number;
+}
+const { href, title, summary, kicker, step } = Astro.props;
+---
+<a class="guide-card" href={href}>
+  {step !== undefined && <span class="guide-step" aria-hidden="true">{String(step).padStart(2, '0')}</span>}
+  <div class="guide-card-body">
+    {kicker && <span class="guide-kicker">{kicker}</span>}
+    <h3>{title}</h3>
+    <p>{summary}</p>
+    <span class="guide-read">Read the guide →</span>
+  </div>
+</a>

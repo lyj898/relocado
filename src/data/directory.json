@@ -1,0 +1,731 @@
+[
+  {
+    "name": "Crown World Mobility",
+    "slug": "crown-world-mobility",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Manages international relocations for employers moving staff into or out of Singapore, including destination services, visa and work permit support, and moves through Crown's in-house movers.",
+    "website": "https://www.crownworldmobility.com",
+    "phone": [
+      "+65 6861 6818"
+    ],
+    "email": [],
+    "address": "3 Toh Tuck Link, Singapore 596228",
+    "source_url": "https://www.crownworldmobility.com/contact/locations/singapore/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Santa Fe Relocation",
+    "slug": "santa-fe-relocation",
+    "types": [
+      "international-movers",
+      "relocation-management"
+    ],
+    "description": "Moves household goods door to door between Singapore and other countries and, for employers, provides assignment management, corporate immigration and destination services such as area orientation.",
+    "website": "https://www.santaferelo.com",
+    "phone": [
+      "+65 6398 8588"
+    ],
+    "email": [
+      "singapore@santaferelo.com"
+    ],
+    "address": "2 Bukit Merah Central, #09-04, Singapore 159835",
+    "source_url": "https://www.santaferelo.com/contact/our-offices/singapore-singapore/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Asian Tigers",
+    "slug": "asian-tigers-group",
+    "types": [
+      "international-movers",
+      "relocation-management"
+    ],
+    "description": "Packs and ships household goods to and from Singapore, runs local moves and storage, and offers relocation services including visas, home search, school search and temporary living.",
+    "website": "https://asiantigersgroup.com/singapore/",
+    "phone": [
+      "+65 6261 8116",
+      "+65 8761 5921"
+    ],
+    "email": [
+      "connect@asiantigers-singapore.com"
+    ],
+    "address": "6 Lok Yang Way, Singapore 628625",
+    "source_url": "https://asiantigersgroup.com/singapore/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Management Mobility Consulting",
+    "slug": "management-mobility-consulting",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Singapore relocation consultancy offering orientation, school search, housing help, work pass and immigration services, and departure support for assignees and their employers.",
+    "website": "https://www.relocationsingapore.com",
+    "phone": [
+      "+65 9775 7401"
+    ],
+    "email": [
+      "info@relocationsingapore.com"
+    ],
+    "address": "50 Raffles Place, Level 19, Singapore Land Tower, Singapore 048623",
+    "source_url": "https://www.relocationsingapore.com/contact.html",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "K2 Group",
+    "slug": "k2-group",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Global mobility company with a Singapore office that manages relocations for employers, covering household goods moves, destination services, pet relocation and immigration support for assignees.",
+    "website": "https://www.k2group.com",
+    "phone": [
+      "+65 6415 6850"
+    ],
+    "email": [
+      "hello@k2group.com"
+    ],
+    "address": "",
+    "source_url": "https://www.k2group.com/contact",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Asian Mobility Services",
+    "slug": "asian-mobility-services",
+    "types": [
+      "international-movers",
+      "relocation-management"
+    ],
+    "description": "Singapore firm that moves household goods internationally and locally, and helps relocating employees with home search, school search, immigration services and local culture training.",
+    "website": "https://asianmobilityservices.com/",
+    "phone": [
+      "+65 9230 0586"
+    ],
+    "email": [
+      "rates@asianmobilityservices.com"
+    ],
+    "address": "60 Paya Lebar Road, #08-10 Paya Lebar Square, Singapore 409051",
+    "source_url": "https://asianmobilityservices.com/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Classic Moving",
+    "slug": "classic-moving",
+    "types": [
+      "international-movers",
+      "relocation-management",
+      "pet-relocation"
+    ],
+    "description": "Singapore mover, founded in 2012, that packs and ships household goods overseas, offers a shared-container service, and arranges pet relocation and destination services for employers.",
+    "website": "https://classicmoving.asia/",
+    "phone": [
+      "+65 6515 4430",
+      "+65 9022 0760"
+    ],
+    "email": [
+      "sales@classicmoving.asia"
+    ],
+    "address": "24 Penjuru Road, #06-01, Singapore 609128",
+    "source_url": "https://classicmoving.asia/contact-us",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Smart Relocators",
+    "slug": "smart-relocators",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Owner-operated Singapore mover, operating since 2011, that packs household goods, prepares customs documents and ships to overseas destinations, alongside local, office and IT moves.",
+    "website": "https://smartrelocators.sg/",
+    "phone": [
+      "+65 6464 7452"
+    ],
+    "email": [
+      "admin@smartrelocators.sg"
+    ],
+    "address": "5 Sungei Kadut Street 2, #08-05, JTC Trendspace, Singapore 729227",
+    "source_url": "https://smartrelocators.sg/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "APAC Relocation",
+    "slug": "apac-relocation",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover that ships full or partial households, furniture and boxes from Singapore to overseas destinations door to door, and also handles local and office moves.",
+    "website": "https://apacrelocation.com/",
+    "phone": [
+      "+65 6520 1914",
+      "+65 9634 3448"
+    ],
+    "email": [
+      "contact@apacrelocation.com"
+    ],
+    "address": "2 Ang Mo Kio Street 64, #02-03A, Econ Building, Singapore 569084",
+    "source_url": "https://apacrelocation.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "IMC Group (GlobalMobility.sg)",
+    "slug": "imc-global-mobility",
+    "types": [
+      "immigration-corporate"
+    ],
+    "description": "Singapore advisory team handling Employment Pass, S Pass, Dependant's Pass and PR applications, plus individual income tax filing and payroll tax compliance for internationally mobile employees.",
+    "website": "https://globalmobility.sg/",
+    "phone": [
+      "+65 8138 5089"
+    ],
+    "email": [],
+    "address": "143 Cecil Street, #25-04B GB Building, Singapore 069542",
+    "source_url": "https://intuitconsultancy.com/contact/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "LandPLUS Group",
+    "slug": "landplus-group",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Singapore destination services firm offering home search, school search, area orientation, settling-in help, tenancy support, work visa guidance and departure services such as lease termination.",
+    "website": "https://landplusgroup.com/",
+    "phone": [
+      "+65 6392 0095"
+    ],
+    "email": [
+      "enquiries@landplusgroup.com",
+      "main@landplusgroup.com"
+    ],
+    "address": "883 North Bridge Road, #07-04, Southbank, Singapore 198785",
+    "source_url": "https://landplusgroup.com/contact/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Geometra Worldwide Movers",
+    "slug": "geometra-worldwide-movers",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover offering international door-to-door relocation, local household moves and commercial relocation, with its main office in Ubi and a separate warehouse.",
+    "website": "https://www.geometramovers.com.sg/",
+    "phone": [
+      "+65 6841 7880"
+    ],
+    "email": [
+      "enquiry@geometramovers.com.sg"
+    ],
+    "address": "71 Ubi Crescent, #05-01 Excalibur Center, Singapore 408571",
+    "source_url": "https://www.geometramovers.com.sg/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Shalom International Movers",
+    "slug": "shalom-international-movers",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover operating since 1982 that ships household goods overseas by sea freight with packing and crating, and also handles residential, commercial and piano moves locally.",
+    "website": "https://shalom.com.sg/",
+    "phone": [
+      "+65 9233 8117",
+      "+65 9233 0877"
+    ],
+    "email": [
+      "admin@shalom.com.sg"
+    ],
+    "address": "10 Kaki Bukit Road 1, #01-25 KB Industrial Building, Singapore 416175",
+    "source_url": "https://shalom.com.sg/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Astro Worldwide Movers",
+    "slug": "astro-worldwide-movers",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore international mover offering pre-move consultation, packing, customs clearance, storage and delivery for household moves, plus air freight and car shipping.",
+    "website": "https://astro-movers.com/",
+    "phone": [
+      "+65 6791 2488",
+      "+65 8366 8868"
+    ],
+    "email": [],
+    "address": "7 Temasek Boulevard, #12-07 Suntec Tower One, Singapore 038987",
+    "source_url": "https://astro-movers.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "SIR Move Services",
+    "slug": "sir-move-services",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover, established in 2006, handling international door-to-door moves, local residential and office moves, transit insurance and pet moving, with a sister office in Kuala Lumpur.",
+    "website": "https://www.sirmove.com/",
+    "phone": [
+      "+65 6534 7345"
+    ],
+    "email": [
+      "talk2us@sirmove.com"
+    ],
+    "address": "10 Ubi Crescent, #03-06, Ubi Techpark, Singapore 408564",
+    "source_url": "https://www.sirmove.com/contact-us",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Corporate Services Singapore",
+    "slug": "corporate-services-singapore",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Singapore corporate services firm that handles company incorporation, Employment Pass and S Pass applications, school search and partner-run moving for people and businesses relocating to Singapore.",
+    "website": "https://www.corporateservicessingapore.com/",
+    "phone": [
+      "+65 6602 8286",
+      "+65 8838 2225"
+    ],
+    "email": [
+      "info@corporateservicessingapore.com"
+    ],
+    "address": "65 Chulia Street, #46-01 OCBC Centre, Singapore 049513",
+    "source_url": "https://www.corporateservicessingapore.com/relocation-services-singapore/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Acclime Singapore",
+    "slug": "acclime-singapore",
+    "types": [
+      "immigration-corporate"
+    ],
+    "description": "Singapore corporate services firm that manages Employment Pass, Dependant's Pass and EntrePass applications, individual and corporate tax filing, and payroll for companies relocating staff to Singapore.",
+    "website": "https://singapore.acclime.com/global-mobility/",
+    "phone": [
+      "+65 6372 8778"
+    ],
+    "email": [
+      "infosingapore@acclime.com"
+    ],
+    "address": "9 Raffles Place, #18-21 Republic Plaza II, Singapore 048619",
+    "source_url": "https://singapore.acclime.com/contact/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Relo Network Asia",
+    "slug": "relo-network-asia",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Singapore-headquartered destination services company, formerly Orientations, providing home search, settling-in, school search, visa and immigration, and departure services for employees relocating across Asia.",
+    "website": "https://www.relonetworkasia.com/",
+    "phone": [
+      "+65 9169 9086"
+    ],
+    "email": [
+      "info@relonetworkasia.com"
+    ],
+    "address": "101 Cecil Street, #10-01 Tong Eng Building, Singapore 069533",
+    "source_url": "https://www.relonetworkasia.com/about/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Capstone Mobility Asia",
+    "slug": "capstone-mobility-asia",
+    "types": [
+      "relocation-management",
+      "immigration-corporate"
+    ],
+    "description": "Singapore relocation company offering visa and immigration support, area orientation, home search, school search and temporary living, as stand-alone services or a full package.",
+    "website": "http://www.capstonemobility.asia/",
+    "phone": [
+      "+65 9681 8817"
+    ],
+    "email": [
+      "contactus@capstonemobility.asia"
+    ],
+    "address": "280 Woodlands Industrial Park E5, #09-16 Harvest@Woodlands, Singapore 757322",
+    "source_url": "http://www.capstonemobility.asia/contact-1.html",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "The Family Movers",
+    "slug": "family-movers-singapore",
+    "types": [
+      "international-movers",
+      "relocation-management",
+      "pet-relocation"
+    ],
+    "description": "Singapore mover founded in 1975 that ships household goods internationally, relocates pets, and offers home search, school search and immigration support for employees on assignment.",
+    "website": "https://www.familymovers.com/",
+    "phone": [
+      "+65 6266 5225",
+      "+65 8202 3428"
+    ],
+    "email": [
+      "sales@familymovers.com"
+    ],
+    "address": "24 Penjuru Road, #06-01, Singapore 609128",
+    "source_url": "https://www.familymovers.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Vialto Partners",
+    "slug": "vialto-partners-singapore",
+    "types": [
+      "immigration-corporate"
+    ],
+    "description": "Global mobility firm with a Singapore office advising employers and individuals on visas, immigration compliance and tax for people working across borders.",
+    "website": "https://vialtopartners.com/",
+    "phone": [],
+    "email": [],
+    "address": "2 Central Boulevard, #14-03 West Tower, IOI Central Boulevard Towers, Singapore 018916",
+    "source_url": "https://vialtopartners.com/contact-us",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Seven Seas Worldwide",
+    "slug": "seven-seas-worldwide",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Ships whole-home contents or just boxes and luggage from Singapore to overseas destinations, including a self-pack MoveCube container service, operating from a Singapore depot.",
+    "website": "https://www.sevenseasworldwide.com/en-sg/",
+    "phone": [
+      "8001 0123 10"
+    ],
+    "email": [
+      "customerservice@sevenseasworldwide.com"
+    ],
+    "address": "3 Pioneer Sector 3, #01-02, Singapore 628342",
+    "source_url": "https://www.sevenseasworldwide.com/about-us/global-depot-locations/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Crown Relocations",
+    "slug": "crown-relocations",
+    "types": [
+      "international-movers",
+      "relocation-management"
+    ],
+    "description": "Crown Relocations' Singapore office handles international and local household moves, shared-container shipments and storage, plus work pass support, home search, school search and partner-arranged pet moves.",
+    "website": "https://www.crownrelo.com/singapore/en-sg",
+    "phone": [
+      "+65 6593 7395"
+    ],
+    "email": [
+      "enquiries.sg@crownrelo.com"
+    ],
+    "address": "3 Toh Tuck Link, Singapore 596228",
+    "source_url": "https://www.crownrelo.com/office/singapore",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Allied Moving Services Singapore",
+    "slug": "allied-moving-services-singapore",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Moves household goods between Singapore and other countries, with a relocation consultant, customs and documentation support, plus local moves, storage and excess baggage shipping.",
+    "website": "https://www.allied.com/sg/",
+    "phone": [
+      "+65 6862 4700"
+    ],
+    "email": [
+      "asmequote@allied.com"
+    ],
+    "address": "4 Shenton Way, #29-02 SGX Centre 2, Singapore 068807",
+    "source_url": "https://www.allied.com/sg/contact-us",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "AGS Movers Singapore",
+    "slug": "ags-movers-singapore",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore branch of the AGS Group, established in 2005, handling international and local household removals, office moves, fine art shipping, pet transport and storage.",
+    "website": "https://www.agsmovers.com/branches/asia/singapore/movers-singapore/",
+    "phone": [
+      "+65 6777 1166"
+    ],
+    "email": [],
+    "address": "31 Jurong Port Road, #06-10/11 Jurong Logistics Hub, Singapore 619115",
+    "source_url": "https://www.agsmovers.com/branches/asia/singapore/movers-singapore/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Yamato Transport Singapore",
+    "slug": "yamato-transport-singapore",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Yamato Transport's Singapore company offers full-service international moves covering condo move-out applications, packing, unpacking and furniture set-up, plus a self-pack plan for shipping belongings to Japan.",
+    "website": "https://www.yamatosingapore.com/services/moving/",
+    "phone": [],
+    "email": [],
+    "address": "2 Bukit Merah Central, #08-01, Singapore 159835",
+    "source_url": "https://www.yamatosingapore.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Asiatic International Relocation",
+    "slug": "asiatic-international-relocation",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore international mover shipping full or partial households and small consignments of boxes overseas, with storage, office moves, transit insurance and pet relocation also offered.",
+    "website": "https://www.asiaticrelo.com/",
+    "phone": [
+      "+65 9139 7965"
+    ],
+    "email": [
+      "sales@asiaticrelo.com"
+    ],
+    "address": "138 Market Street, #24-01 CapitaGreen, Singapore 048946",
+    "source_url": "https://www.asiaticrelo.com/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Abroad Relocation",
+    "slug": "abroad-relocation",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover shipping household goods overseas, co-loading containers so customers pay only for the space used, and arranging packing, customs paperwork, inventory and insurance.",
+    "website": "https://abroadrelo.com/",
+    "phone": [
+      "+65 8356 0215",
+      "+65 8649 1858"
+    ],
+    "email": [
+      "contact@abroadrelo.com"
+    ],
+    "address": "1 Yishun Industrial Street 1, #05-34 A'Posh Biz Hub, Singapore 768160",
+    "source_url": "https://abroadrelo.com/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Across International Relocation",
+    "slug": "across-international-relocation",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore international mover offering door-to-door household and office moves with packing, customs documentation, insurance and storage, each move run by a single project manager.",
+    "website": "https://acrossrelo.com/",
+    "phone": [
+      "+65 9892 9492"
+    ],
+    "email": [
+      "contact@acrossrelo.com"
+    ],
+    "address": "8B Admiralty Street, #06-18 8B@Admiralty, Singapore 757440",
+    "source_url": "https://acrossrelo.com/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "CM Relocation",
+    "slug": "cm-relocation",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore international mover that surveys what you plan to ship, compares shipping options and handles door-to-door household moves overseas for private clients and companies.",
+    "website": "https://cmrelocation.com/",
+    "phone": [
+      "+65 6265 7664"
+    ],
+    "email": [
+      "enquiries@cmrelocation.com"
+    ],
+    "address": "25 Bukit Batok Crescent, #08-09 The Elitist, Singapore 658066",
+    "source_url": "https://cmrelocation.com/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Writer Relocations",
+    "slug": "writer-relocations",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Relocation company with offices in India, the UAE and Singapore, handling international household moves, shared-container shipments and office relocations for families and employers.",
+    "website": "https://writerrelocations.com/",
+    "phone": [],
+    "email": [
+      "enquiry@writerrelocations.com"
+    ],
+    "address": "60 Paya Lebar Road, #09-43 Paya Lebar Square, Singapore 409051",
+    "source_url": "https://writerrelocations.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "CYC Movers",
+    "slug": "cyc-movers",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover operating since 2003 that runs door-to-door international moves, including relocations from Malaysia or China into Singapore, alongside house, office and IT relocation.",
+    "website": "https://www.cycmovers.com/",
+    "phone": [
+      "+65 6278 5150"
+    ],
+    "email": [
+      "enquiries@cycmovers.com"
+    ],
+    "address": "21 Pandan Avenue, #05-03, Singapore 609388",
+    "source_url": "https://www.cycmovers.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Vimbox Movers",
+    "slug": "vimbox-movers",
+    "types": [
+      "international-movers"
+    ],
+    "description": "Singapore mover, started in 2012, that ships household goods overseas by sea or air, or by road to Malaysia, handling packing and customs documents with overseas partner movers.",
+    "website": "https://vimboxmovers.sg/international-movers/",
+    "phone": [
+      "+65 9721 6425"
+    ],
+    "email": [
+      "sales@vimboxmovers.sg"
+    ],
+    "address": "47 Yishun Industrial Park A, Singapore 768724",
+    "source_url": "https://vimboxmovers.sg/contact/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Movers Inn",
+    "slug": "movers-inn",
+    "types": [
+      "international-movers",
+      "relocation-management",
+      "pet-relocation"
+    ],
+    "description": "Singapore-based international mover with offices in London and Dubai, offering door-to-door household moves, storage, pet relocation and destination services such as home search and orientation.",
+    "website": "https://moversinn.com/",
+    "phone": [
+      "+65 6950 0616"
+    ],
+    "email": [
+      "sb@moversinn.com"
+    ],
+    "address": "8 Ubi Road 2, #04-14 Zervex, Singapore 408538",
+    "source_url": "https://moversinn.com/contact/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Shiloh Animal Express",
+    "slug": "shiloh-animal-express",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Singapore pet relocation company that exports and imports dogs and cats by cargo, excess baggage or in cabin, and also transports horses.",
+    "website": "https://shilohanimalex.com/",
+    "phone": [
+      "+65 8118 9620"
+    ],
+    "email": [
+      "transport@shilohanimalex.com"
+    ],
+    "address": "34 Nim Road, Singapore 807562",
+    "source_url": "https://shilohanimalex.com/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Jason's Pet Relocation Services",
+    "slug": "jasons-pet-relocation",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Arranges the export, import and transshipment of dogs and cats through Singapore, handling AVS permits, vet health certificates, crates, flight bookings and airport transfers.",
+    "website": "https://petrelocationsg.com/",
+    "phone": [
+      "+65 6522 2690",
+      "+65 8112 3290"
+    ],
+    "email": [
+      "jason@petrelocationsg.com"
+    ],
+    "address": "Blk 12 Jalan Tari Piring, Singapore 799166",
+    "source_url": "https://petrelocationsg.com/terms-conditions/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Pampered Pets Relocation & Lodging",
+    "slug": "pampered-pets-relocation",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Singapore pet relocation and boarding business that handles pre-export paperwork, works with your vet and arranges transport, with lodging available during the move.",
+    "website": "https://pam-pets.com/pet-movers/",
+    "phone": [
+      "+65 6694 0936"
+    ],
+    "email": [
+      "bookings@pam-pets.com"
+    ],
+    "address": "1 Vista Exchange Green, #01-14/15 The Star Vista, Singapore 138617",
+    "source_url": "https://pam-pets.com/pet-movers/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Ferndale Kennels & Cattery",
+    "slug": "ferndale-kennels",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Pet relocation agency with bases in Hong Kong and Singapore, arranging pet moves to and from Singapore, including import and export licences, pre-flight documents and health certificate consultations.",
+    "website": "https://www.ferndalekennels.com/en/pet-relocation-singapore/",
+    "phone": [
+      "+65 9017 8055"
+    ],
+    "email": [
+      "sg@ferndalekennels.com"
+    ],
+    "address": "11 Collyer Quay, #05-06C The Arcade, Singapore 049317",
+    "source_url": "https://www.ferndalekennels.com/en/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Mitchville Relopet",
+    "slug": "mitchville-relopet",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Singapore pet relocation company handling import and export documentation, quarantine bookings, veterinary work, IATA-approved travel cages, transshipments, and ground and air transport for pets.",
+    "website": "https://mitchville.com.sg/",
+    "phone": [
+      "+65 6482 0084"
+    ],
+    "email": [
+      "enquiries@mitchville.com.sg"
+    ],
+    "address": "5 Ang Mo Kio Industrial Park 2A, #04-31 AMK Tech II, Singapore 567760",
+    "source_url": "https://mitchville.com.sg/contact-us/",
+    "verified_at": "2026-09-28"
+  },
+  {
+    "name": "Savvy Pet Relocation",
+    "slug": "savvy-pet-relocation",
+    "types": [
+      "pet-relocation"
+    ],
+    "description": "Singapore pet relocation agent handling pet export and import, flight bookings, vet health checks, documentation, quarantine bookings, lodging and door-to-door transport.",
+    "website": "https://savvypetrelocation.com/",
+    "phone": [
+      "+65 8925 1825"
+    ],
+    "email": [
+      "info@savvypetrelocation.com"
+    ],
+    "address": "15A Jasmine Road, Singapore 576584",
+    "source_url": "https://savvypetrelocation.com/",
+    "verified_at": "2026-09-28"
+  }
+]

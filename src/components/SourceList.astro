@@ -1,0 +1,20 @@
+---
+interface Props {
+  sources: { label: string; url: string }[];
+  updated: string;
+}
+const { sources, updated } = Astro.props;
+---
+<section class="sources" aria-labelledby="sources">
+  <h2 id="sources">Sources</h2>
+  <p class="sources-note">
+    Rules change. We check each guide against these official pages, last on {updated}. If a source says
+    something different from this guide, the source is right. Please tell us at
+    <a href="mailto:hello@relocado.asia">hello@relocado.asia</a>.
+  </p>
+  <ol>
+    {sources.map((s) => (
+      <li><a href={s.url} rel="noopener">{s.label}</a></li>
+    ))}
+  </ol>
+</section>

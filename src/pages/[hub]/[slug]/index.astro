@@ -1,0 +1,83 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import Toc from '../../../components/Toc.astro';
+import FaqList from '../../../components/FaqList.astro';
+import SourceList from '../../../components/SourceList.astro';
+import GuideCard from '../../../components/GuideCard.astro';
+import PlannerCta from '../../../components/PlannerCta.astro';
+import { HUBS, hubUrl, SITE } from '../../../lib/site';
+import { allGuides, relatedGuides, urlFor, type Guide } from '../../../lib/guides';
+import { formatDate, isoDate } from '../../../lib/seo';
+import { articleNode, breadcrumbNode, faqNode } from '../../../lib/schema';
+
+export async function getStaticPaths() {
+  const guides = await allGuides();
+  return guides.map((guide) => ({
+    params: { hub: HUBS[guide.data.hub].path, slug: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props as { guide: Guide };
+const { data } = guide;
+const hub = HUBS[data.hub];
+const { Content, headings } = await render(guide);
+const related = await relatedGuides(guide);
+const pageUrl = new URL(urlFor(guide), SITE.url).href;
+const updated = formatDate(data.updated);
+const crumbs = [{ label: 'Home', href: '/' }, { label: hub.title, href: hubUrl(data.hub) }, { label: data.title }];
+
+const schema = [
+  breadcrumbNode(crumbs, pageUrl),
+  articleNode({ url: pageUrl, headline: data.title, description: data.description, dateModified: isoDate(data.updated), section: hub.title }),
+  faqNode(pageUrl, data.faqs),
+].filter((n): n is Record<string, unknown> => n !== null);
+
+const tocExtra = [
+  ...(data.faqs.length ? [{ slug: 'questions', text: 'Questions people ask' }] : []),
+  { slug: 'sources', text: 'Sources' },
+];
+---
+<BaseLayout title={data.metaTitle} description={data.description} ogType="article" schema={schema}>
+  <div class="page-header guide-header">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <span class="kicker">{hub.title}</span>
+      <h1>{data.title}</h1>
+      <p class="lede">{data.summary}</p>
+      <p class="guide-meta">Checked against official sources · Updated <time datetime={isoDate(data.updated)}>{updated}</time></p>
+    </div>
+  </div>
+
+  <div class="wrap guide-layout">
+    <aside class="guide-aside">
+      <Toc headings={headings} extra={tocExtra} />
+    </aside>
+    <article class="prose">
+      <Content />
+      <FaqList faqs={data.faqs} />
+      <SourceList sources={data.sources} updated={updated} />
+      <p class="disclosure-note">
+        Relocado is run by the team behind Junk to Clear, HomeToMoved and HomeToClean. Where this guide
+        links to one of them, it’s because the step calls for that service, and we say so in the sentence.
+        <a href="/about/">How Relocado works</a>
+      </p>
+    </article>
+  </div>
+
+  <section class="section related">
+    <div class="wrap">
+      {(data.hub === 'leaving' || data.alsoIn.includes('leaving')) && <PlannerCta />}
+      {related.length > 0 && (
+        <>
+          <div class="section-head"><h2>Read next</h2></div>
+          <div class="guide-list">
+            {related.map((g) => <GuideCard href={urlFor(g)} title={g.data.title} summary={g.data.summary} />)}
+          </div>
+        </>
+      )}
+    </div>
+  </section>
+</BaseLayout>

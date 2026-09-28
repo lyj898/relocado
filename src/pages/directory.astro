@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { DIRECTORY_TYPES, entriesForType, typeLabel, latestCheck, directory } from '../lib/directory';
+import { SITE } from '../lib/site';
+import { formatDate } from '../lib/seo';
+import { breadcrumbNode } from '../lib/schema';
+
+const pageUrl = `${SITE.url}/directory/`;
+const crumbs = [{ label: 'Home', href: '/' }, { label: 'Directory' }];
+const checked = latestCheck() ? formatDate(new Date(latestCheck())) : '';
+const sections = DIRECTORY_TYPES.map((t) => ({ ...t, entries: entriesForType(t.key) })).filter((s) => s.entries.length > 0);
+
+function displayUrl(url: string): string {
+  return url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '');
+}
+
+const schema = [
+  breadcrumbNode(crumbs, pageUrl),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${pageUrl}#page`,
+    url: pageUrl,
+    name: 'Singapore relocation directory',
+    isPartOf: { '@id': `${SITE.url}/#website` },
+  },
+];
+---
+<BaseLayout
+  title="Singapore International Movers and Relocation Firms"
+  description="Singapore international movers, relocation companies and pet relocation specialists, from each company’s own website. Alphabetical, not a ranking."
+  schema={schema}
+>
+  <div class="page-header">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <span class="kicker">Directory</span>
+      <h1>International movers and relocation companies in Singapore</h1>
+      <p class="lede">
+        The parts of an international move that Relocado’s own businesses don’t do: shipping your household
+        goods, managing a company-paid relocation, and flying your pet.
+      </p>
+      <p class="guide-meta">
+        {directory.length} companies · alphabetical, not a ranking · nobody pays to be listed{checked && ` · checked ${checked}`}
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <nav class="dir-jump" aria-label="Directory sections">
+      {sections.map((s) => <a href={`#${s.key}`}>{s.label} <span>{s.entries.length}</span></a>)}
+    </nav>
+
+    {sections.map((s) => (
+      <section class="dir-section" id={s.key} aria-labelledby={`${s.key}-title`}>
+        <h2 id={`${s.key}-title`}>{s.label}</h2>
+        <p class="dir-explainer">{s.explainer}</p>
+        <div class="dir-grid">
+          {s.entries.map((e) => (
+            <article class="dir-card">
+              <h3><a href={e.website} rel="noopener">{e.name}</a></h3>
+              <p class="dir-desc">{e.description}</p>
+              <dl class="dir-facts">
+                {e.address && (<div><dt>Address</dt><dd>{e.address}</dd></div>)}
+                {e.phone.length > 0 && (
+                  <div><dt>Phone</dt><dd>{e.phone.map((p, i) => (<>{i > 0 && ', '}<a href={`tel:${p.replace(/[^+\d]/g, '')}`}>{p}</a></>))}</dd></div>
+                )}
+                <div><dt>Website</dt><dd><a href={e.website} rel="noopener">{displayUrl(e.website)}</a></dd></div>
+              </dl>
+              {e.types.length > 1 && (
+                <p class="dir-tags">{e.types.slice(1).map((t) => <span>{typeLabel(t)}</span>)}</p>
+              )}
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    <p class="dir-footnote">
+      Details come from each company’s own website and were correct when checked. Always confirm with the
+      company before you book. If you run a listed company and something’s wrong, or you’d like to be removed,
+      email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+    </p>
+  </div>
+</BaseLayout>

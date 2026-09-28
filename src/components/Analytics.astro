@@ -1,0 +1,31 @@
+---
+/**
+ * GA4, the same pattern as hometomoved.com. Renders nothing unless PUBLIC_GA4_ID is set (a GitHub
+ * repository variable, passed in by the deploy workflow), so local builds and previews stay clean.
+ *
+ * Enhanced measurement's outbound-click event is what counts readers sent to Junk to Clear,
+ * HomeToMoved and HomeToClean. Keep it switched on in the GA4 data stream settings.
+ */
+const configuredId = (import.meta.env.PUBLIC_GA4_ID ?? '').trim();
+if (configuredId && !/^G-[A-Z0-9]{6,12}$/.test(configuredId)) {
+  throw new Error(`PUBLIC_GA4_ID is not a valid GA4 measurement ID: "${configuredId}"`);
+}
+const measurementId = configuredId || null;
+---
+
+{
+  measurementId && (
+    <>
+      <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} />
+      <script is:inline define:vars={{ measurementId }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          window.dataLayer.push(arguments);
+        }
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', measurementId);
+      </script>
+    </>
+  )
+}

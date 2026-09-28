@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { BRANDS, SITE, DIRECTORY_URL } from '../lib/site';
+import { breadcrumbNode } from '../lib/schema';
+
+const pageUrl = `${SITE.url}/about/`;
+const crumbs = [{ label: 'Home', href: '/' }, { label: 'About' }];
+const schema = [
+  breadcrumbNode(crumbs, pageUrl),
+  { '@type': 'AboutPage', '@id': `${pageUrl}#page`, url: pageUrl, name: 'About Relocado', about: { '@id': `${SITE.url}/#organization` } },
+];
+---
+<BaseLayout
+  title="About Relocado: Who Writes It and How It Works"
+  description="Who runs Relocado, how the guides are researched and checked, how the directory is compiled, and how the site links to its sister businesses."
+  schema={schema}
+>
+  <div class="page-header">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <span class="kicker">About</span>
+      <h1>About Relocado</h1>
+      <p class="lede">
+        A practical guide to moving in or out of Singapore: what to do, in what order, and by when.
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <article class="prose prose-narrow">
+      <h2>Who runs it</h2>
+      <p>
+        Relocado is run by the team behind three Singapore businesses. Junk to Clear was established in 2009
+        under SKAP Waste Management Pte. Ltd., and HomeToMoved and HomeToClean are run by the same team.
+      </p>
+      <ul>
+        {BRANDS.map((b) => (
+          <li><a href={b.url}>{b.name}</a>: {b.does}</li>
+        ))}
+      </ul>
+      <p>
+        Junk to Clear clears homes for people leaving Singapore. Relocado covers the rest of that move: the
+        paperwork, the lease, the shipment and the timing.
+      </p>
+
+      <h2>How we link to our own businesses</h2>
+      <p>
+        A guide links to one of the three businesses only at a step that needs that service, such as
+        clearing a flat before handover, and the sentence says it’s ours. Guides never rank or review our own
+        businesses against anyone else’s. Relocado doesn’t ship anything overseas, so for international moves
+        we point to other companies.
+      </p>
+
+      <h2>How the guides are researched</h2>
+      <ul>
+        <li>Rules, deadlines and eligibility come from the official source (IRAS, MOM, CPF Board, LTA, ICA, Singapore Customs, NEA, HDB and others), which each guide lists and links to.</li>
+        <li>Where something depends on your contract rather than the law, such as a diplomatic clause, we say so and tell you to check your agreement.</li>
+        <li>We don’t publish prices, statistics or claims we can’t source.</li>
+        <li>Each guide shows the date it was last checked. Rules change, and if a source says something different from a guide, the source is right.</li>
+      </ul>
+      <p>Guides are general information, not legal, tax or immigration advice.</p>
+
+      <h2>How the directory works</h2>
+      <p>
+        The <a href={DIRECTORY_URL}>directory</a> lists Singapore international movers, relocation companies
+        and pet relocation specialists: the parts of a move our own businesses don’t do. Each entry comes from
+        the company’s own website and shows the date it was checked. The listings are alphabetical and aren’t
+        a ranking, and nobody pays to appear. If you run a listed company and something is wrong, or you’d
+        like to be removed, email us.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Corrections, questions and directory changes: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+      </p>
+    </article>
+  </div>
+</BaseLayout>

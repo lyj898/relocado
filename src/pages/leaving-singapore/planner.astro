@@ -1,0 +1,263 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { PLANNER_TASKS } from '../../lib/planner';
+import { SITE, hubUrl, HUBS } from '../../lib/site';
+import { breadcrumbNode } from '../../lib/schema';
+
+const pageUrl = `${SITE.url}/leaving-singapore/planner/`;
+const crumbs = [{ label: 'Home', href: '/' }, { label: HUBS.leaving.title, href: hubUrl('leaving') }, { label: 'Planner' }];
+const schema = [
+  breadcrumbNode(crumbs, pageUrl),
+  {
+    '@type': 'WebApplication',
+    '@id': `${pageUrl}#app`,
+    name: 'Leaving Singapore planner',
+    url: pageUrl,
+    applicationCategory: 'LifestyleApplication',
+    operatingSystem: 'Any',
+    isAccessibleForFree: true,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'SGD' },
+    publisher: { '@id': `${SITE.url}/#organization` },
+  },
+];
+---
+<BaseLayout
+  title="Leaving Singapore Planner: Your Dated Checklist | Relocado"
+  description="Enter your last working day and flight date to get every leaving-Singapore task on a date: tax clearance, lease notice, shipment, clear-out and handover."
+  schema={schema}
+>
+  <div class="page-header">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <span class="kicker">Planner</span>
+      <h1>Leaving Singapore planner</h1>
+      <p class="lede">
+        Enter your dates and get every task on a calendar date, from tax clearance and lease notice to the
+        final clear-out and handover. Everything stays in your browser.
+      </p>
+    </div>
+  </div>
+
+  <div class="wrap planner">
+    <form class="planner-form" id="planner-form" novalidate>
+      <fieldset>
+        <legend>Your dates</legend>
+        <label>
+          <span>Last working day in Singapore</span>
+          <input type="date" name="lastDay" required />
+        </label>
+        <label>
+          <span>Flight out</span>
+          <input type="date" name="flight" required />
+        </label>
+        <label>
+          <span>Handing back your home <small>(optional; defaults to two days before your flight)</small></span>
+          <input type="date" name="handover" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What applies to you</legend>
+        <label class="check"><input type="checkbox" name="rent" checked /> I rent my home</label>
+        <label class="check"><input type="checkbox" name="ship" checked /> I’m shipping household goods overseas</label>
+        <label class="check"><input type="checkbox" name="car" /> I have a car registered in Singapore</label>
+        <label class="check"><input type="checkbox" name="pet" /> I’m taking a pet</label>
+        <label class="check"><input type="checkbox" name="pr" /> I’m a PR giving up PR status</label>
+      </fieldset>
+      <button class="btn btn-primary" type="submit">Build my checklist</button>
+    </form>
+
+    <section class="planner-output" id="planner-output" aria-live="polite" hidden>
+      <div class="planner-output-head">
+        <h2>Your checklist</h2>
+        <div class="planner-actions">
+          <button class="btn btn-outline" type="button" id="ics-btn">Add to calendar (.ics)</button>
+          <button class="btn btn-outline" type="button" id="print-btn">Print</button>
+        </div>
+      </div>
+      <p class="planner-summary" id="planner-summary"></p>
+      <ul class="planner-warnings" id="planner-warnings"></ul>
+      <ol class="planner-list" id="planner-list"></ol>
+      <p class="planner-note">
+        Dates are worked out from typical lead times and the official deadlines in our guides. Your lease,
+        your employer and your mover may set different ones, and theirs win. Nothing you enter leaves this page.
+      </p>
+    </section>
+  </div>
+
+  <script type="application/json" id="planner-tasks" set:html={JSON.stringify(PLANNER_TASKS)} />
+  <script>
+    type Anchor = 'lastDay' | 'flight' | 'handover';
+    type Need = 'rent' | 'ship' | 'car' | 'pet' | 'pr';
+    interface Task {
+      id: string;
+      anchor: Anchor;
+      offsetDays: number;
+      when: string;
+      title: string;
+      detail: string;
+      link?: { label: string; href: string };
+      requires?: Need[];
+    }
+
+    const TASKS: Task[] = JSON.parse(document.getElementById('planner-tasks')!.textContent || '[]');
+    const STORE_KEY = 'relocado-planner-v1';
+    const form = document.getElementById('planner-form') as HTMLFormElement;
+    const output = document.getElementById('planner-output') as HTMLElement;
+    const list = document.getElementById('planner-list') as HTMLOListElement;
+    const summary = document.getElementById('planner-summary') as HTMLElement;
+    const warnings = document.getElementById('planner-warnings') as HTMLUListElement;
+    let current: { date: Date; task: Task }[] = [];
+
+    const DAY = 86_400_000;
+    const parse = (v: string): Date | null => (v ? new Date(`${v}T00:00:00`) : null);
+    const addDays = (d: Date, n: number) => new Date(d.getTime() + n * DAY);
+    const fmt = (d: Date) => d.toLocaleDateString('en-SG', { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+    const ymd = (d: Date) => `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
+    const today = () => { const t = new Date(); t.setHours(0, 0, 0, 0); return t; };
+
+    function load(): { inputs?: Record<string, string | boolean>; done?: string[] } {
+      try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch { return {}; }
+    }
+    function save(data: { inputs?: Record<string, string | boolean>; done?: string[] }) {
+      try { localStorage.setItem(STORE_KEY, JSON.stringify({ ...load(), ...data })); } catch { /* storage unavailable: fine */ }
+    }
+
+    function readInputs() {
+      const f = new FormData(form);
+      return {
+        lastDay: String(f.get('lastDay') || ''),
+        flight: String(f.get('flight') || ''),
+        handover: String(f.get('handover') || ''),
+        rent: f.get('rent') === 'on',
+        ship: f.get('ship') === 'on',
+        car: f.get('car') === 'on',
+        pet: f.get('pet') === 'on',
+        pr: f.get('pr') === 'on',
+      };
+    }
+
+    function build() {
+      const inputs = readInputs();
+      const lastDay = parse(inputs.lastDay);
+      const flight = parse(inputs.flight);
+      if (!lastDay || !flight) {
+        summary.textContent = 'Enter your last working day and your flight date to build the checklist.';
+        output.hidden = false;
+        list.replaceChildren();
+        warnings.replaceChildren();
+        return;
+      }
+      const handover = parse(inputs.handover) ?? addDays(flight, -2);
+      const anchors: Record<Anchor, Date> = { lastDay, flight, handover };
+      const has: Record<Need, boolean> = { rent: inputs.rent, ship: inputs.ship, car: inputs.car, pet: inputs.pet, pr: inputs.pr };
+
+      // Lead-time tasks mostly involve a business, so one that lands on a weekend moves to the Friday
+      // before. Tasks pinned to an anchor date itself (offset 0) stay put.
+      const weekdayOrEarlier = (d: Date) => addDays(d, d.getDay() === 6 ? -1 : d.getDay() === 0 ? -2 : 0);
+      current = TASKS
+        .filter((t) => !t.requires || t.requires.every((r) => has[r]))
+        .map((task) => {
+          const raw = addDays(anchors[task.anchor], task.offsetDays);
+          return { task, date: task.offsetDays === 0 ? raw : weekdayOrEarlier(raw) };
+        })
+        .sort((a, b) => a.date.getTime() - b.date.getTime());
+
+      const warn: string[] = [];
+      if (lastDay > flight) warn.push('Your last working day is after your flight. Check both dates.');
+      if (handover > flight) warn.push('You hand back your home after your flight, so arrange for someone to attend the handover for you.');
+      const overdue = current.filter((c) => c.date < today()).length;
+      if (overdue) warn.push(overdue === 1
+        ? '1 task is already past the ideal date. It’s marked, so start there.'
+        : `${overdue} tasks are already past the ideal date. They’re marked, so start with those.`);
+      warnings.replaceChildren(...warn.map((w) => Object.assign(document.createElement('li'), { textContent: w })));
+
+      const done = new Set(load().done || []);
+      list.replaceChildren(...current.map(({ task, date }) => {
+        const li = document.createElement('li');
+        li.className = 'planner-item' + (date < today() ? ' is-overdue' : '');
+        const id = `task-${task.id}`;
+        li.innerHTML = `
+          <input type="checkbox" id="${id}" ${done.has(task.id) ? 'checked' : ''} />
+          <div class="planner-item-body">
+            <p class="planner-date"><time datetime="${date.toISOString().slice(0, 10)}">${fmt(date)}</time> · <span>${task.when}</span>${date < today() ? ' · <strong>Overdue</strong>' : ''}</p>
+            <label for="${id}" class="planner-title"></label>
+            <p class="planner-detail"></p>
+          </div>`;
+        (li.querySelector('.planner-title') as HTMLElement).textContent = task.title;
+        const detail = li.querySelector('.planner-detail') as HTMLElement;
+        detail.textContent = task.detail + ' ';
+        if (task.link) {
+          const a = document.createElement('a');
+          a.href = task.link.href;
+          a.textContent = task.link.label;
+          detail.append(a);
+        }
+        (li.querySelector('input') as HTMLInputElement).addEventListener('change', (e) => {
+          const set = new Set(load().done || []);
+          (e.target as HTMLInputElement).checked ? set.add(task.id) : set.delete(task.id);
+          save({ done: [...set] });
+        });
+        return li;
+      }));
+
+      const days = Math.round((flight.getTime() - today().getTime()) / DAY);
+      summary.textContent = days >= 0
+        ? `${current.length} tasks between now and your flight on ${fmt(flight)}, which is ${days} ${days === 1 ? 'day' : 'days'} away.`
+        : `${current.length} tasks. Your flight date is in the past, so check the date you entered.`;
+      output.hidden = false;
+      save({ inputs });
+    }
+
+    function icsEscape(s: string) {
+      return s.replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+    }
+    // RFC 5545 caps lines at 75 octets. Fold at 60 characters, so multi-byte characters such as ’ stay under it.
+    function fold(line: string) {
+      const out: string[] = [];
+      let rest = line;
+      while (rest.length > 60) { out.push(rest.slice(0, 60)); rest = ' ' + rest.slice(60); }
+      out.push(rest);
+      return out.join('\r\n');
+    }
+    function downloadIcs() {
+      if (!current.length) return;
+      const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+      const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Relocado//Leaving Singapore planner//EN', 'CALSCALE:GREGORIAN'];
+      for (const { task, date } of current) {
+        const url = task.link ? new URL(task.link.href, location.origin).href : '';
+        lines.push(
+          'BEGIN:VEVENT',
+          `UID:${task.id}-${ymd(date)}@relocado.asia`,
+          `DTSTAMP:${stamp}`,
+          `DTSTART;VALUE=DATE:${ymd(date)}`,
+          `DTEND;VALUE=DATE:${ymd(addDays(date, 1))}`,
+          fold(`SUMMARY:${icsEscape(task.title)}`),
+          fold(`DESCRIPTION:${icsEscape(task.detail + (url ? `\n${url}` : ''))}`),
+          'END:VEVENT'
+        );
+      }
+      lines.push('END:VCALENDAR');
+      const blob = new Blob([lines.join('\r\n') + '\r\n'], { type: 'text/calendar' });
+      const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: 'leaving-singapore-checklist.ics' });
+      document.body.append(a);
+      a.click();
+      a.remove();
+    }
+
+    form.addEventListener('submit', (e) => { e.preventDefault(); build(); });
+    document.getElementById('ics-btn')!.addEventListener('click', downloadIcs);
+    document.getElementById('print-btn')!.addEventListener('click', () => window.print());
+
+    // Restore the last session's inputs, if any.
+    const saved = load().inputs;
+    if (saved) {
+      for (const [k, v] of Object.entries(saved)) {
+        const el = form.elements.namedItem(k) as HTMLInputElement | null;
+        if (!el) continue;
+        if (el.type === 'checkbox') el.checked = Boolean(v); else el.value = String(v);
+      }
+      if (saved.lastDay && saved.flight) build();
+    }
+  </script>
+</BaseLayout>

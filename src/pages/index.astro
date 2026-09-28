@@ -1,416 +1,84 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { COUNTRIES, COUNTRY_LABELS, COUNTRY_SLUGS, CITIES, isOriginCountry } from '../lib/constants';
-import { companies } from '../lib/companies';
+import GuideCard from '../components/GuideCard.astro';
+import { HUBS, HUB_ORDER, hubUrl, PLANNER_URL, DIRECTORY_URL, BRANDS } from '../lib/site';
+import { guidesForHub, urlFor } from '../lib/guides';
 
-const providers = companies
-  .filter((c) => c.categories.includes('corporate_mobility'))
-  .map((c) => {
-    const cityInfo = CITIES[c.country].find((ci) => ci.label === c.city);
-    return {
-      id: c.id,
-      name: c.name,
-      description: c.description,
-      city: c.city,
-      countryCode: c.country,
-      countryLabel: COUNTRY_LABELS[c.country],
-      origin: isOriginCountry(c.country),
-      hasPhone: c.contact.phone.length > 0,
-      hasWebsite: Boolean(c.contact.website),
-      href: `/${COUNTRY_SLUGS[c.country]}/${cityInfo?.slug}/corporate_mobility/${c.slug}/`,
-    };
-  })
-  .sort((a, b) => a.countryLabel.localeCompare(b.countryLabel) || a.city.localeCompare(b.city) || a.name.localeCompare(b.name));
-
-const totalProviders = providers.length;
-const countryList = COUNTRIES;
-const totalCountries = countryList.length;
-const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).size;
+const leaving = await guidesForHub('leaving');
+const counts = Object.fromEntries(
+  await Promise.all(HUB_ORDER.map(async (key) => [key, (await guidesForHub(key)).length] as const))
+);
 ---
 <BaseLayout
-  title="Relocado — Corporate Mobility Providers for Relocating to Singapore"
-  description="Search real corporate global mobility and relocation management providers — in Singapore and in your home country — to manage your move to Singapore."
+  title="Relocado: Leaving Singapore, Arriving and Moving Back"
+  description="Practical guides to moving in or out of Singapore: IR21 tax clearance, breaking a lease early, what to ship or clear out, and moving back."
 >
-  <script type="application/json" id="providers-data" set:html={JSON.stringify(providers)} />
-
   <section class="hero">
     <div class="wrap">
-      <span class="hero-kicker">Corporate Mobility Directory · Destination: Singapore</span>
-      <h1>Find the right corporate mobility partner to move your team to Singapore.</h1>
+      <span class="hero-kicker">Moving in or out of Singapore</span>
+      <h1>Leaving Singapore, arriving or moving back, done in the right order.</h1>
       <p class="lede">
-        Relocado tracks real global mobility and relocation management companies — researched from their own
-        websites — for HR and mobility teams (and the employees they're relocating) planning a move to Singapore.
+        Plain-English guides to tax clearance, breaking a lease early, what your mover won’t ship, and what
+        to do with everything that isn’t coming with you. Each one is checked against the official source.
       </p>
-
-      <div class="stat-row">
-        <div class="stat"><b>{totalProviders}</b><span>Providers tracked</span></div>
-        <div class="stat"><b>{totalCountries}</b><span>Countries</span></div>
-        <div class="stat"><b>{totalCities}</b><span>Cities</span></div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href={PLANNER_URL}>Plan your departure</a>
+        <a class="btn btn-outline" href="/leaving-singapore/checklist/">Read the leaving checklist</a>
       </div>
-
-      <input id="search-input" class="search-input" type="text" placeholder="Search providers or cities…" autocomplete="off" />
     </div>
   </section>
 
-  <section class="filter-bar">
-    <div class="wrap filter-row">
-      <select id="country-filter">
-        <option value="">All countries</option>
-        <option value="SG">Singapore (destination)</option>
-        {countryList.filter((c) => c !== 'SG').map((code) => (
-          <option value={code}>{COUNTRY_LABELS[code]}</option>
-        ))}
-      </select>
-      <select id="type-filter">
-        <option value="">All providers</option>
-        <option value="destination">Singapore-based (destination)</option>
-        <option value="origin">Origin-market providers</option>
-      </select>
-      <button id="reset-filters" type="button">Reset</button>
-      <span id="result-count" class="result-count"></span>
-    </div>
-  </section>
-
-  <section class="section" style="padding-top: 32px;">
+  <section class="section">
     <div class="wrap">
-      <div id="provider-groups"></div>
-      <div id="empty-state" class="empty-state" hidden>
-        <p>No providers match your filters. Try clearing search or filters.</p>
+      <div class="grid-3">
+        {HUB_ORDER.map((key) => (
+          <a class="card" href={hubUrl(key)}>
+            <div>
+              <h3>{HUBS[key].title}</h3>
+              <p>{HUBS[key].lede}</p>
+            </div>
+            <div class="cta">{counts[key]} {counts[key] === 1 ? 'guide' : 'guides'} →</div>
+          </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <style is:global>
-    .hero {
-      padding: 72px 0 40px;
-      border-bottom: 1px solid var(--color-line);
-    }
-    .hero-kicker {
-      display: inline-block;
-      font-size: 0.8rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--color-accent);
-      font-weight: 600;
-      margin-bottom: 18px;
-    }
-    .hero h1 {
-      font-family: var(--font-display);
-      font-size: clamp(2.2rem, 4.6vw, 3.4rem);
-      line-height: 1.1;
-      font-weight: 600;
-      max-width: 800px;
-      letter-spacing: -0.01em;
-    }
-    .hero p.lede {
-      margin-top: 20px;
-      font-size: 1.08rem;
-      color: var(--color-ink-soft);
-      max-width: 600px;
-    }
-    .stat-row {
-      display: flex;
-      gap: 40px;
-      margin-top: 32px;
-    }
-    .stat b {
-      font-family: var(--font-display);
-      font-size: 1.6rem;
-      display: block;
-      color: var(--color-primary);
-    }
-    .stat span {
-      font-size: 0.8rem;
-      color: var(--color-ink-soft);
-    }
-    .search-input {
-      display: block;
-      margin-top: 28px;
-      width: 100%;
-      max-width: 520px;
-      padding: 12px 18px;
-      font-size: 0.95rem;
-      font-family: var(--font-body);
-      border: 1px solid var(--color-line);
-      border-radius: 999px;
-      background: var(--color-card);
-      color: var(--color-ink);
-    }
-    .search-input:focus {
-      outline: none;
-      border-color: var(--color-primary);
-    }
+  <section class="section section-tight">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Leaving Singapore, step by step</h2>
+        <a href={hubUrl('leaving')}>All leaving guides</a>
+      </div>
+      <div class="guide-list">
+        {leaving.map((g, i) => <GuideCard href={urlFor(g)} title={g.data.title} summary={g.data.summary} step={i + 1} />)}
+      </div>
+    </div>
+  </section>
 
-    .filter-bar {
-      border-bottom: 1px solid var(--color-line);
-      background: var(--color-card);
-    }
-    .filter-row {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      padding: 16px 24px;
-      flex-wrap: wrap;
-    }
-    .filter-row select {
-      padding: 8px 16px;
-      font-size: 0.88rem;
-      font-family: var(--font-body);
-      border: 1px solid var(--color-line);
-      border-radius: 999px;
-      background: var(--color-bg);
-      color: var(--color-ink);
-    }
-    .filter-row button {
-      padding: 8px 16px;
-      font-size: 0.88rem;
-      font-family: var(--font-body);
-      border: 1px solid var(--color-line);
-      border-radius: 999px;
-      background: transparent;
-      color: var(--color-ink-soft);
-      cursor: pointer;
-    }
-    .filter-row button:hover {
-      border-color: var(--color-primary);
-      color: var(--color-primary);
-    }
-    .result-count {
-      margin-left: auto;
-      font-size: 0.85rem;
-      color: var(--color-ink-soft);
-    }
-
-    .provider-group + .provider-group {
-      margin-top: 40px;
-    }
-    .provider-group h2 {
-      font-family: var(--font-display);
-      font-size: 1.3rem;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-    .provider-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
-    @media (max-width: 900px) {
-      .provider-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-    @media (max-width: 620px) {
-      .provider-grid { grid-template-columns: 1fr; }
-    }
-
-    .provider-card {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      min-height: 240px;
-      padding: 18px;
-      border-radius: 14px;
-      border-top: 3px solid var(--color-primary);
-      background: var(--color-card);
-      box-shadow: 0 1px 2px rgba(34, 31, 26, 0.04);
-      transition: box-shadow 0.15s ease, transform 0.15s ease;
-    }
-    .provider-card:hover {
-      box-shadow: 0 8px 20px rgba(34, 31, 26, 0.1);
-      transform: translateY(-2px);
-    }
-    .provider-card.origin {
-      border-top-color: var(--color-accent);
-    }
-    .provider-card::after {
-      content: '';
-      position: absolute;
-      inset: 8px;
-      border: 1px solid currentColor;
-      opacity: 0.08;
-      border-radius: 8px;
-      pointer-events: none;
-      color: var(--color-ink);
-    }
-    .provider-card .card-top {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .provider-card .kicker-tag {
-      font-size: 0.72rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      font-weight: 600;
-      color: var(--color-primary);
-    }
-    .provider-card.origin .kicker-tag {
-      color: var(--color-accent);
-    }
-    .provider-card .avatar {
-      flex-shrink: 0;
-      width: 30px;
-      height: 30px;
-      border-radius: 999px;
-      border: 1px solid var(--color-line);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-display);
-      font-size: 0.9rem;
-      color: var(--color-ink-soft);
-    }
-    .provider-card h3 {
-      position: relative;
-      z-index: 1;
-      margin-top: 14px;
-      font-family: var(--font-display);
-      font-size: 1.15rem;
-      font-weight: 500;
-      line-height: 1.25;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .provider-card .meta {
-      position: relative;
-      z-index: 1;
-      margin-top: 6px;
-      font-size: 0.8rem;
-      letter-spacing: 0.02em;
-      color: var(--color-ink-soft);
-    }
-    .provider-card .desc {
-      position: relative;
-      z-index: 1;
-      margin-top: 10px;
-      font-size: 0.85rem;
-      line-height: 1.45;
-      color: var(--color-ink-soft);
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      flex: 1;
-    }
-    .provider-card .card-footer {
-      position: relative;
-      z-index: 1;
-      margin-top: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-    }
-    .provider-card .contact-flags {
-      display: flex;
-      gap: 6px;
-      font-size: 0.72rem;
-      color: var(--color-ink-soft);
-    }
-    .provider-card .contact-flags span {
-      border: 1px solid var(--color-line);
-      border-radius: 999px;
-      padding: 2px 8px;
-    }
-    .provider-card .view-link {
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--color-primary);
-      white-space: nowrap;
-    }
-    .provider-card.origin .view-link {
-      color: var(--color-accent);
-    }
-  </style>
-
-  <script>
-    const providers = JSON.parse(document.getElementById('providers-data').textContent);
-
-    function escapeHtml(str) {
-      const div = document.createElement('div');
-      div.textContent = str;
-      return div.innerHTML;
-    }
-    const searchInput = document.getElementById('search-input');
-    const countryFilter = document.getElementById('country-filter');
-    const typeFilter = document.getElementById('type-filter');
-    const resetBtn = document.getElementById('reset-filters');
-    const groupsEl = document.getElementById('provider-groups');
-    const emptyEl = document.getElementById('empty-state');
-    const countEl = document.getElementById('result-count');
-
-    function render() {
-      const q = searchInput.value.trim().toLowerCase();
-      const country = countryFilter.value;
-      const type = typeFilter.value;
-
-      const filtered = providers.filter((p) => {
-        if (country && p.countryCode !== country) return false;
-        if (type === 'origin' && !p.origin) return false;
-        if (type === 'destination' && p.origin) return false;
-        if (q && !(p.name.toLowerCase().includes(q) || p.city.toLowerCase().includes(q))) return false;
-        return true;
-      });
-
-      countEl.textContent = `${filtered.length} provider${filtered.length === 1 ? '' : 's'} found`;
-      groupsEl.innerHTML = '';
-      emptyEl.hidden = filtered.length > 0;
-
-      const byCountry = new Map();
-      for (const p of filtered) {
-        if (!byCountry.has(p.countryLabel)) byCountry.set(p.countryLabel, []);
-        byCountry.get(p.countryLabel).push(p);
-      }
-
-      for (const [label, list] of byCountry) {
-        const group = document.createElement('div');
-        group.className = 'provider-group';
-        const heading = document.createElement('h2');
-        heading.textContent = `${label} (${list.length})`;
-        group.appendChild(heading);
-        const grid = document.createElement('div');
-        grid.className = 'provider-grid';
-        for (const p of list) {
-          const card = document.createElement('a');
-          card.className = 'provider-card' + (p.origin ? ' origin' : '');
-          card.href = p.href;
-          const flags = [];
-          if (p.hasPhone) flags.push('<span>Phone</span>');
-          if (p.hasWebsite) flags.push('<span>Website</span>');
-          card.innerHTML = `
-            <div class="card-top">
-              <span class="kicker-tag">${p.origin ? 'Origin market' : 'Destination'}</span>
-              <span class="avatar">${escapeHtml(p.name.charAt(0))}</span>
-            </div>
-            <h3>${escapeHtml(p.name)}</h3>
-            <div class="meta">${escapeHtml(p.city)}, ${escapeHtml(p.countryLabel)}</div>
-            ${p.description ? `<p class="desc">${escapeHtml(p.description)}</p>` : '<div class="desc"></div>'}
-            <div class="card-footer">
-              <div class="contact-flags">${flags.join('')}</div>
-              <span class="view-link">View details →</span>
-            </div>
-          `;
-          grid.appendChild(card);
-        }
-        group.appendChild(grid);
-        groupsEl.appendChild(group);
-      }
-    }
-
-    searchInput.addEventListener('input', render);
-    countryFilter.addEventListener('change', render);
-    typeFilter.addEventListener('change', render);
-    resetBtn.addEventListener('click', () => {
-      searchInput.value = '';
-      countryFilter.value = '';
-      typeFilter.value = '';
-      render();
-    });
-
-    render();
-  </script>
+  <section class="section">
+    <div class="wrap split">
+      <div>
+        <h2 class="split-title">Who ships your things overseas?</h2>
+        <p>
+          Relocado doesn’t move anything overseas. For the international leg, the directory lists Singapore’s
+          international movers, relocation companies and pet relocation specialists. They’re listed
+          alphabetically, from each company’s own website, and nobody pays to be there.
+        </p>
+        <a class="btn btn-outline" href={DIRECTORY_URL}>Browse the directory</a>
+      </div>
+      <div>
+        <h2 class="split-title">Who runs Relocado</h2>
+        <p>
+          The team behind three Singapore businesses. Where a guide needs one of them, it links there and
+          says so. For everything else (tax, passes, leases, customs) it links to the official source.
+        </p>
+        <ul class="brand-list">
+          {BRANDS.map((b) => (
+            <li><a href={b.url}>{b.name}</a>: {b.does}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
 </BaseLayout>

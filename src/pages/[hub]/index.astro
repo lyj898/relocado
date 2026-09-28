@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import GuideCard from '../../components/GuideCard.astro';
+import PlannerCta from '../../components/PlannerCta.astro';
+import { HUBS, HUB_ORDER, hubUrl, SITE, type HubKey } from '../../lib/site';
+import { guidesForHub, urlFor } from '../../lib/guides';
+import { breadcrumbNode } from '../../lib/schema';
+
+export function getStaticPaths() {
+  return HUB_ORDER.map((key) => ({ params: { hub: HUBS[key].path }, props: { hubKey: key } }));
+}
+
+const { hubKey } = Astro.props as { hubKey: HubKey };
+const hub = HUBS[hubKey];
+const guides = await guidesForHub(hubKey);
+const pageUrl = new URL(hubUrl(hubKey), SITE.url).href;
+const crumbs = [{ label: 'Home', href: '/' }, { label: hub.title }];
+
+const schema = [
+  breadcrumbNode(crumbs, pageUrl),
+  {
+    '@type': 'CollectionPage',
+    '@id': `${pageUrl}#page`,
+    url: pageUrl,
+    name: hub.title,
+    description: hub.description,
+    isPartOf: { '@id': `${SITE.url}/#website` },
+    hasPart: guides.map((g) => ({ '@id': `${new URL(urlFor(g), SITE.url).href}#article` })),
+  },
+];
+---
+<BaseLayout title={hub.metaTitle} description={hub.description} schema={schema}>
+  <div class="page-header">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} />
+      <span class="kicker">Guides</span>
+      <h1>{hub.title}</h1>
+      <p class="lede">{hub.lede}</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="wrap">
+      {hubKey === 'leaving' && <PlannerCta />}
+      <div class="guide-list">
+        {guides.map((g, i) => (
+          <GuideCard
+            href={urlFor(g)}
+            title={g.data.title}
+            summary={g.data.summary}
+            step={hubKey === 'leaving' ? i + 1 : undefined}
+            kicker={g.data.hub !== hubKey ? HUBS[g.data.hub].title : undefined}
+          />
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
