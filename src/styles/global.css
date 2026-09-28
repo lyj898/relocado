@@ -1,12 +1,21 @@
+/* "Passport": navy for trust, marigold for action. Marigold is only ever a fill behind dark text or a
+   decorative bar. As text on white it fails contrast, so never use --color-accent for text. */
 :root {
-  --color-bg: #F7F3EC;
-  --color-ink: #221F1A;
-  --color-ink-soft: #5B5648;
-  --color-primary: #2F4B3C;
-  --color-primary-soft: #E4E9DE;
-  --color-accent: #C1592A;
-  --color-line: #E2DACB;
-  --color-card: #FFFDF8;
+  --color-bg: #F6F7F9;
+  --color-ink: #141B2D;
+  --color-ink-soft: #4A5468;
+  --color-primary: #1B2A4A;
+  --color-primary-soft: #E8ECF3;
+  --color-primary-line: #CDD5E3;
+  --color-accent: #F2B233;
+  --color-accent-soft: #FFF6DF;
+  --color-accent-line: #F2D489;
+  --color-accent-ink: #6B4700;
+  --color-line: #DDE2EA;
+  --color-line-strong: #B7BFCC;
+  --color-card: #FFFFFF;
+  --color-card-hover: #F9FAFC;
+  --color-footer-ink: #C9D1E0;
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
 }
@@ -43,6 +52,7 @@ button { font-family: inherit; }
 /* ---- Shared site chrome ---- */
 
 header.site {
+  background: var(--color-card);
   border-bottom: 1px solid var(--color-line);
 }
 .site-header-row {
@@ -59,7 +69,7 @@ header.site {
   font-weight: 600;
   letter-spacing: -0.01em;
 }
-.logo span { color: var(--color-accent); }
+.logo span { color: var(--color-primary); box-shadow: inset 0 -3px 0 var(--color-accent); }
 nav.site-nav {
   display: flex;
   gap: 28px;
@@ -82,19 +92,16 @@ nav.site-nav a:hover { color: var(--color-ink); }
 }
 
 footer.site {
-  border-top: 1px solid var(--color-line);
-  padding: 36px 0;
+  background: var(--color-primary);
+  padding: 44px 0 36px;
   font-size: 0.85rem;
-  color: var(--color-ink-soft);
+  color: var(--color-footer-ink);
 }
-footer.site .footer-row {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-footer.site a { border-bottom: 1px solid transparent; }
-footer.site a:hover { border-color: var(--color-ink-soft); }
+footer.site a { color: #fff; border-bottom: 1px solid transparent; }
+footer.site a:hover { border-color: var(--color-accent); }
+footer.site :focus-visible { outline-color: var(--color-accent); }
+footer.site .logo { color: #fff; }
+footer.site .logo span { color: var(--color-accent); box-shadow: none; }
 
 /* ---- Breadcrumbs ---- */
 
@@ -106,7 +113,7 @@ footer.site a:hover { border-color: var(--color-ink-soft); }
   flex-wrap: wrap;
 }
 .breadcrumbs a:hover { color: var(--color-ink); text-decoration: underline; }
-.breadcrumbs .sep { color: var(--color-line); }
+.breadcrumbs .sep { color: var(--color-line-strong); }
 
 /* ---- Page header (hub/category/profile) ---- */
 
@@ -119,9 +126,19 @@ footer.site a:hover { border-color: var(--color-ink-soft); }
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 600;
   margin: 18px 0 14px;
+}
+.page-header .kicker::before,
+.hero-kicker::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background: var(--color-accent);
+  vertical-align: middle;
+  margin-right: 8px;
 }
 .page-header h1 {
   font-family: var(--font-display);
@@ -157,13 +174,13 @@ footer.site a:hover { border-color: var(--color-ink-soft); }
   justify-content: space-between;
   transition: background 0.15s ease;
 }
-.card:hover { background: #FBF8F1; }
+.card:hover { background: var(--color-card-hover); }
 .card h3 { font-size: 1.15rem; font-weight: 600; }
 .card p { margin-top: 10px; font-size: 0.9rem; color: var(--color-ink-soft); }
 .card .cta {
   font-family: var(--font-display);
   font-size: 0.85rem;
-  color: var(--color-accent);
+  color: var(--color-primary);
   margin-top: 16px;
 }
 
@@ -186,6 +203,12 @@ footer.site a:hover { border-color: var(--color-ink-soft); }
 .btn-outline {
   background: transparent;
   color: var(--color-primary);
+}
+/* The planner's call to action. Marigold fill with ink text. */
+.btn-accent {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-ink);
 }
 .btn:hover { opacity: 0.85; }
 
@@ -232,7 +255,7 @@ footer.site a:hover { border-color: var(--color-ink-soft); }
 
 nav.site-nav a[aria-current="page"] { color: var(--color-ink); font-weight: 500; }
 
-:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 2px; }
 
 /* ---- Footer ---- */
 
@@ -242,7 +265,7 @@ footer.site .footer-grid {
   gap: 40px;
 }
 footer.site .footer-about p { margin-top: 12px; max-width: 520px; line-height: 1.6; }
-footer.site .footer-about p a { color: var(--color-primary); border-bottom: 1px solid var(--color-primary); }
+footer.site .footer-about p a { border-bottom-color: var(--color-accent); }
 footer.site .footer-links {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -263,7 +286,7 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -307,11 +330,18 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
 .guide-card:hover { border-color: var(--color-primary); }
 .guide-step {
   font-family: var(--font-display);
-  font-size: 1.6rem;
+  font-size: 1rem;
+  font-weight: 600;
   line-height: 1;
-  color: var(--color-accent);
+  color: var(--color-ink);
+  background: var(--color-accent);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  min-width: 2.2ch;
 }
 .guide-card-body { min-width: 0; }
 .guide-kicker {
@@ -377,7 +407,7 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
 .prose ul { list-style: disc; }
 .prose ol { list-style: decimal; }
 .prose li + li { margin-top: 0.45em; }
-.prose li::marker { color: var(--color-accent); }
+.prose li::marker { color: var(--color-primary); }
 .prose strong { font-weight: 600; }
 .prose blockquote {
   margin-left: 0;
@@ -423,7 +453,7 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
   justify-content: space-between;
   gap: 20px;
   background: var(--color-primary-soft);
-  border: 1px solid #CBD5C4;
+  border: 1px solid var(--color-primary-line);
   border-radius: 4px;
   padding: 22px 26px;
   margin-bottom: 28px;
@@ -522,8 +552,8 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
   font-size: 0.9rem;
   padding: 10px 14px;
   border-radius: 4px;
-  background: #FBEDE5;
-  border: 1px solid #EFCDB9;
+  background: var(--color-accent-soft);
+  border: 1px solid var(--color-accent-line);
 }
 .planner-list { margin-top: 20px; display: grid; gap: 10px; }
 .planner-item {
@@ -539,8 +569,8 @@ footer.site .footer-base { margin-top: 28px; font-size: 0.8rem; }
 .planner-item-body { min-width: 0; }
 .planner-date { font-size: 0.8rem; color: var(--color-ink-soft); }
 .planner-date time { color: var(--color-primary); font-weight: 600; }
-.planner-item.is-overdue { border-color: #EFCDB9; }
-.planner-item.is-overdue strong { color: var(--color-accent); }
+.planner-item.is-overdue { border-color: var(--color-accent-line); background: var(--color-accent-soft); }
+.planner-item.is-overdue strong { color: var(--color-accent-ink); }
 .planner-title { display: block; margin-top: 4px; font-weight: 600; cursor: pointer; }
 .planner-detail { margin-top: 4px; font-size: 0.92rem; color: var(--color-ink-soft); }
 .planner-detail a { color: var(--color-primary); text-decoration: underline; text-underline-offset: 2px; }

@@ -39,6 +39,15 @@ Also never target the service sites' sales searches ("movers singapore", "house 
 - `src/data/redirects.json`: old Singapore directory URLs → `/directory/`. The old overseas listings 404 on
   purpose (there's no relevant new home, and redirecting them would be an irrelevant redirect).
 
+## Design
+
+The "Passport" palette: navy `#1B2A4A` for trust (links, headings, primary buttons, footer) and marigold
+`#F2B233` for action (planner buttons, step numbers, small bars). Every colour is a token on `:root` in
+`src/styles/global.css`; don't hard-code hex values in pages. Marigold is only ever a fill behind dark
+text or a decorative bar. As text on white it fails WCAG contrast (1.9:1), so never use `--color-accent`
+for text. The palette is deliberately unlike the sister sites (HomeToMoved bronze, HomeToClean teal,
+SwyftClear steel blue, Junk to Clear green).
+
 ## Measurement
 
 GA4 renders only when the `PUBLIC_GA4_ID` repository variable is set (see `.github/workflows/deploy.yml`).
