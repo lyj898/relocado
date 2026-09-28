@@ -128,6 +128,8 @@ CEA's template has you return the property in similar condition to when you move
 - curtains professionally dry-cleaned, with a receipt
 - keys, access cards, manuals and inventory items accounted for.
 
+OurKampung, a sister guide from the same team, has a step-by-step [tenancy handover checklist](https://ourkampung.com/ending-a-tenancy/tenancy-handover-checklist/) that works for any tenant, and a guide to the [small repairs worth doing before handover](https://ourkampung.com/ending-a-tenancy/handyman-fixes-before-handover/).
+
 If you'd rather not do the final clean yourself, HomeToClean (run by the same team as Relocado) matches you with vetted cleaning vendors for [move-out cleaning](https://hometoclean.com/cleaning/move-out-cleaning/). For furniture and household items you're not shipping, selling or giving away, Junk to Clear, the team behind Relocado, [clears anything from single items to whole flats](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/). Our guide to [what to ship, sell, store or dispose of](/leaving-singapore/ship-sell-store-or-dispose/) helps you sort them.
 
 Under the template, the deposit, less any deductions, is refunded without interest when the tenancy ends, and the landlord must give written notice and 14 days to put a breach right before deducting. Check whether your agreement sets a refund deadline, and agree how the money will reach you once you've left.
