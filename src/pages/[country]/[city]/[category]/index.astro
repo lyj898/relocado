@@ -6,19 +6,21 @@ import {
   COUNTRY_LABELS,
   COUNTRY_SLUGS,
   CITIES,
-  CATEGORIES,
   CATEGORY_LABELS,
   isOriginCountry,
   type CountryCode,
   type Category,
 } from '../../../../lib/constants';
-import { getCompaniesByCategory } from '../../../../lib/companies';
+import { getCompaniesByCategory, getCompaniesByCity, populatedCategories } from '../../../../lib/companies';
 
 export function getStaticPaths() {
   return COUNTRIES.flatMap((code) =>
     CITIES[code].flatMap((city) => {
       // Origin countries only have the corporate_mobility category populated — skip the rest to avoid thin pages.
-      const categories = isOriginCountry(code) ? (['corporate_mobility'] as const) : CATEGORIES;
+      // Destination cities get a page only for categories that have at least one listing.
+      const categories = isOriginCountry(code)
+        ? (['corporate_mobility'] as const)
+        : populatedCategories(getCompaniesByCity(code, city.slug));
       return categories.map((category) => ({
         params: { country: COUNTRY_SLUGS[code], city: city.slug, category },
       }));

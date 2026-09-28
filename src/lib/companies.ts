@@ -1,6 +1,6 @@
 import companiesData from '../data/companies.json';
 import type { Company } from './types';
-import { CITIES, type CountryCode } from './constants';
+import { CATEGORIES, CITIES, type CountryCode } from './constants';
 import type { Category } from './constants';
 
 export const companies = companiesData as Company[];
@@ -34,4 +34,9 @@ export function getCompanyBySlug(
 
 export function countByCategory(list: Company[], category: Category): number {
   return list.filter((c) => c.categories.includes(category)).length;
+}
+
+/** Categories with at least one listing — empty categories get no page and no card. */
+export function populatedCategories(list: Company[]): Category[] {
+  return CATEGORIES.filter((category) => countByCategory(list, category) > 0);
 }

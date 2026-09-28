@@ -7,13 +7,12 @@ import {
   COUNTRY_LABELS,
   COUNTRY_SLUGS,
   CITIES,
-  CATEGORIES,
   CATEGORY_LABELS,
   CATEGORY_DESCRIPTIONS,
   isOriginCountry,
   type CountryCode,
 } from '../../lib/constants';
-import { getCompaniesByCity, getCompaniesByCountry, countByCategory } from '../../lib/companies';
+import { getCompaniesByCity, getCompaniesByCountry, countByCategory, populatedCategories } from '../../lib/companies';
 
 export function getStaticPaths() {
   return COUNTRIES.map((code) => ({ params: { country: COUNTRY_SLUGS[code] } }));
@@ -37,6 +36,7 @@ const originList = origin
 // Destination countries: single-city ones show the category grid directly; multi-city show a city selector.
 const soleCity = !origin && cities.length === 1 ? cities[0] : null;
 const soleCityList = soleCity ? getCompaniesByCity(countryCode, soleCity.slug) : [];
+const soleCityCategories = populatedCategories(soleCityList);
 const cityCounts = !origin
   ? cities.map((city) => ({ ...city, count: getCompaniesByCity(countryCode, city.slug).length }))
   : [];
@@ -65,7 +65,7 @@ const cityCounts = !origin
         {origin
           ? `${originList.length} companies based in ${countryLabel} that manage corporate relocation and global mobility programs for employees moving to Singapore.`
           : soleCity
-            ? `${soleCityList.length} providers listed across ${CATEGORIES.length} categories.`
+            ? `${soleCityList.length} providers listed across ${soleCityCategories.length} categories.`
             : `Choose a city to see providers listed there.`}
       </p>
     </div>
@@ -90,7 +90,7 @@ const cityCounts = !origin
         )
       ) : soleCity ? (
         <div class="grid-3">
-          {CATEGORIES.map((cat) => (
+          {soleCityCategories.map((cat) => (
             <a class="card" href={`/${countrySlug}/${soleCity.slug}/${cat}/`}>
               <div>
                 <h3>{CATEGORY_LABELS[cat]}</h3>

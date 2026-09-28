@@ -7,13 +7,12 @@ import {
   COUNTRY_LABELS,
   COUNTRY_SLUGS,
   CITIES,
-  CATEGORIES,
   CATEGORY_LABELS,
   CATEGORY_DESCRIPTIONS,
   isOriginCountry,
   type CountryCode,
 } from '../../../lib/constants';
-import { getCompaniesByCity, countByCategory } from '../../../lib/companies';
+import { getCompaniesByCity, countByCategory, populatedCategories } from '../../../lib/companies';
 
 export function getStaticPaths() {
   return COUNTRIES.flatMap((code) =>
@@ -32,6 +31,7 @@ const cityInfo = CITIES[countryCode].find((c) => c.slug === citySlug)!;
 const list = getCompaniesByCity(countryCode, citySlug as string);
 const origin = isOriginCountry(countryCode);
 const corporateMobilityList = list.filter((c) => c.categories.includes('corporate_mobility'));
+const cityCategories = populatedCategories(list);
 ---
 <BaseLayout
   title={
@@ -60,7 +60,7 @@ const corporateMobilityList = list.filter((c) => c.categories.includes('corporat
       <p class="lede">
         {origin
           ? `${corporateMobilityList.length} providers managing corporate relocations to Singapore from ${cityInfo.label}.`
-          : `${list.length} providers listed across ${CATEGORIES.length} categories.`}
+          : `${list.length} providers listed across ${cityCategories.length} categories.`}
       </p>
     </div>
   </div>
@@ -81,7 +81,7 @@ const corporateMobilityList = list.filter((c) => c.categories.includes('corporat
         )
       ) : (
         <div class="grid-3">
-          {CATEGORIES.map((cat) => (
+          {cityCategories.map((cat) => (
             <a class="card" href={`/${countrySlug}/${citySlug}/${cat}/`}>
               <div>
                 <h3>{CATEGORY_LABELS[cat]}</h3>

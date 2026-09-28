@@ -36,7 +36,7 @@ export const CATEGORY_DESCRIPTIONS: Record<Category, string> = {
 };
 
 // Destination markets: full directory (all categories).
-export const DESTINATION_COUNTRIES = ['SG', 'ID'] as const;
+export const DESTINATION_COUNTRIES = ['SG'] as const;
 
 // Origin markets: providers based here who move corporate assignees TO Singapore.
 // Only the corporate_mobility category is populated for these for now.
@@ -48,7 +48,6 @@ export type CountryCode = (typeof COUNTRIES)[number];
 
 export const COUNTRY_LABELS: Record<CountryCode, string> = {
   SG: 'Singapore',
-  ID: 'Indonesia',
   US: 'United States',
   CA: 'Canada',
   UK: 'United Kingdom',
@@ -66,7 +65,6 @@ export const COUNTRY_LABELS: Record<CountryCode, string> = {
 
 export const COUNTRY_SLUGS: Record<CountryCode, string> = {
   SG: 'sg',
-  ID: 'id',
   US: 'us',
   CA: 'ca',
   UK: 'uk',
@@ -85,10 +83,6 @@ export const COUNTRY_SLUGS: Record<CountryCode, string> = {
 // City slugs per country. Countries with a single city still keep the segment for URL consistency.
 export const CITIES: Record<CountryCode, { slug: string; label: string }[]> = {
   SG: [{ slug: 'singapore', label: 'Singapore' }],
-  ID: [
-    { slug: 'jakarta', label: 'Jakarta' },
-    { slug: 'bali', label: 'Bali' },
-  ],
   US: [
     { slug: 'boston', label: 'Boston' },
     { slug: 'buffalo-grove', label: 'Buffalo Grove' },

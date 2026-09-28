@@ -23,7 +23,7 @@ const providers = companies
   .sort((a, b) => a.countryLabel.localeCompare(b.countryLabel) || a.city.localeCompare(b.city) || a.name.localeCompare(b.name));
 
 const totalProviders = providers.length;
-const countryList = COUNTRIES.filter((code) => code !== 'ID');
+const countryList = COUNTRIES;
 const totalCountries = countryList.length;
 const totalCities = new Set(providers.map((p) => `${p.countryCode}-${p.city}`)).size;
 ---
