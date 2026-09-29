@@ -47,5 +47,12 @@ SwyftClear steel blue, Junk to Clear green).
 
 ## Measurement
 
-GA4 renders only when the `PUBLIC_GA4_ID` repository variable is set (see `.github/workflows/deploy.yml`).
-Outbound clicks (GA4 enhanced measurement) count the readers sent to the brands.
+Set up 29 Sep 2026. Don't break either; the user doesn't want to redo them.
+
+- **GA4:** property "Relocado" (556542819) in the Junktoclear Analytics account, linked to Search Console.
+  The measurement ID `G-MJ92RY5G1J` lives in `src/lib/site.ts`. The tag renders in production builds only,
+  and `scripts/audit.mjs` fails the build if any page is missing it. Data retention is 14 months.
+- **Search Console:** domain property `sc-domain:relocado.asia`, verified by a `google-site-verification` TXT
+  record at Namecheap. Never delete that record: deleting it unverifies the site.
+- Outbound clicks (GA4 enhanced measurement) count the readers sent to the brands.
+- The privacy note is on `/about/#privacy`, linked from the footer. Keep it true if tracking changes.

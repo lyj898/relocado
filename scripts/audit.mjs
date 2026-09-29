@@ -7,6 +7,10 @@ import { fileURLToPath } from 'node:url';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
 const SITE = 'https://relocado.asia';
 const BRAND_HOSTS = ['junktoclear.com.sg', 'hometomoved.com', 'hometoclean.com'];
+// The GA4 ID is read from src/lib/site.ts so there's one place it lives. Every page must carry the tag,
+// including the 404 page: losing it silently loses the site's measurement.
+const GA4_ID = readFileSync(new URL('../src/lib/site.ts', import.meta.url), 'utf8').match(/ga4Id:\s*'(G-[A-Z0-9]+)'/)?.[1];
+if (!GA4_ID) throw new Error('Could not read ga4Id from src/lib/site.ts');
 const errors = [];
 const fail = (page, msg) => errors.push(`${page}: ${msg}`);
 
@@ -34,6 +38,7 @@ for (const p of content) {
   const noindex = /<meta name="robots" content="noindex"/.test(p.html);
   if (!title) fail(p.url, 'missing <title>');
   if (!desc) fail(p.url, 'missing meta description');
+  if (!p.html.includes(`googletagmanager.com/gtag/js?id=${GA4_ID}`)) fail(p.url, `missing the GA4 tag (${GA4_ID})`);
   if (!noindex) {
     const canon = [...p.html.matchAll(/<link rel="canonical" href="([^"]+)"/g)].map((m) => m[1]);
     if (canon.length !== 1) fail(p.url, `expected 1 canonical, found ${canon.length}`);

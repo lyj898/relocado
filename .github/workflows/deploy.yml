@@ -25,9 +25,6 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build
-        env:
-          # GA4 measurement ID (G-XXXXXXX), set as a repository variable. Unset = no tag is rendered.
-          PUBLIC_GA4_ID: ${{ vars.PUBLIC_GA4_ID }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

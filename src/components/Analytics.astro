@@ -1,16 +1,18 @@
 ---
 /**
- * GA4, the same pattern as hometomoved.com. Renders nothing unless PUBLIC_GA4_ID is set (a GitHub
- * repository variable, passed in by the deploy workflow), so local builds and previews stay clean.
+ * GA4 for the "Relocado" property. The measurement ID lives in src/lib/site.ts, and scripts/audit.mjs
+ * fails the build if any page is missing the tag.
  *
- * Enhanced measurement's outbound-click event is what counts readers sent to Junk to Clear,
- * HomeToMoved and HomeToClean. Keep it switched on in the GA4 data stream settings.
+ * Rendered only in production builds, so `astro dev` never sends hits. Enhanced measurement's
+ * outbound-click event counts the readers sent to Junk to Clear, HomeToMoved and HomeToClean. Keep it
+ * switched on in the GA4 data stream settings.
  */
-const configuredId = (import.meta.env.PUBLIC_GA4_ID ?? '').trim();
-if (configuredId && !/^G-[A-Z0-9]{6,12}$/.test(configuredId)) {
-  throw new Error(`PUBLIC_GA4_ID is not a valid GA4 measurement ID: "${configuredId}"`);
+import { SITE } from '../lib/site';
+
+if (!/^G-[A-Z0-9]{6,12}$/.test(SITE.ga4Id)) {
+  throw new Error(`SITE.ga4Id is not a valid GA4 measurement ID: "${SITE.ga4Id}"`);
 }
-const measurementId = configuredId || null;
+const measurementId = import.meta.env.PROD ? SITE.ga4Id : null;
 ---
 
 {

@@ -4,6 +4,8 @@ export const SITE = {
   name: 'Relocado',
   url: 'https://relocado.asia',
   email: 'hello@relocado.asia',
+  /** GA4 property "Relocado" (556542819) in the Junktoclear Analytics account. Don't change it. */
+  ga4Id: 'G-MJ92RY5G1J',
   description:
     'Practical guides to moving in or out of Singapore: leaving, arriving and moving back, written by the team behind Junk to Clear and HomeToMoved.',
 } as const;
