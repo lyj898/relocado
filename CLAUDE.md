@@ -4,17 +4,14 @@ The practical guide to **moving in or out of Singapore**: leaving, arriving, and
 Junk to Clear and HomeToMoved (and HomeToClean where a move-out clean is needed) by answering the questions
 people have before they book. It's run openly by the same team. Astro 7, static, GitHub Pages (deploys from `main`).
 
-## The lane (don't drift out of it)
+## The JTC family (read first)
 
-Three sister guide sites split the audience. Never publish the same question on two of them:
+The lanes between the sister sites, the linking rules, brand facts and the shared facts table live in one
+file for the whole family. It wins over anything below:
 
-| Site | Covers |
-|---|---|
-| ourkampung.com | Your own home in Singapore (local moves, BTO, ending a tenancy, bulky items, repairs) |
-| swyftclear.com | A property you're responsible for but don't live in (estates, landlords, sellers, MCSTs) |
-| **relocado.asia** | **A move across the border.** If the reader is getting on a plane, it belongs here |
+@../jtc-family/PORTFOLIO.md
 
-Also never target the service sites' sales searches ("movers singapore", "house clearing singapore").
+Relocado's lane: **a move across the border.** If the reader is getting on a plane, it belongs here.
 
 ## Content rules
 
