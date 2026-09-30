@@ -90,3 +90,24 @@ export const BRANDS = [
     does: 'Matches you with vetted cleaners, including move-out cleaning before you hand back a rental.',
   },
 ] as const;
+
+/**
+ * Enquiry form (family rule, 30 Sep 2026: every site takes enquiries on its own FormSubmit form). The
+ * endpoint is the same inbox HomeToClean uses. The user passes each enquiry to Junk to Clear's staff or
+ * the right partner. A form isn't a brand link, so it doesn't count towards the two-per-guide limit.
+ */
+export const ENQUIRY = {
+  endpoint: 'https://formsubmit.co/ajax/lyj898@gmail.com',
+  /** GA4 event sent once, only after FormSubmit confirms delivery. It's the property's key event. */
+  event: 'generate_lead',
+  services: {
+    clearout: 'Clear out what I’m not taking',
+    cleaning: 'Move-out cleaning',
+    move: 'A move within Singapore',
+    repairs: 'Repairs before handover',
+    other: 'Something else',
+  },
+  propertyTypes: ['HDB flat', 'Condo or apartment', 'Landed house', 'Storage unit', 'Other'],
+} as const;
+
+export type EnquiryService = keyof typeof ENQUIRY.services;

@@ -7,6 +7,9 @@ alsoIn: []
 order: 3
 updated: 2026-09-28
 summary: "Aerosols, paint, gas cylinders and lithium batteries are dangerous goods in transport, and weapons and wildlife products such as ivory need permits, so get your mover's prohibited list before you pack. Australia and the US also restrict food, plants and soil. Use up, recycle, donate or give away what can't go."
+enquiry:
+  service: clearout
+  heading: "Need the leftovers cleared before you fly?"
 sources:
   - label: "FIDI — Professional Cooperation Guidelines for International Movers (version 1.4)"
     url: "https://www.fidi.org/sites/default/files/public/2021-01/FIDI%20Professional%20Cooperation%20Guidelines_2020.pdf"

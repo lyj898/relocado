@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
+import EnquiryForm from '../components/EnquiryForm.astro';
 import { BRANDS, SITE, DIRECTORY_URL } from '../lib/site';
 import { breadcrumbNode } from '../lib/schema';
 
@@ -51,6 +52,10 @@ const schema = [
         businesses against anyone else’s. Relocado doesn’t ship anything overseas, so for international moves
         we point to other companies.
       </p>
+      <p>
+        Relocado also takes enquiries. The form on a guide, and the one on this page, sends your details to the
+        same team, which passes them to whoever will quote for the job.
+      </p>
 
       <h2>How the guides are researched</h2>
       <ul>
@@ -70,6 +75,12 @@ const schema = [
         like to be removed, email us.
       </p>
 
+      <EnquiryForm
+        id="enquiry"
+        heading="Get help with your move"
+        lede="A clear-out, a move-out clean, a move within Singapore or repairs before handover: tell us what you need and the team behind Junk to Clear will get you a quote."
+      />
+
       <h2 id="privacy">Privacy</h2>
       <p>
         Relocado uses Google Analytics to count visits and see which guides help people. It records the pages
@@ -82,6 +93,14 @@ const schema = [
       <p>
         The <a href="/leaving-singapore/planner/">leaving Singapore planner</a> keeps the dates you enter in your
         own browser, and nothing you type into it is sent to us. If you email us, we use your address only to reply.
+      </p>
+      <p>
+        If you send an enquiry, the form sends what you enter (the job, property type, area, date, your name and
+        number) through FormSubmit, the form service we use, to the team behind Junk to Clear, HomeToMoved and
+        HomeToClean. They use it only to arrange quotes for that job, and pass it to whoever will quote: Junk to
+        Clear itself, or a vetted mover, cleaner or handyman. Google Analytics records that an enquiry was sent,
+        not what was in it. To see, correct or delete the details you sent, email
+        <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
       </p>
 
       <h2>Contact</h2>

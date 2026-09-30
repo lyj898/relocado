@@ -19,6 +19,13 @@ const guides = defineCollection({
     // Every guide rests on sources a reader can check. A guide with none does not build.
     sources: z.array(z.object({ label: z.string(), url: z.url() })).min(1),
     faqs: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
+    // The enquiry form shown after the guide, for the service its main step calls for.
+    enquiry: z
+      .object({
+        service: z.enum(['clearout', 'cleaning', 'move', 'repairs', 'other']),
+        heading: z.string().max(80),
+      })
+      .optional(),
   }),
 });
 

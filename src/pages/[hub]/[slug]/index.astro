@@ -7,6 +7,7 @@ import FaqList from '../../../components/FaqList.astro';
 import SourceList from '../../../components/SourceList.astro';
 import GuideCard from '../../../components/GuideCard.astro';
 import PlannerCta from '../../../components/PlannerCta.astro';
+import EnquiryForm from '../../../components/EnquiryForm.astro';
 import { HUBS, hubUrl, SITE } from '../../../lib/site';
 import { allGuides, relatedGuides, urlFor, type Guide } from '../../../lib/guides';
 import { formatDate, isoDate } from '../../../lib/seo';
@@ -36,6 +37,7 @@ const schema = [
 ].filter((n): n is Record<string, unknown> => n !== null);
 
 const tocExtra = [
+  ...(data.enquiry ? [{ slug: 'enquiry', text: data.enquiry.heading }] : []),
   ...(data.faqs.length ? [{ slug: 'questions', text: 'Questions people ask' }] : []),
   { slug: 'sources', text: 'Sources' },
 ];
@@ -57,12 +59,13 @@ const tocExtra = [
     </aside>
     <article class="prose">
       <Content />
+      {data.enquiry && <EnquiryForm service={data.enquiry.service} heading={data.enquiry.heading} />}
       <FaqList faqs={data.faqs} />
       <SourceList sources={data.sources} updated={updated} />
       <p class="disclosure-note">
         Relocado is run by the team behind Junk to Clear, HomeToMoved and HomeToClean. Where this guide
         links to one of them, it’s because the step calls for that service, and we say so in the sentence.
-        <a href="/about/">How Relocado works</a>
+        Enquiries sent through the form go to the same team. <a href="/about/">How Relocado works</a>
       </p>
     </article>
   </div>

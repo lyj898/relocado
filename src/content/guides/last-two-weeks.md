@@ -7,6 +7,9 @@ alsoIn: []
 order: 6
 updated: 2026-09-28
 summary: "If the lease ends first, book a hotel or serviced apartment. Clear the flat before handover, agree who closes the SP Group account, deal with the car, redirect mail and keep a bank account open. Once your pass is cancelled you can't work; a Short-Term Visit Pass covers up to 90 days after an EP or 30 after an S Pass."
+enquiry:
+  service: clearout
+  heading: "Need the final clear-out, clean or a small move sorted?"
 sources:
   - label: "MOM — Cancel an Employment Pass"
     url: "https://www.mom.gov.sg/passes-and-permits/employment-pass/cancel-a-pass"

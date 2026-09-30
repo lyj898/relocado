@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import EnquiryForm from '../../components/EnquiryForm.astro';
 import { PLANNER_TASKS } from '../../lib/planner';
 import { SITE, hubUrl, HUBS } from '../../lib/site';
 import { breadcrumbNode } from '../../lib/schema';
@@ -83,6 +84,10 @@ const schema = [
         your employer and your mover may set different ones, and theirs win. Nothing you enter leaves this page.
       </p>
     </section>
+  </div>
+
+  <div class="wrap enquiry-block">
+    <EnquiryForm service="clearout" heading="Want someone to handle the clear-out, clean or move?" />
   </div>
 
   <script type="application/json" id="planner-tasks" set:html={JSON.stringify(PLANNER_TASKS)} />

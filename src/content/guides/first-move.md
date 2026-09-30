@@ -7,6 +7,9 @@ alsoIn: []
 order: 1
 updated: 2026-09-28
 summary: "Sign the tenancy agreement and stamp it within 14 days, then open your SP Group account and check the building's move-in rules. At handover, record the flat's condition before your shipment is delivered, move what's in the serviced apartment, and update your address with MOM within 5 days."
+enquiry:
+  service: move
+  heading: "Need your things moved from the serviced apartment?"
 sources:
   - label: "Urban Redevelopment Authority — Short-term accommodation"
     url: "https://www.ura.gov.sg/guidelines/property-and-business-owners/property/short-term-accommodation/"

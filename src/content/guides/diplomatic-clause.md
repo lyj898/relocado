@@ -7,6 +7,9 @@ alsoIn: [hr]
 order: 4
 updated: 2026-09-28
 summary: "A diplomatic clause is a term in your tenancy agreement, not a law. Where there is one, it lets you end the lease early if you're transferred out of Singapore, stop being employed or are ordered to leave, but only after an agreed number of months, with notice and proof. Check your own agreement for the terms."
+enquiry:
+  service: cleaning
+  heading: "Need the flat cleaned or cleared before handover?"
 sources:
   - label: "Council for Estate Agencies — About CEA"
     url: "https://www.cea.gov.sg/about-cea/"

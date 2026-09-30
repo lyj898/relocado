@@ -6,6 +6,9 @@ hub: leaving
 order: 1
 updated: 2026-09-28
 summary: "Start about three months out. Lease notice and mover surveys come first, because they fix every other date. Your employer files IR21 at least a month before your last day. Sell and give things away early, clear and clean the flat in the final week, and keep a bank account open for refunds."
+enquiry:
+  service: clearout
+  heading: "Want the clear-out, clean or move taken off your list?"
 sources:
   - label: "IRAS — Getting Tax Clearance: A Step-by-Step Guide"
     url: "https://www.iras.gov.sg/taxes/individual-income-tax/employers/tax-clearance-for-foreign-spr-employees-(ir21)/getting-tax-clearance-a-step-by-step-guide"

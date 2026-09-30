@@ -7,6 +7,9 @@ alsoIn: []
 order: 2
 updated: 2026-09-28
 summary: "Returning citizens and PRs can get GST relief on used household goods owned for three months or more, but not on liquor, tobacco or cars, and the declaration must reach Singapore Customs before the shipment arrives. Tell HDB within 7 days when tenants leave your flat, and report your new address to ICA within 28 days."
+enquiry:
+  service: move
+  heading: "Need a move, or a storage unit cleared, when you’re back?"
 sources:
   - label: "Singapore Customs — Bringing in Household Items Overview"
     url: "https://www.customs.gov.sg/personal-shipment/moving-to-singapore/bringing-in-household-items-overview/"

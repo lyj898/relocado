@@ -7,6 +7,9 @@ alsoIn: []
 order: 2
 updated: 2026-09-28
 summary: "Decide before the international mover's survey, since the quote is built on the volume the surveyor records. Ship what suits your destination's voltage and is costly to replace, sell or donate the rest early, store only if you expect to return, and book collections ahead, because free options have limits."
+enquiry:
+  service: clearout
+  heading: "Need what’s left cleared before handover?"
 sources:
   - label: "FIDI — Professional Cooperation Guidelines for International Movers (version 1.4)"
     url: "https://www.fidi.org/sites/default/files/public/2021-01/FIDI%20Professional%20Cooperation%20Guidelines_2020.pdf"

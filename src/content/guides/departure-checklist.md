@@ -7,6 +7,9 @@ alsoIn: []
 order: 1
 updated: 2026-09-28
 summary: "File Form IR21 with IRAS at least one month before a non-citizen employee's last day, and withhold all money due to them. Cancel the work pass within a week after the last day of notice, which also cancels family passes, and pay for the flight home unless the employee has agreed in writing to cover it."
+enquiry:
+  service: clearout
+  heading: "Arranging the clear-out or clean for a departing employee?"
 sources:
   - label: "IRAS — Getting Tax Clearance: A Step-by-Step Guide"
     url: "https://www.iras.gov.sg/taxes/individual-income-tax/employers/tax-clearance-for-foreign-spr-employees-(ir21)/getting-tax-clearance-a-step-by-step-guide"
