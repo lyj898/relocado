@@ -25,6 +25,19 @@ Relocado's lane: **a move across the border.** If the reader is getting on a pla
 - Nothing ranks or reviews our own businesses against others.
 - British spelling, plain English, answer first.
 
+## Enquiries
+
+- The FormSubmit form is `src/components/EnquiryForm.astro`, and its endpoint, services and property types are
+  `ENQUIRY` in `src/lib/site.ts`. It posts to the same inbox as HomeToClean, with "Relocado", the service and
+  the page in the subject. The user passes each enquiry on to Junk to Clear's staff or the right partner.
+- It appears after the main text of any guide whose frontmatter sets `enquiry` (the service its main step
+  needs), on the planner, and at `/about/#enquiry`. It isn't a brand link, so it doesn't count towards the
+  two-per-guide limit.
+- The GA4 key event is `generate_lead`, sent once, only after FormSubmit confirms delivery. Don't rename it to
+  `form_submit`: enhanced measurement already sends that on every submit attempt, delivered or not.
+- If the fields, the inbox or who receives the details change, update the notice under the button and
+  `/about/#privacy` in the same commit (PDPA).
+
 ## Structure
 
 - Guides: `src/content/guides/<slug>.md`. The frontmatter schema is in `src/content.config.ts`. The URL is
