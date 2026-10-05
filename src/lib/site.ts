@@ -93,11 +93,12 @@ export const BRANDS = [
 
 /**
  * Enquiry form (family rule, 30 Sep 2026: every site takes enquiries on its own FormSubmit form). The
- * endpoint is the same inbox HomeToClean uses. The user passes each enquiry to Junk to Clear's staff or
- * the right partner. A form isn't a brand link, so it doesn't count towards the two-per-guide limit.
+ * endpoint is FormSubmit's alias for the family inbox, the one OurKampung uses, so the address never
+ * appears in the page source (5 Oct 2026). The user passes each enquiry to Junk to Clear's staff or the
+ * right partner. A form isn't a brand link, so it doesn't count towards the two-per-guide limit.
  */
 export const ENQUIRY = {
-  endpoint: 'https://formsubmit.co/ajax/lyj898@gmail.com',
+  endpoint: 'https://formsubmit.co/ajax/1aacc4903352135bb0fa38c3987d3abd',
   /** GA4 event sent once, only after FormSubmit confirms delivery. It's the property's key event. */
   event: 'generate_lead',
   services: {

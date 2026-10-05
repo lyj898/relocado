@@ -67,6 +67,9 @@ for (const p of content) {
   if (!footer.includes('<a href="https://ourkampung.com/" rel="nofollow">')) fail(p.url, 'footer is missing the nofollow "Part of OurKampung" link');
   if (/rel="[^"]*\bnoreferrer\b/.test(p.html)) fail(p.url, 'a link has rel="noreferrer"');
 
+  // The form posts to FormSubmit's alias, so no page carries the inbox's address (5 Oct 2026).
+  if (/[\w.+-]+@gmail\.com/i.test(p.html)) fail(p.url, 'contains a Gmail address (post to the FormSubmit alias instead)');
+
   // Astro drops the space when a line of text ends and a link starts on the next line ("withGoogle’s"). Keep the
   // word before a link on the link's line.
   const glued = p.html.replace(/<script[\s\S]*?<\/script>/g, '').match(/[A-Za-z0-9,;:’)]<a\s/);
