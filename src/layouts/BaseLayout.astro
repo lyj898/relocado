@@ -72,6 +72,9 @@ const year = new Date().getFullYear();
           only where a guide calls for that service. The directory lists other companies, and nobody pays
           to appear in it. <a href="/about/">How Relocado works</a>
         </p>
+        {/* The family's one footer link (OurKampung revamp, 5 Oct 2026). Nofollow because it's for readers, not
+            rankings; never noreferrer, which would hide the visit's source from OurKampung's GA4. */}
+        <p>Part of <a href="https://ourkampung.com/" rel="nofollow">OurKampung</a>.</p>
       </div>
       <nav class="footer-links" aria-label="Footer">
         {HUB_ORDER.map((key) => <a href={hubUrl(key)}>{HUBS[key].navLabel}</a>)}

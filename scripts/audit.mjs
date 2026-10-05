@@ -61,6 +61,17 @@ for (const p of content) {
     if (!existsSync(target)) fail(p.url, `broken internal link ${href}`);
   }
 
+  // The family's one footer link (OurKampung revamp, 5 Oct 2026) stays nofollow, and no link is ever noreferrer:
+  // that would hide the visit's source from the other site's GA4.
+  const footer = p.html.match(/<footer class="site">([\s\S]*?)<\/footer>/)?.[1] ?? '';
+  if (!footer.includes('<a href="https://ourkampung.com/" rel="nofollow">')) fail(p.url, 'footer is missing the nofollow "Part of OurKampung" link');
+  if (/rel="[^"]*\bnoreferrer\b/.test(p.html)) fail(p.url, 'a link has rel="noreferrer"');
+
+  // Astro drops the space when a line of text ends and a link starts on the next line ("withGoogle’s"). Keep the
+  // word before a link on the link's line.
+  const glued = p.html.replace(/<script[\s\S]*?<\/script>/g, '').match(/[A-Za-z0-9,;:’)]<a\s/);
+  if (glued) fail(p.url, `a word runs into a link with no space ("${glued[0]}")`);
+
   // Brand rules: matching services never say "our movers"/"our cleaners"; a guide links to the brands at most twice.
   const body = p.html.match(/<article class="prose">([\s\S]*?)<\/article>/)?.[1] ?? '';
   if (/\bour (movers|cleaners|trucks|crew)\b/i.test(body)) fail(p.url, 'says "our movers/cleaners/trucks/crew"');
