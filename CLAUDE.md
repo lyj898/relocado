@@ -62,7 +62,7 @@ SwyftClear steel blue, Junk to Clear green).
 
 Set up 29 Sep 2026. Don't break either; the user doesn't want to redo them.
 
-- **GA4:** property "Relocado" (556542819) in the Junktoclear Analytics account, linked to Search Console.
+- **GA4:** property "Relocado" (556542819) in the OurKampung Analytics account (403279198), linked to Search Console.
   The measurement ID `G-MJ92RY5G1J` lives in `src/lib/site.ts`. The tag renders in production builds only,
   and `scripts/audit.mjs` fails the build if any page is missing it. Data retention is 14 months.
 - **Search Console:** domain property `sc-domain:relocado.asia`, verified by a `google-site-verification` TXT
