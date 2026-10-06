@@ -137,4 +137,4 @@ Before you sign, ask about access hours, climate control, insurance and the noti
 
 Whatever isn't shipped, sold, donated, recycled or stored still has to leave before you hand back the keys, so check your tenancy agreement for the condition the flat must be returned in. Charity collections and ALBA's free service need booking ahead, and town council removal is capped, so plan a final clearance for the last items.
 
-[Junk to Clear](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), the team behind Relocado, has cleared homes since 2009 and clears single items up to whole flats, seven days a week. The guide to [your last two weeks](/leaving-singapore/last-two-weeks/) covers the handover itself.
+[Junk to Clear](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), a disposal company we refer jobs to, clears single items up to whole flats, seven days a week. The guide to [your last two weeks](/leaving-singapore/last-two-weeks/) covers the handover itself.

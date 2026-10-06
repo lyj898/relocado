@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import GuideCard from '../components/GuideCard.astro';
-import { HUBS, HUB_ORDER, hubUrl, PLANNER_URL, DIRECTORY_URL, BRANDS } from '../lib/site';
+import { HUBS, HUB_ORDER, hubUrl, PLANNER_URL, DIRECTORY_URL, SISTER_SITES } from '../lib/site';
 import { guidesForHub, urlFor } from '../lib/guides';
 
 const leaving = await guidesForHub('leaving');
@@ -70,11 +70,11 @@ const counts = Object.fromEntries(
       <div>
         <h2 class="split-title">Who runs Relocado</h2>
         <p>
-          The team behind three Singapore businesses. Where a guide needs one of them, it links there and
-          says so. For everything else (tax, passes, leases, customs) it links to the official source.
+          The OurKampung team, which also runs the two sites below. Where a guide needs one of them, it links
+          there and says so. For everything else (tax, passes, leases, customs) it links to the official source.
         </p>
         <ul class="brand-list">
-          {BRANDS.map((b) => (
+          {SISTER_SITES.map((b) => (
             <li><a href={b.url}>{b.name}</a>: {b.does}</li>
           ))}
         </ul>

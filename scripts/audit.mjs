@@ -6,7 +6,11 @@ import { fileURLToPath } from 'node:url';
 
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
 const SITE = 'https://relocado.asia';
-const BRAND_HOSTS = ['junktoclear.com.sg', 'hometomoved.com', 'hometoclean.com'];
+// Sister service sites and the partner we refer clear-outs to. A guide links to these at most twice.
+const BRAND_HOSTS = [
+  'hometomoved.com', 'hometoclean.com', 'pesttoclear.com', 'aircontocool.com', 'brokentofixed.com',
+  'junktoclear.com.sg',
+];
 // The GA4 ID is read from src/lib/site.ts so there's one place it lives. Every page must carry the tag,
 // including the 404 page: losing it silently loses the site's measurement.
 const GA4_ID = readFileSync(new URL('../src/lib/site.ts', import.meta.url), 'utf8').match(/ga4Id:\s*'(G-[A-Z0-9]+)'/)?.[1];
@@ -72,10 +76,17 @@ for (const p of content) {
 
   // Astro drops the space when a line of text ends and a link starts on the next line ("withGoogle’s"). Keep the
   // word before a link on the link's line.
-  const glued = p.html.replace(/<script[\s\S]*?<\/script>/g, '').match(/[A-Za-z0-9,;:’)]<a\s/);
+  const glued = p.html.replace(/<script[\s\S]*?<\/script>/g, '').match(/[A-Za-z0-9,;:.!?’)]<a\s/);
   if (glued) fail(p.url, `a word runs into a link with no space ("${glued[0]}")`);
 
-  // Brand rules: matching services never say "our movers"/"our cleaners"; a guide links to the brands at most twice.
+  // Independence (6 Oct 2026): the OurKampung team runs Relocado. Junk to Clear is a separate company we refer
+  // jobs to, so nothing may name SKAP, borrow its history, or call it the team behind Relocado.
+  const text = p.html.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ');
+  const borrowed = text.match(/SKAP|team behind Junk to Clear|Junk to Clear, the team behind|since 2009|established in 2009/i);
+  if (borrowed) fail(p.url, `says "${borrowed[0]}" (Junk to Clear is a partner, not the team behind Relocado)`);
+
+  // Brand rules: matching services never say "our movers"/"our cleaners"; a guide links to sister sites and
+  // partners at most twice.
   const body = p.html.match(/<article class="prose">([\s\S]*?)<\/article>/)?.[1] ?? '';
   if (/\bour (movers|cleaners|trucks|crew)\b/i.test(body)) fail(p.url, 'says "our movers/cleaners/trucks/crew"');
   if (body) {

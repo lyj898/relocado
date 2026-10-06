@@ -121,4 +121,4 @@ Pack a folder and a bag that travel with you, not with the shipment:
 
 ## The bulky leftovers
 
-Once the packers have gone, you may still have furniture that didn't sell and items a charity turned down. [Junk to Clear](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), the team behind Relocado, has cleared homes since 2009, from single items up to whole flats, seven days a week. Leave a gap between packing day and your handover for that clearance.
+Once the packers have gone, you may still have furniture that didn't sell and items a charity turned down. [Junk to Clear](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), a disposal company we refer jobs to, clears anything from single items up to whole flats, seven days a week. Leave a gap between packing day and your handover for that clearance.

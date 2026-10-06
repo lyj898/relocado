@@ -16,6 +16,8 @@ export function baseGraph(): Node[] {
       url: `${SITE.url}/`,
       email: SITE.email,
       description: SITE.description,
+      // Part of the OurKampung family (6 Oct 2026). No company runs it, so there's no legalName or foundingDate.
+      parentOrganization: { '@type': 'Organization', name: 'OurKampung', url: 'https://ourkampung.com/' },
       areaServed: { '@type': 'Country', name: 'Singapore' },
       knowsLanguage: 'en-SG',
       knowsAbout: [

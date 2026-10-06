@@ -7,7 +7,7 @@ export const SITE = {
   /** GA4 property "Relocado" (556542819) in the OurKampung Analytics account (403279198). Don't change it. */
   ga4Id: 'G-MJ92RY5G1J',
   description:
-    'Practical guides to moving in or out of Singapore: leaving, arriving and moving back, written by the team behind Junk to Clear and HomeToMoved.',
+    'Practical guides to moving in or out of Singapore: leaving, arriving and moving back, written by the OurKampung team.',
 } as const;
 
 export type HubKey = 'leaving' | 'arriving' | 'hr';
@@ -70,15 +70,11 @@ export const PLANNER_URL = '/leaving-singapore/planner/';
 export const DIRECTORY_URL = '/directory/';
 
 /**
- * The businesses Relocado is run alongside. Named in the footer and on /about/ so the relationship
- * is never hidden. HomeToMoved and HomeToClean are matching services: never "our movers" / "our cleaners".
+ * Sister sites the guides link to. The OurKampung team runs them too, and they're named on the home page and
+ * /about/ so the relationship is never hidden. Both are matching services: never "our movers" / "our cleaners".
+ * Junk to Clear isn't one: it's a separate disposal company we refer jobs to, with no referral fee (6 Oct 2026).
  */
-export const BRANDS = [
-  {
-    name: 'Junk to Clear',
-    url: 'https://junktoclear.com.sg/',
-    does: 'A Singapore disposal company that clears anything from a single sofa to a whole flat, including clear-outs for people leaving Singapore.',
-  },
+export const SISTER_SITES = [
   {
     name: 'HomeToMoved',
     url: 'https://hometomoved.com/',
@@ -94,8 +90,8 @@ export const BRANDS = [
 /**
  * Enquiry form (family rule, 30 Sep 2026: every site takes enquiries on its own FormSubmit form). The
  * endpoint is FormSubmit's alias for the family inbox, the one OurKampung uses, so the address never
- * appears in the page source (5 Oct 2026). The user passes each enquiry to Junk to Clear's staff or the
- * right partner. A form isn't a brand link, so it doesn't count towards the two-per-guide limit.
+ * appears in the page source (5 Oct 2026). The OurKampung team passes each enquiry to the partner who'll quote
+ * for the job. A form isn't a brand link, so it doesn't count towards the two-per-guide limit.
  */
 export const ENQUIRY = {
   endpoint: 'https://formsubmit.co/ajax/1aacc4903352135bb0fa38c3987d3abd',

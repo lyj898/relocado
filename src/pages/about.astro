@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import EnquiryForm from '../components/EnquiryForm.astro';
-import { BRANDS, SITE, DIRECTORY_URL } from '../lib/site';
+import { SISTER_SITES, SITE, DIRECTORY_URL } from '../lib/site';
 import { breadcrumbNode } from '../lib/schema';
 
 const pageUrl = `${SITE.url}/about/`;
@@ -14,7 +14,7 @@ const schema = [
 ---
 <BaseLayout
   title="About Relocado: Who Writes It and How It Works"
-  description="Who runs Relocado, how the guides are researched and checked, how the directory is compiled, and how the site links to its sister businesses."
+  description="Who runs Relocado, how the guides are researched and checked, how the directory is compiled, and how the site links to its sister sites and partners."
   schema={schema}
 >
   <div class="page-header">
@@ -32,33 +32,30 @@ const schema = [
     <article class="prose prose-narrow">
       <h2>Who runs it</h2>
       <p>
-        Relocado is run by the team behind three Singapore businesses. Junk to Clear was established in 2009
-        under SKAP Waste Management Pte. Ltd., and HomeToMoved and HomeToClean are run by the same team.
+        Relocado is run by the OurKampung team, which runs a small family of Singapore guides and service
+        sites, and <a href="https://ourkampung.com/our-sites/">OurKampung lists them all</a>. Two of them come
+        up in Relocado’s guides:
       </p>
       <ul>
-        {BRANDS.map((b) => (
+        {SISTER_SITES.map((b) => (
           <li><a href={b.url}>{b.name}</a>: {b.does}</li>
         ))}
       </ul>
       <p>
-        Junk to Clear clears homes for people leaving Singapore. Relocado covers the rest of that move: the
-        paperwork, the lease, the shipment and the timing.
-      </p>
-      <p>
-        Relocado is one of a small family of Singapore guides and service sites run by the same team,
-        and <a href="https://ourkampung.com/our-sites/">OurKampung lists them all</a>.
+        For clearing out what you won’t ship, the guides point to Junk to Clear, a separate disposal company we
+        refer jobs to. It pays no referral fees.
       </p>
 
-      <h2>How we link to our own businesses</h2>
+      <h2>How we link to sister sites and partners</h2>
       <p>
-        A guide links to one of the three businesses only at a step that needs that service, such as
-        clearing a flat before handover, and the sentence says it’s ours. Guides never rank or review our own
-        businesses against anyone else’s. Relocado doesn’t ship anything overseas, so for international moves
-        we point to other companies.
+        A guide links to HomeToMoved, HomeToClean or Junk to Clear only at a step that needs that service, such
+        as clearing a flat before handover, and the sentence says how we’re connected. Guides never rank or
+        review our sister sites or partners against anyone else’s. Relocado doesn’t ship anything overseas, so
+        for international moves we point to other companies.
       </p>
       <p>
         Relocado also takes enquiries. The form on a guide, and the one on this page, sends your details to the
-        same team, which passes them to whoever will quote for the job.
+        OurKampung team, who pass them to the partner who’ll quote for the job.
       </p>
 
       <h2>How the guides are researched</h2>
@@ -73,8 +70,8 @@ const schema = [
       <h2>How the directory works</h2>
       <p>
         The <a href={DIRECTORY_URL}>directory</a> lists Singapore international movers, relocation companies
-        and pet relocation specialists: the parts of a move our own businesses don’t do. Each entry comes from
-        the company’s own website and shows the date it was checked. The listings are alphabetical and aren’t
+        and pet relocation specialists: the parts of a move our sister sites and partners don’t handle. Each
+        entry comes from the company’s own website and shows the date it was checked. The listings are alphabetical and aren’t
         a ranking, and nobody pays to appear. If you run a listed company and something is wrong, or you’d
         like to be removed, email us.
       </p>
@@ -82,10 +79,13 @@ const schema = [
       <EnquiryForm
         id="enquiry"
         heading="Get help with your move"
-        lede="A clear-out, a move-out clean, a move within Singapore or repairs before handover: tell us what you need and the team behind Junk to Clear will get you a quote."
+        lede="A clear-out, a move-out clean, a move within Singapore or repairs before handover: tell us what you need, and we’ll pass it to a partner who’ll quote for the job."
       />
 
       <h2 id="privacy">Privacy</h2>
+      <p>
+        Relocado is run by the OurKampung team, and “we” on this page means that team.
+      </p>
       <p>
         Relocado uses Google Analytics to count visits and see which guides help people. It records the pages
         you view, how you arrived (from a search, for example), how far you scroll, which links to other sites
@@ -100,10 +100,10 @@ const schema = [
       </p>
       <p>
         If you send an enquiry, the form sends what you enter (the job, property type, area, date, your name and
-        number) through FormSubmit, the form service we use, to the team behind Junk to Clear, HomeToMoved and
-        HomeToClean. They use it only to arrange quotes for that job, and pass it to whoever will quote: Junk to
-        Clear itself, or a vetted mover, cleaner or handyman. Google Analytics records that an enquiry was sent,
-        not what was in it. To see, correct or delete the details you sent,
+        number) through FormSubmit, the form service we use, to the OurKampung team. We use it only to arrange
+        quotes for that job, and pass it to the partner matched to the job: a vetted mover, cleaner or handyman,
+        or, for disposal and clear-outs, Junk to Clear. Google Analytics records that an enquiry was sent, not
+        what was in it. To see, correct or delete the details you sent,
         email <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
       </p>
 

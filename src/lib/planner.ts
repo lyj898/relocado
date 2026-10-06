@@ -139,7 +139,7 @@ export const PLANNER_TASKS: PlannerTask[] = [
     when: 'Two weeks before handover',
     title: 'Book the final clear-out',
     detail:
-      'Whatever isn’t shipped, sold or given away has to leave before handover. Junk to Clear, the team behind Relocado, clears anything from a few items to the whole flat.',
+      'Whatever isn’t shipped, sold or given away has to leave before handover. Junk to Clear, a disposal company we refer jobs to, clears anything from a few items to the whole flat.',
     link: { label: 'Junk to Clear', href: 'https://junktoclear.com.sg/services/residential-waste-disposal-singapore/' },
   },
   {

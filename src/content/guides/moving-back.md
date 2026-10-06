@@ -117,7 +117,7 @@ Letting the whole flat moved it onto non-owner-occupier property tax rates, and 
 
 Decide what you still want before anything moves. Start with the storage unit and whatever is at your parents' home, and leave any culling of the shipment until later: goods brought in under GST relief mustn't be sold, given away or disposed of within three months of arrival.
 
-Check the storage unit's notice period so you don't pay for a month you don't need, and book a clear-out for whatever you won't keep. Junk to Clear, the team behind Relocado, has cleared homes in Singapore since 2009 and lists storage space cleanouts among its services; see its [residential disposal service](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/).
+Check the storage unit's notice period so you don't pay for a month you don't need, and book a clear-out for whatever you won't keep. Junk to Clear, a disposal company we refer jobs to, lists storage space cleanouts among its services; see its [residential disposal service](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/).
 
 ## Moving everything into your flat
 

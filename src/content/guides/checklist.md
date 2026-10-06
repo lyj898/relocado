@@ -78,7 +78,7 @@ The order matters more than the speed. Lease notice and mover surveys have the l
 ## Two weeks out: packing day and the final bookings
 
 - **Packing day.** Before the packers arrive, set aside everything that flies with you: passports, pass cards, tenancy and employment documents, medication, valuables and laptops.
-- **Book the final clear-out.** Whatever didn't sell, find a new home or fit in the container still has to leave before handover. Junk to Clear, the team behind Relocado, [clears anything from a few items to a whole flat](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), seven days a week.
+- **Book the final clear-out.** Whatever didn't sell, find a new home or fit in the container still has to leave before handover. Junk to Clear, a disposal company we refer jobs to, [clears anything from a few items to a whole flat](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/), seven days a week.
 - **Keeping a few things in Singapore?** HomeToMoved, run by the same team as Relocado, matches you with vetted movers for [single items](https://hometomoved.com/moving/single-item-moving/), such as the things going to a friend's place or into storage.
 - **Book the move-out clean and the aircon service.** CEA's template expects the flat thoroughly cleaned at handover, with receipts for air-conditioner servicing, which it requires at least every three months. Your agreement may say more.
 

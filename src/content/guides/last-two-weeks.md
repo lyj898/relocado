@@ -87,7 +87,7 @@ Anything that missed the container but isn't for the bin, such as a bicycle for 
 
 Whatever didn't sell, didn't suit a charity and wasn't worth shipping still has to go before the inspection. The [template tenancy agreement for private homes](https://isomer-user-content.by.gov.sg/71/60052678-1592-4904-b443-3269a655e0de/Tenancy%20Agreement%20Template%20for%20Private%20Residential%20Property.pdf) from the Council for Estate Agencies (CEA), for example, expects everything you brought in to be removed and lets the landlord remove or dispose of anything left behind. Book the collection a day or two before the handover, so there's time to clean afterwards.
 
-Junk to Clear, the team behind Relocado, has cleared homes in Singapore since 2009 and takes anything from a single item to the contents of a whole flat; see its [residential disposal service](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/). [Ship, sell, store or dispose](/leaving-singapore/ship-sell-store-or-dispose/) helps if you're still deciding.
+Junk to Clear, a disposal company we refer jobs to, takes anything from a single item to the contents of a whole flat; see its [residential disposal service](https://junktoclear.com.sg/services/residential-waste-disposal-singapore/). [Ship, sell, store or dispose](/leaving-singapore/ship-sell-store-or-dispose/) helps if you're still deciding.
 
 ## The handover inspection and your deposit
 

@@ -25,7 +25,7 @@ const config = { endpoint: ENQUIRY.endpoint, event: ENQUIRY.event };
 <section class="enquiry" id={id} aria-labelledby={`${id}-title`} data-enquiry>
   <h2 id={`${id}-title`}>{heading}</h2>
   <p class="enquiry-lede">
-    {lede ?? 'Tell us what you need and the team behind Junk to Clear will get you a quote.'}
+    {lede ?? 'Tell us what you need, and we’ll pass it to a partner who’ll quote for the job.'}
   </p>
 
   <form class="enquiry-form" novalidate data-enquiry-form>
@@ -68,9 +68,8 @@ const config = { endpoint: ENQUIRY.endpoint, event: ENQUIRY.event };
     <p class="enquiry-status" role="status" aria-live="polite" data-enquiry-status hidden></p>
 
     <p class="enquiry-notice">
-      Your details go to the team behind Junk to Clear, HomeToMoved and HomeToClean. They pass them to whoever
-      will quote for the job: Junk to Clear itself, or a vetted mover, cleaner or handyman. We use them only for
-      this enquiry. <a href="/about/#privacy">How we handle your details</a>
+      Your details go to the OurKampung team, who pass them to the partner who’ll quote for the job. We use
+      them only for this enquiry. <a href="/about/#privacy">How we handle your details</a>
     </p>
   </form>
 
